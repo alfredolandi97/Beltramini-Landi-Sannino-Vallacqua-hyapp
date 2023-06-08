@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     ssr:true,
-    modules:["@nuxtjs/supabase"]
+    modules:["@nuxtjs/supabase"],
+    css: [
+        '~/assets/css/general.css'
+    ],
 })
