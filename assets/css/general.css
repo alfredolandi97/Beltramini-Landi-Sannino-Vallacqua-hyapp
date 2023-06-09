@@ -7,6 +7,40 @@ body
 {
     display: flex;
     flex-direction: column;
-    background-color: brown;
-    margin: 0;
+    background-color: lightgoldenrodyellow;
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right:30px;
+    height: 100%; 
+
 }
+h1.titpag{
+    font-size: 150px;
+    /* per creare lo spessore nel testo*/
+    -webkit-text-stroke-width: 1px; /* Spessore del contorno */
+    -webkit-text-stroke-color: blue;
+    color: transparent;
+    background-clip: text;
+    font-family: 'Consolas', sans-serif;
+    margin-top:-40px;
+
+
+    /* codice per il movimento del titolo*/
+
+    overflow: hidden;/* nasconde contenuto in eccesso*/
+    white-space: nowrap; /*mantiene il testo su un'unica riga*/
+    text-overflow: marquee;
+    animation: marquee 6s infinite linear; /* come deve essere l'animazione*/
+      }
+      /* come si muove l'animazione*/
+      @keyframes marquee {
+        0% {
+          transform: translateX(120%);
+        }
+        100% {
+          transform: translateX(-130%);
+        }
+      }
+
+
+

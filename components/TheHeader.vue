@@ -1,13 +1,13 @@
 <template>
-    <header>
-            <h1>HyperGroup!</h1>
+    <header ref="navbar" class="navbar fade-in">
+            <h1 class="logo">HyperGroup!</h1>
             <nav>
                 <NuxtLink to = "/">Home</NuxtLink>
                 <NuxtLink to = "/dogs">Our team</NuxtLink>
                 <NuxtLink to = "/locations">Areas of interest</NuxtLink>
-                <NuxtLink to = "/about">Contacts</NuxtLink>
+                <NuxtLink to = "/contact">Contacts</NuxtLink>
                 <NuxtLink to = "/news">News</NuxtLink>
-                <NuxtLink to = "/contact">About us</NuxtLink>
+                <NuxtLink to = "/about">About us</NuxtLink>
             </nav>
 
 
@@ -15,11 +15,37 @@
         </header>
 </template>
 
+<script>
+export default {
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const headerHeight = this.$refs.navbar.offsetHeight;
+
+      if (window.pageYOffset > headerHeight) {
+        this.$refs.navbar.style.display = 'flex';
+        this.$refs.navbar.classList.add('fade-in');
+      } else {
+        this.$refs.navbar.style.display = 'none';
+        this.$refs.navbar.classList.remove('fade-in');
+      }
+    }
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+}
+</script>
+
+
 <style>
     header
     {
+        transition: transofrm 0.3 ease;
         position: sticky;
-        top: 0;
+        top: 0px;
         background-color: #0652ff;
         padding: 0px 20px 0px 20px;
         margin-bottom: 10px;
@@ -30,22 +56,28 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
         width:100%;
         z-index:999;
+       
     }
 
     nav {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         font-size: 17pt;
+        
        
     }
-    h1{
+    h1.logo{
         padding: 0px 0px 40px 0px;
 
     }
     nav a {
-    color: #FFFF33; /* Colore dei link normali */
-    text-decoration: none;
-  }
+  color: #FFFF33; /* Colore dei link normali */
+  text-decoration: none;
+  border: 3px solid brown; 
+  border-radius: 10px; 
+  padding: 10px;
+}
+
 
 
 
@@ -74,5 +106,21 @@
   background-color: #a8bbbf;
 }
 
+
+
+
+.fade-in {
+  animation: fade-in 0.5s ease-in;
+  display:none;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 </style>

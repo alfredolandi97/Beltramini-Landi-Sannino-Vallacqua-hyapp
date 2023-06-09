@@ -6,3 +6,5 @@ export default defineNuxtConfig({
         '~/assets/css/general.css'
     ],
 })
+
+
