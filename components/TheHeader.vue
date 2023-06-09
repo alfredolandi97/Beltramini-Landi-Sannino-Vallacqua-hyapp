@@ -18,6 +18,8 @@
 <style>
     header
     {
+        position: sticky;
+        top: 0;
         background-color: #0652ff;
         padding: 0px 20px 0px 20px;
         margin-bottom: 10px;
@@ -26,8 +28,8 @@
         justify-content: space-between;
         align-items: center;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-        position: fixed;
         width:100%;
+        z-index:999;
     }
 
     nav {
@@ -50,6 +52,7 @@
   /* custom scrollbar, qui si regolano le dimensioni */
 ::-webkit-scrollbar {
   width: 30px;
+  height: 80%
 }
 
 
