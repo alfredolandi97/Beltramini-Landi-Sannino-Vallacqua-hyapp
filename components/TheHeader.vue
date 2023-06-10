@@ -1,7 +1,10 @@
 <template>
     <header ref="navbar">
-            <h1 class="logo">NextFund</h1>
+                <h1 class="logo">
+                <NuxtLink to="/" class="logo-link">NextFund</NuxtLink>
+                </h1>
             <nav>
+                
                 <NuxtLink to = "/persons">Our team</NuxtLink>
                 <NuxtLink to = "/topprojects">Top projects</NuxtLink>
                 <NuxtLink to = "/areas">Areas of interest</NuxtLink>
@@ -66,10 +69,18 @@ export default {
         
        
     }
-    h1.logo{
-        padding: 0px 0px 40px 0px;
 
-    }
+
+    h1.logo {
+    padding: 0px 0px 40px 0px;
+  }
+
+
+  .logo-link {
+    text-decoration: none;
+    color: black; 
+  }  
+
     nav a {
   color: #FFFF33; /* Colore dei link normali */
   
