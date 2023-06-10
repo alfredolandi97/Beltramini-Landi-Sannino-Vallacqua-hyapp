@@ -2,9 +2,9 @@
     <header ref="navbar" class="navbar fade-in">
             <h1 class="logo">HyperGroup!</h1>
             <nav>
-                <NuxtLink to = "/">Home</NuxtLink>
-                <NuxtLink to = "/dogs">Our team</NuxtLink>
-                <NuxtLink to = "/locations">Areas of interest</NuxtLink>
+                <NuxtLink to = "/persons">Our team</NuxtLink>
+                <NuxtLink to = "/topprojects">Top projects</NuxtLink>
+                <NuxtLink to = "/areas">Areas of interest</NuxtLink>
                 <NuxtLink to = "/contact">Contacts</NuxtLink>
                 <NuxtLink to = "/news">News</NuxtLink>
                 <NuxtLink to = "/about">About us</NuxtLink>
@@ -72,6 +72,7 @@ export default {
     }
     nav a {
   color: #FFFF33; /* Colore dei link normali */
+  
   text-decoration: none;
   border: 3px solid brown; 
   border-radius: 10px; 
