@@ -7,7 +7,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(255, 255, 255);
     margin-top: 150px;
     margin-left: 30px;
     margin-right:30px;
