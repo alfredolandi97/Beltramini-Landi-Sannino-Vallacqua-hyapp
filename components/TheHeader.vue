@@ -1,6 +1,6 @@
 <template>
-    <header ref="navbar" class="navbar fade-in">
-            <h1 class="logo">HyperGroup!</h1>
+    <header ref="navbar">
+            <h1 class="logo">NextFund</h1>
             <nav>
                 <NuxtLink to = "/persons">Our team</NuxtLink>
                 <NuxtLink to = "/topprojects">Top projects</NuxtLink>
@@ -15,6 +15,7 @@
         </header>
 </template>
 
+<!--
 <script>
 export default {
   mounted() {
@@ -38,12 +39,11 @@ export default {
   }
 }
 </script>
-
+-->
 
 <style>
     header
     {
-        transition: transofrm 0.3 ease;
         position: sticky;
         top: 0px;
         background-color: #0652ff;
@@ -109,10 +109,10 @@ export default {
 
 
 
-
+/*
 .fade-in {
   animation: fade-in 0.5s ease-in;
-  display:none;
+ 
 }
 
 @keyframes fade-in {
@@ -123,5 +123,6 @@ export default {
     transform: translateY(0);
   }
 }
+*/
 
 </style>
