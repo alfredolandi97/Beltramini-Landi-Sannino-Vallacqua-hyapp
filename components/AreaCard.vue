@@ -1,16 +1,21 @@
 <template>
     <div class="card">
-        <!--div class="image-container">
-            <img class="dog-img" src="~/assets/img/home-image.jpg" />
-        </div-->
+        <div class="image-container">
+            <img class="dog-img" :src="getImagePath()"/>
+        </div>
         <span class="dog-name">{{name}}</span>
-        <span class="dog-breed">{{info}}</span>        
+        <span class="dog-breed">{{info}}</span>
+        <span class="dog-breed">{{description}}</span>           
     </div>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["name", "info"])
+    const props = defineProps(["name", "info", "description", "image"])
+
+    function getImagePath() {
+        return new URL(`../assets/img/areas/${props.image}`, import.meta.url)
+    }
 </script>
 
 <style>
