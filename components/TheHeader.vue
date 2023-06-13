@@ -86,7 +86,7 @@ export default {
   
   text-decoration: none;
   border: 3px solid brown; 
-  border-radius: 10px; 
+  border-radius: 100px; 
   padding: 10px;
 }
 
