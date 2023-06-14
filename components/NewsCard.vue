@@ -6,14 +6,13 @@
         <span class="dog-name">{{title}}</span>
         <span class="dog-breed">{{caption}}</span>
         <span class="dog-name">{{text}}</span>
-        <span class="dog-breed">{{image}}</span>
-        
+        <span class="dog-breed">{{date}}</span>
     </div>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["title", "caption", "text", "image"])
+    defineProps(["title", "caption", "text", "image", "date"])
 </script>
 
 <style>

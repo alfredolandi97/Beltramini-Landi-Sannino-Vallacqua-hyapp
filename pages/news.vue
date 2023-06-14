@@ -1,7 +1,7 @@
 <template>
     <h1>News</h1>
         <div id="card-container">
-            <NewsCard v-for = "update of news" :title = "update.title" :caption = "update.caption" :text = "update.text" :image = "update.image"/>
+            <NewsCard v-for = "update of news" :title = "update.title" :caption = "update.caption" :text = "update.text" :image = "update.image" :date="update.date"/>
         </div>
 
 </template>
