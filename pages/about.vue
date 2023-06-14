@@ -25,8 +25,15 @@
       border: 1px solid #C0FF3B;
       margin-left: -8px;
       margin-top: 20px;
+      transition: background-color 0.5s;
   }
 
+  .card1:hover{
+      background-color:#C0FF3B;;
+      opacity:1;
+      
+      
+    }
 .textDiv{
           position:relative;
           bottom:5px;
@@ -42,11 +49,8 @@
           transition:color 0.5s;
       }     
       
-      .card1:hover{
-      background-color:#C0FF3B;;
-      opacity:1;
-      
-      
-    }
-    
+      .card1:hover .textDiv {
+  color:  pink; /* Colore desiderato quando passi sopra il div */
+}
+
   </style>
