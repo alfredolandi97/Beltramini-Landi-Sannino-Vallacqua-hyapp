@@ -3,9 +3,14 @@
         <div class="imageAC">
             <img class="imgAC" :src="getImagePath()"/>
         </div>
-        <span class="AC-name">{{name}}</span>
-        <span class="AC-breed">{{info}}</span>
-        <span class="AC-breed">{{description}}</span>           
+       <div class="textWrapper">
+             <span class="AC-name">{{name}}</span>
+       </div>
+       <div class="infoDescWrapper">       
+             <span class="AC-info">{{info}}</span>
+             <span class="AC-desc">{{description}}</span> 
+       </div>       
+          
     </div>
 </template>
 
@@ -19,14 +24,42 @@
 </script>
 
 <style>
-     .imageAC
+
+.cardAC
+{
+      width: 100.3vw;
+      height: 180px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border: 1px solid #C0FF3B;
+      margin-left: -8px;
+      margin-top: 10px;
+      transition: background-color 0.5s;
+}
+
+.cardAC:hover{
+      background-color:#C0FF3B;;
+      opacity:1;
+      
+}
+
+
+
+.imageAC
 {
     display: flex;
     justify-content: center;
     padding: 2px;
     width: 70px;
     height: 70px;
-    filter: brightness(1000%);
+    filter: invert(100%);
+   
+}
+
+.cardAC:hover .imageAC{
+    filter: invert(0%);
+      
 }
 
 .imgAC
@@ -40,23 +73,22 @@
     
 }
 
-.cardAC
-{
-      width: 101vw;
-      height: 180px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      border: 1px solid #C0FF3B;
-      margin-left: -8px;
-      margin-top: 20px;
-      transition: background-color 0.5s;
+
+
+.textWrapper {
+    display: flex;
+    flex-direction:center;
+    margin-left: 20px;
 }
 
-.cardAC:hover{
-      background-color:#C0FF3B;;
-      opacity:1;
-    }
+.infoDescWrapper {
+  display: flex;
+  flex-direction:column;
+  margin-left: 1300px;
+  margin-top:-150px;
+  margin-right:40px;
+}
+
 .AC-name
 {
           text-transform: uppercase;
@@ -77,7 +109,7 @@
 
 
 .cardAC:hover .AC-name{
-        position:relative;
+          position:relative;
           bottom:5px;
           font-size: 100px;
           /* per creare lo spessore nel testo*/
@@ -89,5 +121,25 @@
           font-weight:800;
           margin-left: 80px;
           transition:color 0.5s;
+}
+.AC-info{
+    font-size: 25px;
+    color:rgb(226, 230, 188);
+    
+}
+
+.cardAC:hover .AC-info{
+color:#05041D;
+font-size: 26px;
+}
+
+.AC-desc{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.cardAC:hover .AC-desc{
+color: #05041D;
+font-size: 16;
 }
 </style>
