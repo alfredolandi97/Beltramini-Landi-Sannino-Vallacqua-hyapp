@@ -9,7 +9,6 @@
        </div>
        <div class="infoDescWrapper">       
              <span class="AC-info">{{info}}</span>
-             <span class="AC-desc">{{description}}</span> 
        </div>       
           
     </div>
@@ -56,6 +55,7 @@
     width: 10%;
     height: 45%;
     filter: invert(100%);
+    margin-bottom: -1%;
    
 }
 
@@ -71,7 +71,9 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    margin-left: -10%;
+    margin-left: -15%;
+    
+    
     
 }
 
@@ -85,8 +87,8 @@
 .infoDescWrapper {
   display: flex;
   flex-direction:column;
-  margin-left: 57vw;
-  margin-top:-8vw;
+  margin-left: 56vw;
+  margin-top:-8.5vw;
   margin-right:2vw;
 }
 
@@ -104,7 +106,7 @@
           font-family: "Roboto", sans-serif;
           font-weight:800;
           margin-left: -2vw;
-          margin-top:1vw;
+          margin-top:1.5vw;
           transition:color 0.5s;
 }
 
@@ -121,31 +123,19 @@
           font-family: "Roboto", sans-serif;
           font-weight:800;
           margin-left: -2vw;
-          margin-top:1vw;
+          margin-top:1.5vw;
           transition:color 0.5s;
 }
 .AC-info{
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     color:rgb(226, 230, 188);
     
 }
 
 .cardAC:hover .AC-info{
 color:#05041D;
-font-size: 1.3vw;
+font-size: 1.8vw;
 }
-
-.AC-desc{
-    font-size: 0.9vw;
-    color: rgb(255, 255, 255);
-}
-
-.cardAC:hover .AC-desc{
-color: #05041D;
-font-size: 0.9vw;
-}
-
-
 .nuxtclassAC{
     text-decoration: none;
 }

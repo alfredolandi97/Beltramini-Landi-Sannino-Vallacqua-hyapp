@@ -5,13 +5,13 @@
     <p class="firstpar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
 
     <div class="firstsec">
-       <!--<img  class="firstimg" src="../assets/img/about/papa_francesco_02-696x557.jpg" alt=""> --> 
+       <img  class="firstimg" src="../assets/img/about/papa_francesco_02-696x557.jpg" alt=""> 
 
         <p class="secondpar"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque cupiditate dignissimos rem pariatur consectetur consequatur voluptate nihil. Dolorem tempora ipsam error facere obcaecati nesciunt eligendi sit, at corrupti rerum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quas esse nihil deserunt consequuntur? Quos vitae sapiente consequatur quisquam autem minima illo aliquam temporibus, provident nostrum ab iure, quibusdam repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos fugit rerum cumque doloremque, delectus accusantium in distinctio illum aperiam accusamus vero sequi odit voluptates veniam provident saepe animi repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia iure porro eos velit. Ducimus repellendus, quibusdam tempore odit veniam, dolor ratione exercitationem tenetur aliquam nulla fugiat sunt, voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum explicabo porro quas, assumenda nulla aliquid odio tempore, doloremque quisquam incidunt beatae, voluptas dicta commodi. At atque ut quibusdam unde veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum quasi corporis maiores iure mollitia asperiores recusandae magni eos, obcaecati labore, quos sit cupiditate optio impedit dolores molestiae ducimus pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum maiores iste molestiae odit dolor, facere neque, libero impedit sunt quisquam est earum fugiat repellendus officiis eveniet laudantium blanditiis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quia. Exercitationem porro quaerat veritatis delectus atque autem eos esse eveniet ipsam minima illo dolore doloremque consectetur, rem quibusdam quo provident! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit sunt aperiam amet adipisci odit asperiores porro, quod nulla tenetur tempore ducimus obcaecati ad rerum vitae architecto molestiae temporibus dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, voluptate. Dolore dolorum sunt repellendus! A vel, error eos iure, eligendi nam, iste maxime harum omnis cupiditate eaque ab! Perferendis, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti quo at exercitationem placeat quod nulla assumenda ipsam id nemo, expedita praesentium vel culpa facere nobis soluta, nihil necessitatibus dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque cupiditate dignissimos rem pariatur consectetur consequatur voluptate nihil. Dolorem tempora ipsam error facere obcaecati nesciunt eligendi sit, at corrupti rerum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quas esse nihil deserunt consequuntur? Quos vitae sapiente consequatur quisquam autem minima illo aliquam temporibus, provident nostrum ab iure, quibusdam repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos fugit rerum cumque doloremque, delectus accusantium in distinctio illum aperiam accusamus vero sequi odit voluptates veniam provident saepe animi repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia iure porro eos velit. Ducimus repellendus, quibusdam tempore odit veniam, dolor ratione exercitationem tenetur aliquam nulla fugiat sunt, voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum explicabo porro quas, assumenda nulla aliquid odio tempore, doloremque quisquam incidunt beatae, voluptas dicta commodi. At atque ut quibusdam unde veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum quasi corporis maiores iure mollitia asperiores recusandae magni eos, obcaecati labore, quos sit cupiditate optio impedit dolores molestiae ducimus pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum maiores iste molestiae odit dolor, facere neque, libero impedit sunt quisquam est earum fugiat repellendus officiis eveniet laudantium blanditiis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quia. Exercitationem porro quaerat veritatis delectus atque autem eos esse eveniet ipsam minima illo dolore doloremque consectetur, rem quibusdam quo provident! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit sunt aperiam amet adipisci odit asperiores porro, quod nulla tenetur tempore ducimus obcaecati ad rerum vitae architecto molestiae temporibus dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, voluptate. Dolore dolorum sunt repellendus! A vel, error eos iure, eligendi nam, iste maxime harum omnis cupiditate eaque ab! Perferendis, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti quo at exercitationem placeat quod nulla assumenda ipsam id nemo, expedita praesentium vel culpa facere nobis soluta, nihil necessitatibus dolores! </p>
 
     </div>
     <div class="secondsec">
-        <!-- <img class="secondimg" src="../assets/img/about/20096080_small-900x600.jpg" alt="">-->
+         <img class="secondimg" src="../assets/img/about/20096080_small-900x600.jpg" alt="">
 
         <p class="thirdpar"> 'my silky poodle is so wet'</p>
 
@@ -34,21 +34,21 @@
   <style>
 .firstsec{
 
-margin-bottom: 100px;
 }
 
 .firstpar{
-    margin-left: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
   } 
 
 .secondpar{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
 
 .thirdpar{
-  font-size: 80px;
+  font-size: 3vw;
     /* per creare lo spessore nel testo*/
     -webkit-text-stroke-width: 1px; /* Spessore del contorno */
     -webkit-text-stroke-color:#C0FF3B;
@@ -56,14 +56,14 @@ margin-bottom: 100px;
     background-clip: text;
     font-family: 'Consolas', sans-serif;
     position: relative;
-    top:40px;
-    left: 100px;
+    top: 1vw;
+    left: 3vw;
 
 }
 
 .forthpar {
-  position: relative; /* Imposta la posizione relativa */
-  top: 250px; /* Sposta il paragrafo verso il basso di 50 pixel (puoi regolare il valore come desideri) */
+  position: relative; 
+  top: 10vw;
 }
 
 
@@ -75,8 +75,8 @@ margin-bottom: 100px;
   }
 .secondimg {
     float: left; /* Immagine a sinistra */
-  margin-right: 100px; /* Margine a destra per separare l'immagine dal paragrafo */
-  margin-left: 20px;
+   /* Margine a destra per separare l'immagine dal paragrafo */
+  margin-left: 2%;
 } 
 
   </style>

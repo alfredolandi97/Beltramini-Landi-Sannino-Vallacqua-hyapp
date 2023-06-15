@@ -22,11 +22,11 @@
   header
   {
       position: sticky;
-      top: 0px;
+      top: 0%;
       background-color: #1107FF;
-      padding: 0px 20px 0px 20px;
-      margin-bottom: 10px;
-      height: 130px;
+      padding-left: 2%;
+      margin-bottom: 2%;
+      height: 7vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -38,13 +38,14 @@
 
   nav {
       display: flex;
-      margin-right:60px;
-      margin-bottom: 40px;
+      margin-right:2%;
+      margin-bottom: 2%;
   }
 
 
   h1.logo {
-  padding: 0px 0px 40px 0px;
+  padding-bottom: 2.5%;
+  font-size: 2.1vw;
 }
 
 
@@ -57,10 +58,10 @@
 color: #FFFFFF; /* Colore dei link normali */
 opacity:0.7;
 text-decoration: none;
-padding: 30px;
+padding: 1vw;
 font-family: "Roboto", sans-serif;
 font-weight:500;
-font-size: 18pt;
+font-size: 1.5vw;
 transition: all 0.1s ease;
 
 }
@@ -75,7 +76,7 @@ opacity:1;
 
 /* custom scrollbar, qui si regolano le dimensioni */
 ::-webkit-scrollbar {
-width: 30px;
+width: 27px;
 height: 80%
 }
 
