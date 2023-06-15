@@ -30,13 +30,13 @@
 .cardAC
 {
       width: 100.3vw;
-      height: 180px;
+      height: 10vw;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       border: 1px solid #C0FF3B;
-      margin-left: -8px;
-      margin-top: 10px;
+      margin-left: -1vw;
+      margin-top: 1vw;
       transition: background-color 0.5s;
 }
 
@@ -52,9 +52,9 @@
 {
     display: flex;
     justify-content: center;
-    padding: 2px;
-    width: 70px;
-    height: 70px;
+    padding: 1vw;
+    width: 10%;
+    height: 45%;
     filter: invert(100%);
    
 }
@@ -71,7 +71,7 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    margin-left: 100px;
+    margin-left: -10%;
     
 }
 
@@ -80,23 +80,22 @@
 .textWrapper {
     display: flex;
     flex-direction:center;
-    margin-left: 20px;
 }
 
 .infoDescWrapper {
   display: flex;
   flex-direction:column;
-  margin-left: 1300px;
-  margin-top:-150px;
-  margin-right:40px;
+  margin-left: 57vw;
+  margin-top:-8vw;
+  margin-right:2vw;
 }
 
 .AC-name
 {
           text-transform: uppercase;
           position:relative;
-          bottom:5px;
-          font-size: 100px;
+          bottom:0.4vw;
+          font-size: 4.5vw;
           /* per creare lo spessore nel testo*/
           -webkit-text-stroke-width: 2.5px; /* Spessore del contorno */
           -webkit-text-stroke-color:#C0FF3B;
@@ -104,16 +103,16 @@
           background-clip: text;
           font-family: "Roboto", sans-serif;
           font-weight:800;
-          margin-left: 80px;
-          margin-top:20px;
+          margin-left: -2vw;
+          margin-top:1vw;
           transition:color 0.5s;
 }
 
 
 .cardAC:hover .AC-name{
           position:relative;
-          bottom:5px;
-          font-size: 100px;
+          bottom:0.4vw;
+          font-size: 4.5vw;
           /* per creare lo spessore nel testo*/
           -webkit-text-stroke-width: 4px; /* Spessore del contorno */
           -webkit-text-stroke-color: #05041D;
@@ -121,28 +120,29 @@
           background-clip: text;
           font-family: "Roboto", sans-serif;
           font-weight:800;
-          margin-left: 80px;
+          margin-left: -2vw;
+          margin-top:1vw;
           transition:color 0.5s;
 }
 .AC-info{
-    font-size: 25px;
+    font-size: 1.3vw;
     color:rgb(226, 230, 188);
     
 }
 
 .cardAC:hover .AC-info{
 color:#05041D;
-font-size: 26px;
+font-size: 1.3vw;
 }
 
 .AC-desc{
-    font-size: 15px;
+    font-size: 0.9vw;
     color: rgb(255, 255, 255);
 }
 
 .cardAC:hover .AC-desc{
 color: #05041D;
-font-size: 16;
+font-size: 0.9vw;
 }
 
 
