@@ -1,11 +1,11 @@
 <template>
-    <div class="card">
-        <div class="image-container">
-            <img class="dog-img" :src="getImagePath()"/>
+    <div class="cardAC">
+        <div class="imageAC">
+            <img class="imgAC" :src="getImagePath()"/>
         </div>
-        <span class="dog-name">{{name}}</span>
-        <span class="dog-breed">{{info}}</span>
-        <span class="dog-breed">{{description}}</span>           
+        <span class="AC-name">{{name}}</span>
+        <span class="AC-breed">{{info}}</span>
+        <span class="AC-breed">{{description}}</span>           
     </div>
 </template>
 
@@ -19,41 +19,75 @@
 </script>
 
 <style>
-     .image-container
+     .imageAC
 {
     display: flex;
     justify-content: center;
-    border: 2px dashed red;
-    border-radius: 10px;
     padding: 2px;
-    width: 250px;
-    height: 250px;
+    width: 70px;
+    height: 70px;
+    filter: brightness(1000%);
 }
 
-.dog-img
+.imgAC
 {
     vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
     height: auto;
     width: auto;
-    margin: auto;
+    margin-left: 100px;
+    
 }
 
-.card
+.cardAC
 {
-    display: flex;
-    flex-flow: column;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
+      width: 101vw;
+      height: 180px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border: 1px solid #C0FF3B;
+      margin-left: -8px;
+      margin-top: 20px;
+      transition: background-color 0.5s;
 }
 
-.dog-name
+.cardAC:hover{
+      background-color:#C0FF3B;;
+      opacity:1;
+    }
+.AC-name
 {
-    font-size: 2em;
-    font-weight: bold;
+          text-transform: uppercase;
+          position:relative;
+          bottom:5px;
+          font-size: 100px;
+          /* per creare lo spessore nel testo*/
+          -webkit-text-stroke-width: 2.5px; /* Spessore del contorno */
+          -webkit-text-stroke-color:#C0FF3B;
+          color: transparent;
+          background-clip: text;
+          font-family: "Roboto", sans-serif;
+          font-weight:800;
+          margin-left: 80px;
+          margin-top:20px;
+          transition:color 0.5s;
+}
+
+
+.cardAC:hover .AC-name{
+        position:relative;
+          bottom:5px;
+          font-size: 100px;
+          /* per creare lo spessore nel testo*/
+          -webkit-text-stroke-width: 4px; /* Spessore del contorno */
+          -webkit-text-stroke-color: #05041D;
+          color: transparent;
+          background-clip: text;
+          font-family: "Roboto", sans-serif;
+          font-weight:800;
+          margin-left: 80px;
+          transition:color 0.5s;
 }
 </style>
