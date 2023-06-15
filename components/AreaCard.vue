@@ -1,4 +1,5 @@
 <template>
+    <NuxtLink to = "/about" class="nuxtclassAC">
     <div class="cardAC">
         <div class="imageAC">
             <img class="imgAC" :src="getImagePath()"/>
@@ -12,6 +13,7 @@
        </div>       
           
     </div>
+    </NuxtLink>
 </template>
 
 <script setup>
@@ -141,5 +143,10 @@ font-size: 26px;
 .cardAC:hover .AC-desc{
 color: #05041D;
 font-size: 16;
+}
+
+
+.nuxtclassAC{
+    text-decoration: none;
 }
 </style>
