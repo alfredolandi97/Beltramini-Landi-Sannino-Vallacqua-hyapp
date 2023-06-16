@@ -5,7 +5,7 @@
         </div>
         <span class="namePC">{{name}}</span>
         <span class="rolePC">{{role}}</span>
-        <span class="captionPC">{{bio}}</span>
+        <span class="captionPC">{{caption}}</span>
         <span class="emailPC">{{email}}</span>
         <span class="numberPC">{{number}}</span>
     </div>
@@ -13,7 +13,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["name", "role", "bio", "email", "number", "image"])
+    defineProps(["name", "role", "email", "number", "image", "caption"])
 </script>
 
 <style>
