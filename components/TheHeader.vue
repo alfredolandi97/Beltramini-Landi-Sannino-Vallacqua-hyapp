@@ -1,16 +1,18 @@
 <template>
   <header ref="navbar">
-              <h1 class="logo">
-              <NuxtLink to="/" class="logo-link">NextFund</NuxtLink>
-              </h1>
+             
+              <NuxtLink to="/" class="logo-link">
+                <img class="logo" src="../assets/img/general/image 15logo.png" alt="Logo NextFund">
+              </NuxtLink>
+              
           <nav>
               
-              <NuxtLink to = "/persons">Our team</NuxtLink>
-              <NuxtLink to = "/areas">Areas of interest</NuxtLink>
-              <NuxtLink to = "/topprojects">Top projects</NuxtLink>
-              <NuxtLink to = "/contact">Contacts</NuxtLink>
-              <NuxtLink to = "/news">News</NuxtLink>
-              <NuxtLink to = "/about">About us</NuxtLink>
+              <NuxtLink to = "/persons"  class="nav-link">Our team</NuxtLink>
+              <NuxtLink to = "/areas"  class="nav-link">Areas of interest</NuxtLink>
+              <NuxtLink to = "/topprojects"  class="nav-link">Top projects</NuxtLink>
+              <NuxtLink to = "/contact"  class="nav-link">Contacts</NuxtLink>
+              <NuxtLink to = "/news"  class="nav-link">News</NuxtLink>
+              <NuxtLink to = "/about"  class="nav-link">About us</NuxtLink>
           </nav>
 
 
@@ -32,36 +34,51 @@
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
       width:100%;
+      height:8.5vw;
       z-index:999;
      
   }
 
   nav {
       display: flex;
-      margin-right:2%;
-      margin-bottom: 2%;
+      margin-right:0.5%;
+      margin-bottom:2%;
+      
+      
   }
 
-
-  h1.logo {
-  padding-bottom: 2.5%;
-  font-size: 2.1vw;
+  .nav-link {
+    margin-left: 1vw;
+    
+    
+    
 }
 
-
+ .logo {
+  max-width:18vw;
+  height: 2.7vw;
+  margin-bottom: 2vw;
+  
+  
+}
 .logo-link {
-  text-decoration: none;
-  color: black; 
-}  
+   
+  max-width: 30vw;
+  max-height: 3vw;
+  margin-bottom: 2.5vw;
+
+  
+  
+  }
 
   nav a {
 color: #FFFFFF; /* Colore dei link normali */
 opacity:0.7;
 text-decoration: none;
-padding: 1vw;
-font-family: "Roboto", sans-serif;
+padding: 0.6vw;
+font-family: "helvetica11", sans-serif;
 font-weight:500;
-font-size: 1.5vw;
+font-size: 1.4vw;
 transition: all 0.1s ease;
 
 }

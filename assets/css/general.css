@@ -3,6 +3,10 @@ html, body
     height: 100%; 
 }
 
+
+
+
+
 body
 {
     display: flex;
@@ -22,7 +26,7 @@ h1.titpag{
     -webkit-text-stroke-color: blue;
     color: transparent;
     background-clip: text;
-    font-family: 'Consolas', sans-serif;
+    font-family: "stretch_pro", sans-serif;
     margin-top:-40px;
 
 
@@ -45,10 +49,10 @@ h1.titpag{
 
 
 h1.titolo{
-font-size:8vw;
+font-size:6vw;
 color: #C0FF3B;
 margin-left:2vw;
-font-family: Helvetica, sans-serif;
+font-family: "stretch_pro", sans-serif;
 margin-top:2vw;
 
 
@@ -58,3 +62,18 @@ margin-top:2vw;
 p{
   font-family: Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: "stretch_pro";
+  src: url("../img/fonts/stretch-pro.basic.ttf") format("truetype");
+/*  font-family: "stretch_pro", sans-serif; */
+}
+
+
+@font-face {
+  font-family: "helvetica11";
+  src: url("../img/fonts/Helvetica.ttc") format("truetype");
+
+}
+

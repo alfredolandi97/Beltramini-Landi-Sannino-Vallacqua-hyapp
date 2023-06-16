@@ -71,7 +71,7 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    margin-left: -15%;
+    margin-left: -30%;
     
     
     
@@ -87,7 +87,7 @@
 .infoDescWrapper {
   display: flex;
   flex-direction:column;
-  margin-left: 56vw;
+  margin-left: 62vw;
   margin-top:-8.5vw;
   margin-right:2vw;
 }
@@ -97,15 +97,15 @@
           text-transform: uppercase;
           position:relative;
           bottom:0.4vw;
-          font-size: 4.5vw;
+          font-size: 3.8vw;
           /* per creare lo spessore nel testo*/
-          -webkit-text-stroke-width: 2.5px; /* Spessore del contorno */
+          -webkit-text-stroke-width: 1px; /* Spessore del contorno */
           -webkit-text-stroke-color:#C0FF3B;
           color: transparent;
           background-clip: text;
-          font-family: "Roboto", sans-serif;
+          font-family: "stretch_pro", sans-serif;
           font-weight:800;
-          margin-left: -2vw;
+          margin-left: -4vw;
           margin-top:1.5vw;
           transition:color 0.5s;
 }
@@ -114,27 +114,30 @@
 .cardAC:hover .AC-name{
           position:relative;
           bottom:0.4vw;
-          font-size: 4.5vw;
+          font-size: 3.8vw;
           /* per creare lo spessore nel testo*/
-          -webkit-text-stroke-width: 4px; /* Spessore del contorno */
+          -webkit-text-stroke-width: 2px; /* Spessore del contorno */
           -webkit-text-stroke-color: #05041D;
           color: transparent;
           background-clip: text;
-          font-family: "Roboto", sans-serif;
+          font-family: "stretch_pro", sans-serif;
           font-weight:800;
-          margin-left: -2vw;
+          margin-left: -4vw;
           margin-top:1.5vw;
           transition:color 0.5s;
 }
 .AC-info{
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     color:rgb(226, 230, 188);
+    font-family: "helvetica11" sans-serif;
     
 }
 
 .cardAC:hover .AC-info{
 color:#05041D;
-font-size: 1.8vw;
+font-size: 1.5vw;
+font-family: "helvetica11" sans-serif;
+
 }
 .nuxtclassAC{
     text-decoration: none;

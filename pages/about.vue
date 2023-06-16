@@ -44,6 +44,7 @@
 .secondpar{
     margin-left: 2%;
     margin-right: 2%;
+    font-family:"Helvetica11", sans-serif
   }
 
 

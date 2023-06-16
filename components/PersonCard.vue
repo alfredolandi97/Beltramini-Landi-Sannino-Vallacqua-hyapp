@@ -1,13 +1,13 @@
 <template>
-    <div class="card">
-        <div class="image-container">
+    <div class="cardPC">
+        <div class="image-containerPC">
             <!--img class="dog-img" src="~/assets/img/home-image.jpg" /-->
         </div>
-        <span class="dog-name">{{name}}</span>
-        <span class="dog-breed">{{role}}</span>
-        <span class="dog-name">{{bio}}</span>
-        <span class="dog-name">{{email}}</span>
-        <span class="dog-name">{{number}}</span>
+        <span class="namePC">{{name}}</span>
+        <span class="rolePC">{{role}}</span>
+        <span class="captionPC">{{bio}}</span>
+        <span class="emailPC">{{email}}</span>
+        <span class="numberPC">{{number}}</span>
     </div>
 </template>
 
@@ -17,15 +17,14 @@
 </script>
 
 <style>
-     .image-container
+     .image-containerPC
 {
     display: flex;
     justify-content: center;
-    border: 2px dashed red;
-    border-radius: 10px;
-    padding: 2px;
-    width: 250px;
-    height: 250px;
+    border: 2px solid pink;
+    margin: 0.3vw;
+    width: 16vw;
+    height: 16vw;
 }
 
 .dog-img
@@ -38,20 +37,57 @@
     margin: auto;
 }
 
-.card
+.cardPC
 {
+    margin:2vw;
     display: flex;
     flex-flow: column;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: fit-content;
+    padding: 1.3vw;
+    border: 5px solid pink;
+    width: 17vw;
     height: fit-content;
+    background-color: #C0FF3B;
 }
 
-.dog-name
+.namePC
 {
-    font-size: 2em;
+    font-size: 2vw;
+    font-family: "helvetica11", sans-serif;
+    color: #05041D;
+    font-weight:bold;
+    margin: 0.3vw;
+}
+
+.rolePC
+{
+    font-size: 1.5vw;
+    font-family: "helvetica11", sans-serif;
+    color: #05041D;
+    font-weight: 500;
+    margin: 0.3vw;
+}
+
+.captionPC
+{
+    font-size: 1vw;
+    font-family: "helvetica11", sans-serif;
+    color: #05041D;
+    margin: 0.3vw;
+}
+.emailPC
+{
+    font-size: 1vw;
+    font-family: "helvetica11", sans-serif;
+    color: #05041D;
     font-weight: bold;
+    margin: 0.3vw;
+}
+.numberPC
+{
+    font-size: 1vw;
+    font-family: "helvetica11", sans-serif;
+    color: #05041D;
+    font-weight: bold;
+    margin: 0.3vw;
 }
 </style>
