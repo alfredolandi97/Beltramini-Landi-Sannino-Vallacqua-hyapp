@@ -6,13 +6,12 @@
               </NuxtLink>
               
           <nav>
-              
-              <NuxtLink to = "/persons"  class="nav-link">Our team</NuxtLink>
+              <NuxtLink to = "/about"  class="nav-link">About us</NuxtLink>
               <NuxtLink to = "/areas"  class="nav-link">Areas of interest</NuxtLink>
               <NuxtLink to = "/topprojects"  class="nav-link">Top projects</NuxtLink>
-              <NuxtLink to = "/contact"  class="nav-link">Contacts</NuxtLink>
+              <NuxtLink to = "/persons"  class="nav-link">Our team</NuxtLink>
               <NuxtLink to = "/news"  class="nav-link">News</NuxtLink>
-              <NuxtLink to = "/about"  class="nav-link">About us</NuxtLink>
+              <NuxtLink to = "/contact"  class="nav-link">Contacts</NuxtLink>
           </nav>
 
 
