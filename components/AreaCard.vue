@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink to = "/about" class="nuxtclassAC">
+    <NuxtLink :to = "link" class="nuxtclassAC">
     <div class="cardAC">
         <div class="imageAC">
             <img class="imgAC" :src="getImagePath()"/>
@@ -17,7 +17,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["name", "info", "description", "image"])
+    const props = defineProps(["name", "info", "description", "image", "link"])
 
     function getImagePath() {
         return new URL(`../assets/img/areas/${props.image}`, import.meta.url)

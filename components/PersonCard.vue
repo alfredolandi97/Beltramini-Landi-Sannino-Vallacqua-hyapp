@@ -9,7 +9,7 @@
         <!-- <span class="captionPC">{{caption}}</span>-->
         <!-- <span class="emailPC">{{email}}</span>-->
         <!-- <span class="numberPC">{{number}}</span> -->
-        <NuxtLink to = "/about" class="nuxtclassPC">
+        <NuxtLink :to = "link" class="nuxtclassPC">
         <button class="buttonPC">More Info</button>
         </NuxtLink>
     </div>
@@ -18,7 +18,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["name", "role", "email", "number", "image", "caption"])
+    defineProps(["name", "role", "email", "number", "image", "caption", "link"])
 </script>
 
 <style>
