@@ -2,7 +2,7 @@
     <div class="cardPC">
         
         <div class="image-containerPC">
-            <img class="dog-img" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
+            <img class="imgPC" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
         </div>
         <span class="namePC">{{name}}</span>
         <span class="rolePC">{{role}}</span>
@@ -29,20 +29,19 @@
 {
     display: flex;
     justify-content: center;
-
-    margin: 0.3vw;
+    margin: 0vw;
     width: 16vw;
     height: 16vw;
 }
 
-.dog-img
+.imgPC
 {
     vertical-align: middle;
-    max-width: 100%;
+    max-width: 120%;
     max-height: 100%;
     height: auto;
     width: auto;
-    margin-bottom:20%;
+    margin-bottom:1vw;
 }
 
 .cardPC
@@ -50,14 +49,14 @@
     margin:1.5vw;
     display: flex;
     flex-flow: column;
-    padding: 1.3vw;
-    border: 5px solid pink;
+    padding-top: -1vw;
+    border: 0px solid pink;
     width: 17vw;
     max-height: 100%;
-    background-color: #C0FF3B;
-    clip-path: polygon(10%1 0, 100% 0, 80% 100%, 0 100%);
-}
+    background-color:  #C0FF3B;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 88%, 88% 100%, 0% 100%, 0% 12%);
 
+}
 
 .namePC
 {
