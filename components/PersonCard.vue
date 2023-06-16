@@ -1,14 +1,19 @@
 <template>
     <div class="cardPC">
+        
         <div class="image-containerPC">
-            <!--img class="dog-img" src="~/assets/img/home-image.jpg" /-->
+            <img class="dog-img" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
         </div>
         <span class="namePC">{{name}}</span>
         <span class="rolePC">{{role}}</span>
         <span class="captionPC">{{caption}}</span>
         <span class="emailPC">{{email}}</span>
         <span class="numberPC">{{number}}</span>
+        <NuxtLink to = "/about" class="nuxtclassPC">
+        <button class="buttonPC">More Info</button>
+        </NuxtLink>
     </div>
+  
 </template>
 
 <script setup>
@@ -17,11 +22,14 @@
 </script>
 
 <style>
-     .image-containerPC
+
+
+
+.image-containerPC
 {
     display: flex;
     justify-content: center;
-    border: 2px solid pink;
+
     margin: 0.3vw;
     width: 16vw;
     height: 16vw;
@@ -39,15 +47,16 @@
 
 .cardPC
 {
-    margin:2vw;
+    margin:1.5vw;
     display: flex;
     flex-flow: column;
     padding: 1.3vw;
     border: 5px solid pink;
     width: 17vw;
-    height: fit-content;
+    max-height: 100%;
     background-color: #C0FF3B;
 }
+
 
 .namePC
 {
@@ -89,5 +98,14 @@
     color: #05041D;
     font-weight: bold;
     margin: 0.3vw;
+}
+
+.buttonPC{
+    background-color: #05041D;    
+    color: #C0FF3B;
+}
+.nuxtclassPC{
+    margin: auto;
+    margin-right:1vw;
 }
 </style>
