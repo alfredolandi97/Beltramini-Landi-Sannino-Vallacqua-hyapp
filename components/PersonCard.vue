@@ -6,9 +6,9 @@
         </div>
         <span class="namePC">{{name}}</span>
         <span class="rolePC">{{role}}</span>
-        <span class="captionPC">{{caption}}</span>
-        <span class="emailPC">{{email}}</span>
-        <span class="numberPC">{{number}}</span>
+        <!-- <span class="captionPC">{{caption}}</span>-->
+        <!-- <span class="emailPC">{{email}}</span>-->
+        <!-- <span class="numberPC">{{number}}</span> -->
         <NuxtLink to = "/about" class="nuxtclassPC">
         <button class="buttonPC">More Info</button>
         </NuxtLink>
@@ -42,7 +42,7 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    margin: auto;
+    margin-bottom:20%;
 }
 
 .cardPC
@@ -55,6 +55,7 @@
     width: 17vw;
     max-height: 100%;
     background-color: #C0FF3B;
+    clip-path: polygon(10%1 0, 100% 0, 80% 100%, 0 100%);
 }
 
 
@@ -64,7 +65,7 @@
     font-family: "helvetica11", sans-serif;
     color: #05041D;
     font-weight:bold;
-    margin: 0.3vw;
+    margin-top:-2vw;
 }
 
 .rolePC
