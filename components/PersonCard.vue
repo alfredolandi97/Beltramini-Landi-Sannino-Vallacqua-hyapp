@@ -29,9 +29,8 @@
 {
     display: flex;
     justify-content: center;
-    margin: 0vw;
-    width: 16vw;
-    height: 16vw;
+    width: 17vw;
+    height: 18vw;
 }
 
 .imgPC
@@ -41,18 +40,21 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    margin-bottom:1vw;
+    margin-bottom:2vw;
 }
 
 .cardPC
 {
-    margin:1.5vw;
+    margin-top:1.5vw;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
     display: flex;
     flex-flow: column;
     padding-top: -1vw;
     border: 0px solid pink;
-    width: 17vw;
-    max-height: 100%;
+    width: 18vw;
+    max-height: 40vw;
     background-color:  #C0FF3B;
     clip-path: polygon(12% 0%, 100% 0%, 100% 88%, 88% 100%, 0% 100%, 0% 12%);
 
