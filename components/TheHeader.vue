@@ -1,8 +1,9 @@
 <template>
+  <header class="border-header"></header>
   <header ref="navbar">
              
               <NuxtLink to="/" class="logo-link">
-                <img class="logo" src="../assets/img/general/image 15logo.png" alt="Logo NextFund">
+                <img class="logo" src="../assets/img/general/logopagina.png" alt="Logo NextFund">
               </NuxtLink>
               
           <nav>
@@ -20,12 +21,23 @@
 </template>
 
 <style>
+
+.border-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 20.4%;
+  background-color: #F8F0FB; /* Colore del bordo */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%); /* Forma poligonale del bordo */
+  z-index: 998; /* Assicurati che il bordo sia sopra l'header principale */
+}
   header
   {
       position: sticky;
       top: 0%;
-      background-color: #1107FF;
-      padding-left: 2%;
+      background-color: #6320EE;
+      padding-left: 1%;
       margin-bottom: 2%;
       height: 7vw;
       display: flex;
@@ -41,7 +53,7 @@
   nav {
       display: flex;
       margin-right:0.5%;
-      margin-bottom:2%;
+      margin-bottom:3.5%;
       
       
   }
@@ -75,10 +87,12 @@ color: #FFFFFF; /* Colore dei link normali */
 opacity:0.7;
 text-decoration: none;
 padding: 0.6vw;
-font-family: "helvetica11", sans-serif;
+font-family: "stretch_pro", sans-serif;
 font-weight:500;
-font-size: 1.4vw;
+font-size: 1vw;
+text-transform: uppercase;
 transition: all 0.1s ease;
+
 
 }
 
@@ -86,7 +100,8 @@ transition: all 0.1s ease;
 nav a:hover {
 transform: scale(1.05); /* Aumenta leggermente la scala durante il passaggio del mouse */
 opacity:1;
--webkit-text-stroke: 0.3px white;
+-webkit-text-stroke: 0.1px white;
+
 
 }
 
@@ -104,7 +119,7 @@ background-color: transparent;
 
 /* caratteristiche della scrollbar stessa*/
 ::-webkit-scrollbar-thumb {
-background-color: blue;
+background-color: #F3F4EF;
 border-radius: 20px;
 border: 6px solid transparent;
 background-clip: content-box;

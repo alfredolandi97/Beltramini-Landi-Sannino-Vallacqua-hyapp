@@ -52,7 +52,7 @@
   font-size: 3vw;
     /* per creare lo spessore nel testo*/
     -webkit-text-stroke-width: 1px; /* Spessore del contorno */
-    -webkit-text-stroke-color:#C0FF3B;
+    -webkit-text-stroke-color:#BBFB1E;
     color: transparent;
     background-clip: text;
     font-family: 'Consolas', sans-serif;

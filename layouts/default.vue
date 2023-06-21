@@ -14,7 +14,7 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: #05041D;
+        background-color: #020122;
         margin: 0;
     }
 </style>

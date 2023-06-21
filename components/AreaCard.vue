@@ -33,14 +33,14 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      border: 1px solid #C0FF3B;
+      border: 1px solid #BBFB1E;
       margin-left: -1vw;
       margin-top: 1vw;
       transition: background-color 0.5s;
 }
 
 .cardAC:hover{
-      background-color:#C0FF3B;;
+      background-color:#BBFB1E;
       opacity:1;
       
 }
@@ -54,7 +54,7 @@
     padding: 1vw;
     width: 10%;
     height: 45%;
-    filter: invert(100%);
+    filter: invert(98%);
     margin-bottom: -1%;
    
 }
@@ -100,7 +100,7 @@
           font-size: 3.8vw;
           /* per creare lo spessore nel testo*/
           -webkit-text-stroke-width: 1px; /* Spessore del contorno */
-          -webkit-text-stroke-color:#C0FF3B;
+          -webkit-text-stroke-color:#BBFB1E;
           color: transparent;
           background-clip: text;
           font-family: "stretch_pro", sans-serif;
@@ -117,7 +117,7 @@
           font-size: 3.8vw;
           /* per creare lo spessore nel testo*/
           -webkit-text-stroke-width: 2px; /* Spessore del contorno */
-          -webkit-text-stroke-color: #05041D;
+          -webkit-text-stroke-color: #020122;
           color: transparent;
           background-clip: text;
           font-family: "stretch_pro", sans-serif;
@@ -128,13 +128,13 @@
 }
 .AC-info{
     font-size: 1.5vw;
-    color:rgb(226, 230, 188);
+    color:#F8F0FB;
     font-family: "helvetica11" sans-serif;
     
 }
 
 .cardAC:hover .AC-info{
-color:#05041D;
+color:#020122;
 font-size: 1.5vw;
 font-family: "helvetica11" sans-serif;
 

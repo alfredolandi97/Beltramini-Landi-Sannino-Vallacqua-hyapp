@@ -55,7 +55,7 @@
     border: 0px solid pink;
     width: 18vw;
     max-height: 40vw;
-    background-color:  #C0FF3B;
+    background-color:  #BBFB1E;
     clip-path: polygon(12% 0%, 100% 0%, 100% 88%, 88% 100%, 0% 100%, 0% 12%);
 
 }
@@ -64,7 +64,7 @@
 {
     font-size: 2vw;
     font-family: "helvetica11", sans-serif;
-    color: #05041D;
+    color: #020122;
     font-weight:bold;
     margin-top:-2vw;
 }
@@ -72,8 +72,8 @@
 .rolePC
 {
     font-size: 1.5vw;
-    font-family: "helvetica11", sans-serif;
-    color: #05041D;
+    font-family:"nunito" ,sans-serif;
+    color: #020122;
     font-weight: 500;
     margin: 0.3vw;
 }
@@ -81,30 +81,30 @@
 .captionPC
 {
     font-size: 1vw;
-    font-family: "helvetica11", sans-serif;
-    color: #05041D;
+    font-family: "nunito", sans-serif;
+    color: #020122;
     margin: 0.3vw;
 }
 .emailPC
 {
     font-size: 1vw;
-    font-family: "helvetica11", sans-serif;
-    color: #05041D;
+    font-family: "proxima_nova", sans-serif;
+    color: #020122;
     font-weight: bold;
     margin: 0.3vw;
 }
 .numberPC
 {
     font-size: 1vw;
-    font-family: "helvetica11", sans-serif;
-    color: #05041D;
+    font-family: "proxima_nova", sans-serif;
+    color: #020122;
     font-weight: bold;
     margin: 0.3vw;
 }
 
 .buttonPC{
-    background-color: #05041D;    
-    color: #C0FF3B;
+    background-color: #020122;    
+    color: #BBFB1E;
 }
 .nuxtclassPC{
     margin: auto;
