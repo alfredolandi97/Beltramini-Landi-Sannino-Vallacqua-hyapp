@@ -32,8 +32,8 @@
   justify-content: space-between;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
-  width: 93.8%;
-  height: 8.8vw;
+  width: 100%;
+  height: 8.3vw;
   z-index: 998;
 
 }
@@ -44,13 +44,14 @@
       background-color: #6320EE;
       padding-left: 1%;
       margin-bottom: 2%;
+      margin-left: -3vw;
       height: 7vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-      width:100%;
-      height:8.5vw;
+      width:106%;
+      height:8vw;
       z-index:999;
      
   }
