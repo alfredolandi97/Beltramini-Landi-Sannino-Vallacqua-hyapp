@@ -1,5 +1,5 @@
 <template>
-  <header class="border-header"></header>
+  <header class="header-white"></header>
   <header ref="navbar">
              
               <NuxtLink to="/" class="logo-link">
@@ -22,15 +22,20 @@
 
 <style>
 
-.border-header {
-  position: absolute;
+.header-white {
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 98%;
-  height: 20.4%;
-  background-color: #F8F0FB; /* Colore del bordo */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%); /* Forma poligonale del bordo */
-  z-index: 998; /* Assicurati che il bordo sia sopra l'header principale */
+  background-color: white;
+  padding-left: 1%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+  width: 93.8%;
+  height: 8.8vw;
+  z-index: 998;
+
 }
   header
   {

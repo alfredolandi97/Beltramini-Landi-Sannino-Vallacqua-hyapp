@@ -12,13 +12,17 @@ body
     display: flex;
     flex-direction: column;
     background-color:#020122;
+    /*background-image: url("../img/general/photoshop-cc-icon-png-logo-2.png");
+    background-repeat: repeat;*/
     margin-top: 0px;
     margin-left: 3vw;
-    margin-right:3vw;
+    margin-right: 3vw;
     height: 100%; 
     color:#F8F0FB;
 
 }
+
+
 h1.titpag{
     font-size: 150px;
     /* per creare lo spessore nel testo*/
@@ -49,9 +53,8 @@ h1.titpag{
 
 
 h1.titolo{
-font-size:6vw;
-color: #BBFB1E
-;
+font-size:5.5vw;
+color: #BBFB1E;
 margin-left:2vw;
 font-family: "stretch_pro", sans-serif;
 margin-top:2vw;
@@ -60,10 +63,19 @@ margin-top:2vw;
 
 }
 
-p{
-  font-family: Helvetica, sans-serif;
+p.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1.1vw;
+  margin-top: 7vw;
+  margin-bottom: -2vw;
+  margin-left: -0.5vw;
+ 
 }
 
+p.descrPag{
+  font-family:  "nunito",sans-serif;
+  margin-bottom: 4vw;
+}
 
 @font-face {
   font-family: "stretch_pro";

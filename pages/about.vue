@@ -2,7 +2,7 @@
 <h1 class="titolo">ABOUT US</h1>
 <div>
 
-    <p class="firstpar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
+    <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
 
     <div class="firstsec">
        <img  class="firstimg" src="../assets/img/about/papa_francesco_02-696x557.jpg" alt=""> 
@@ -17,15 +17,16 @@
 
         <p class="forthpar"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto, itaque optio culpa aut minima ea laudantium! Velit ipsum sint eius dolor quod reprehenderit maxime quisquam! Voluptates delectus enim incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore ut architecto perspiciatis excepturi distinctio dolorem quas, fuga similique? Dolorem eos blanditiis id illo quas quaerat fugiat voluptatem ad deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam velit deleniti magni ullam aut voluptate doloribus modi quibusdam iste expedita voluptatem, ad perferendis sint excepturi facere distinctio quae, porro accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum molestiae ducimus obcaecati, explicabo cum totam adipisci dignissimos enim assumenda! Tenetur rem nisi quod sequi officiis inventore tempora facilis quibusdam illo!</p>
     </div>
+    
 </div>
+<p class="parEndPag"> You are on the About Us page.</p>
   </template>
   
   
 
-  <script setup>
- 
-</script>
+  <script>
 
+</script>
   
 
   
@@ -36,15 +37,9 @@
 
 }
 
-.firstpar{
-    margin-left: 2%;
-    margin-right: 2%;
-  } 
-
 .secondpar{
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family:"Helvetica11", sans-serif
+   
+    font-family:"nunito", sans-serif
   }
 
 
@@ -55,16 +50,17 @@
     -webkit-text-stroke-color:#BBFB1E;
     color: transparent;
     background-clip: text;
-    font-family: 'Consolas', sans-serif;
+    font-family: "nunito", sans-serif;
     position: relative;
     top: 1vw;
-    left: 3vw;
+    left: 2vw;
 
 }
 
 .forthpar {
   position: relative; 
-  top: 10vw;
+  top: 5vw;
+  font-family: "nunito", sans-serif;
 }
 
 
@@ -73,11 +69,14 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    width: 45vw;
   }
 .secondimg {
-    float: left; /* Immagine a sinistra */
-   /* Margine a destra per separare l'immagine dal paragrafo */
-  margin-left: 2%;
+    float: left;
+    margin-right: 2vw;
+    width: 50vw;
+   
+  
 } 
 
   </style>

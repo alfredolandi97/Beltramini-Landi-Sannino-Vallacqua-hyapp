@@ -13,6 +13,7 @@
         <h2>Description</h2>
         <!-- TO-DO: mettere i supervised projects-->
     </main>
+    <p class="parEndPag"> You are on the Description Persons page.</p>
 </template>
 
 <script setup>

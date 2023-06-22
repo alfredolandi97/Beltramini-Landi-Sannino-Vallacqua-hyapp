@@ -11,6 +11,7 @@
         <h2>Description</h2>
         <!-- TO-DO: mettere i related projects-->
     </main>
+    <p class="parEndPag"> You are on the Description Areas page.</p>
 </template>
 
 <script setup>

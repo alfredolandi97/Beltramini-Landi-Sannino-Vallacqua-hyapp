@@ -34,9 +34,10 @@
       flex-wrap: wrap;
       align-items: center;
       border: 1px solid #BBFB1E;
-      margin-left: -1vw;
       margin-top: 1vw;
+      margin-left: -3.1vw;
       transition: background-color 0.5s;
+
 }
 
 .cardAC:hover{
@@ -53,9 +54,9 @@
     justify-content: center;
     padding: 1vw;
     width: 10%;
-    height: 45%;
+    height: 42%;
     filter: invert(98%);
-    margin-bottom: -1%;
+    margin-bottom: -1.1%;
    
 }
 
@@ -87,9 +88,9 @@
 .infoDescWrapper {
   display: flex;
   flex-direction:column;
-  margin-left: 62vw;
+  margin-left: 61vw;
   margin-top:-8.5vw;
-  margin-right:2vw;
+  margin-right:4vw;
 }
 
 .AC-name

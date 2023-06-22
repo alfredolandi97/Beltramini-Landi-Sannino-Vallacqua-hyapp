@@ -10,23 +10,21 @@
 </template>
 
 <style>
-.helvetica-text{
-    padding: 0.7vw;
-}
     footer{
         background-color: #F8F0FB;
         flex-shrink: 0;
-        margin-top: 1vw;
-        min-height: 3vw;
+        margin-top: 5vw;
         color: #020122;
         text-align:leftmar;
-        width: 100%;
-        padding-left: 3vw;
+        width: 105%;
+        padding-left: 2.5vw;
         display: flex;
         align-items: center;
         height: 3.5vw;
         font-family: "nunito", sans-serif;
         letter-spacing: -0.3px;
+        margin-left: -3vw;
+        
 
     }
     .footerspan{

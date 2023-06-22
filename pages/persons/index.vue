@@ -1,10 +1,11 @@
 <template>
     <h1 class="titolo">OUR TEAM</h1>
-    <p class="parafPC" style="padding-left: 2vw; padding-right: 2vw; font-size: 1.5vw; font"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum nemo impedit reiciendis recusandae quaerat consequuntur expedita facilis. Enim doloribus porro totam exercitationem mollitia ex molestiae voluptatum ipsum nostrum repellat?</p>
+    <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
         <div id="card-containerPC">
             <PersonCard v-for = "person of persons" :name = "person.name" :role = "person.role" :bio = "person.bio" :email = "person.email" :number = "person.number" :image = "person.image" :caption="person.caption" :link="'/persons/'+person.id"/>
-        </div>
 
+        </div>
+        <p class="parEndPag"> You are on the Our Team page.</p>
 </template>
 
 <script setup>
