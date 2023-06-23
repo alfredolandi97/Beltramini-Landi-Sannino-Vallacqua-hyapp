@@ -12,8 +12,9 @@ body
     display: flex;
     flex-direction: column;
     background-color:#020122;
-    /*background-image: url("../img/general/photoshop-cc-icon-png-logo-2.png");
-    background-repeat: repeat;*/
+    background-image: url("../img/general/background.jpg");
+    background-size: 30vw;
+    /*background-repeat: repeat;*/
     margin-top: 0px;
     margin-left: 3vw;
     margin-right: 3vw;
