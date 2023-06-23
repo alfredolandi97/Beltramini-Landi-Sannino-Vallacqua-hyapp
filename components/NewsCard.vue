@@ -1,12 +1,12 @@
 <template>
-    <div class="card">
-        <div class="image-container">
-            <img class="dog-img" :src="getImagePath()" />
-        </div>
-        <span class="dog-name">{{title}}</span>
-        <span class="dog-breed">{{caption}}</span>
-        <span class="dog-name">{{text}}</span>
-        <span class="dog-breed">{{date}}</span>
+    <div class="cardNC">
+       <div class="containerNC">
+        <img class="imgNC" :src="getImagePath()" />
+        <span class="titleNC">{{title}}</span>
+        <span class="captionNC">{{caption}}</span>
+        <span class="textNC">{{text}}</span>
+        <span class="dateNC">{{date}}</span>
+       </div>
     </div>
 </template>
 
@@ -20,41 +20,68 @@
 </script>
 
 <style>
-     .image-container
-{
+.containerNC{
     display: flex;
-    justify-content: center;
-    border: 2px dashed red;
-    border-radius: 10px;
-    padding: 2px;
-    width: 250px;
-    height: 250px;
+    flex-flow:column;
 }
-
-.dog-img
+.imgNC
 {
-    vertical-align: middle;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    margin: auto;
+    width: 33vw;
+    float: left;
+  
 }
 
-.card
+.cardNC
 {
     display: flex;
     flex-flow: column;
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid #BBFB1E;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
+    margin-bottom: 10px;
 }
 
-.dog-name
+.titleNC
 {
-    font-size: 2em;
-    font-weight: bold;
+font-size:1.8vw;
+color: #BBFB1E;
+margin-left:10vw;
+font-family: "stretch_pro", sans-serif;
+text-transform: uppercase;
+margin-top: -18vw;
+margin-left: 40vw;
+margin-right: 2vw;
+
+}
+
+.captionNC{
+    font-size: 1.1vw;
+    font-family:"nunito" ,sans-serif;
+    color:  #d80c0c;
+    font-weight: 400;
+    margin-top: -0.2vw;
+    margin-left: 40vw;
+    margin-right: 2vw;
+
+}
+
+.textNC{
+    font-size: 1vw;
+    font-family:"nunito" ,sans-serif;
+    color:  #ffffff;
+    font-weight: 400;
+    margin-top: -0.2vw;
+    margin-left: 40vw;
+    margin-right: 2vw;
+}
+.dateNC{
+    font-size: 1.1vw;
+    font-family:"nunito" ,sans-serif;
+    color:  #ffffff;
+    font-weight: 400;
+    margin-top: -0.2vw;
+    margin-left: 0.8vw;
 }
 </style>
