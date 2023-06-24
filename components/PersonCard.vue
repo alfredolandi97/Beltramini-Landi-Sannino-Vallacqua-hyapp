@@ -1,6 +1,6 @@
 <template>
-
-    <div class="cardPC">
+    <NuxtLink :to = "link" class="nuxtclassPC">
+        <div class="cardPC">
         
         <div class="image-containerPC">
             <img class="imgPC" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
@@ -10,11 +10,9 @@
         <!-- <span class="captionPC">{{caption}}</span>-->
         <!-- <span class="emailPC">{{email}}</span>-->
         <!-- <span class="numberPC">{{number}}</span> -->
-        <NuxtLink :to = "link" class="nuxtclassPC">
-        <button class="buttonPC">More Info</button>
-        </NuxtLink>
-    </div>
-  
+    
+        </div>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -31,25 +29,34 @@
 {
     display: flex;
     justify-content: center;
-    width: 16vw;
+    width: 18vw;
     height: 16.3vw;
-    margin-left: 0.99vw;
+    margin-left: 0vw;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .imgPC
 {
     vertical-align: middle;
-    max-width: 130%;
-    max-height: 100%;
+    max-width: 140%;
+    max-height: 110%;
     height: auto;
     width: auto;
     margin-bottom:2vw;
+    transition: transform 0.2s;
+    transform-origin: bottom;
 }
 
+.image-containerPC:hover .imgPC {
+  transform: scale(1.1);
+
+}
 .cardPC
 {
     margin-top:1.5vw;
-    margin-left: 2.8vw;
+    margin-left: 1.6vw;
     margin-right: 2vw;
     margin-bottom: 3vw;
     display: flex;
@@ -74,27 +81,27 @@ background-color: #BBFB1E;
 
 .namePC
 {
-    font-size: 1.7vw;
-    font-family: "nunito", sans-serif;
+    font-size: 1.2vw;
+    font-family: "stretch_pro", sans-serif;
     text-transform: uppercase;
     color: #BBFB1E;
     font-weight:bold;
-    margin-top:-1.8vw;
+    margin-top:-1.4vw;
     margin-left: 0.8vw;
     font-weight:500;
     transition:color 0.2s;
 }
 
 .cardPC:hover .namePC{
-    font-size: 1.7vw;
-    font-family: "nunito", sans-serif;
+    font-size: 1.2vw;
+    font-family: "stretch_pro", sans-serif;
     text-transform: uppercase;
     color:  #020122;
     font-weight:bold;
-    margin-top:-1.8vw;
+    margin-top:-1.4vw;
     margin-left: 0.8vw;
     font-weight:500;
-    transition:color 0.5s;
+    transition:color 0.2s;
 }
 
 .rolePC
@@ -140,25 +147,12 @@ background-color: #BBFB1E;
     margin: 0.3vw;
 }
 
-.buttonPC{
-    background-color:  #BBFB1E;    
-    color: #020122;
-    border-width: 2px;
-    border-color:#BBFB1E;
-    border-radius: 4px;
-    opacity: 0.8;
-    cursor: pointer;
-}
-.cardPC:hover .buttonPC{
-    background-color:   #020122;    
-    color: #BBFB1E;
-    border-width: 3px;
-    border-color: #020122;
-    border-radius: 4px;
-
-}
 .nuxtclassPC{
     margin: auto;
     margin-right:1vw;
+}
+
+.nuxtclassPC{
+    text-decoration: none;
 }
 </style>

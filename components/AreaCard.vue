@@ -1,3 +1,4 @@
+
 <template>
     <NuxtLink :to = "link" class="nuxtclassAC">
     <div class="cardAC">
@@ -7,12 +8,12 @@
        <div class="textWrapper">
              <span class="AC-name">{{name}}</span>
        </div>
+          
        <div class="infoDescWrapper">       
              <span class="AC-info">{{info}}</span>
-       </div>       
-          
+       </div> 
     </div>
-    </NuxtLink>
+</NuxtLink>
 </template>
 
 <script setup>
@@ -34,7 +35,7 @@
       flex-wrap: wrap;
       align-items: center;
       border: 1px solid #BBFB1E;
-      margin-top: 1vw;
+      margin-top: 0vw;
       margin-left: -3.1vw;
       transition: background-color 0.5s;
 
@@ -130,14 +131,14 @@
 .AC-info{
     font-size: 1.5vw;
     color:#F8F0FB;
-    font-family: "helvetica11" sans-serif;
+    font-family: "nunito", sans-serif;
     
 }
 
 .cardAC:hover .AC-info{
 color:#020122;
 font-size: 1.5vw;
-font-family: "helvetica11" sans-serif;
+font-family: "nunito", sans-serif;
 
 }
 .nuxtclassAC{

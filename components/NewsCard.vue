@@ -37,10 +37,17 @@
     flex-flow: column;
     padding: 20px;
     border: 2px solid #BBFB1E;
-    border-radius: 20px;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 10px;
+    margin-bottom: -1px;
+    width: 104%;
+    margin-left: -3.1vw;
+    transition: background-color 0.2s;
+}
+
+
+.cardNC:hover{
+      background-color:#BBFB1E;      
 }
 
 .titleNC
@@ -51,9 +58,21 @@ margin-left:10vw;
 font-family: "stretch_pro", sans-serif;
 text-transform: uppercase;
 margin-top: -18vw;
-margin-left: 40vw;
+margin-left: 42vw;
 margin-right: 2vw;
+transition:color 0.2s;
 
+}
+
+.cardNC:hover .titleNC{
+font-size:1.8vw;
+color:#020122;
+margin-left:10vw;
+font-family: "stretch_pro", sans-serif;
+text-transform: uppercase;
+margin-top: -18vw;
+margin-left: 42vw;
+margin-right: 2vw;
 }
 
 .captionNC{
@@ -62,7 +81,7 @@ margin-right: 2vw;
     color:  #d80c0c;
     font-weight: 400;
     margin-top: -0.2vw;
-    margin-left: 40vw;
+    margin-left: 42vw;
     margin-right: 2vw;
 
 }
@@ -73,9 +92,21 @@ margin-right: 2vw;
     color:  #ffffff;
     font-weight: 400;
     margin-top: -0.2vw;
-    margin-left: 40vw;
+    margin-left: 42vw;
     margin-right: 2vw;
 }
+
+.cardNC:hover .textNC{
+    font-size: 1vw;
+    font-family:"nunito" ,sans-serif;
+    color:#020122;
+    font-weight: 400;
+    margin-top: -0.2vw;
+    margin-left: 42vw;
+    margin-right: 2vw;
+}
+
+
 .dateNC{
     font-size: 1.1vw;
     font-family:"nunito" ,sans-serif;

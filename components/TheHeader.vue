@@ -75,6 +75,7 @@
   max-width:18vw;
   height: 2.7vw;
   margin-bottom: 2vw;
+  margin-left: 2vw;
   
   
 }
@@ -181,3 +182,4 @@ beforeDestroy() {
 -->
 */
 </style>
+

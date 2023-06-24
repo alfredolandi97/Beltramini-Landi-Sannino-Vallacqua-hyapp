@@ -33,7 +33,7 @@
         height: 3.5vw;
         font-family: "nunito", sans-serif;
         letter-spacing: -0.3px;
-        
+        font-size: 0.9vw;
         
 
     }
@@ -48,9 +48,9 @@
 
 
     .logoFT1 {
-    width:1.5vw;
-    height: 1.5vw;
-    margin-bottom: -0.2vw;
+    width:1.2vw;
+    height: 1.2vw;
+    margin-bottom: 0vw;
     text-decoration: none;
     pointer-events: none;
   
@@ -58,10 +58,10 @@
 }
     .logoimgFT1 {
    
-    width: 1.5vw;
-    height: 1.5vw;
-    margin-left: 66vw;
-    margin-bottom: vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 69.5vw;
+    margin-bottom: 0vw;
     pointer-events: auto;
     
 
@@ -70,9 +70,9 @@
   }
   
   .logoFT2 {
-    width:1.5vw;
-    height: 1.5vw;
-    margin-bottom: -0.2vw;
+    width:1.2vw;
+    height: 1.2vw;
+    margin-bottom: 0vw;
     text-decoration: none;
     pointer-events: none;
   
@@ -80,9 +80,9 @@
 }
     .logoimgFT2{
    
-    width: 1.5vw;
-    height: 1.5vw;
-    margin-left: 56vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 60.5vw;
     margin-bottom: 0vw;
     pointer-events: auto;
     
@@ -90,19 +90,19 @@
   
   }
   .img-caption1{
-    font-size: 1.2vw;
-    margin-left: 68vw;
+    font-size: 1vw;
+    margin-left: 71vw;
     position: relative; 
-    top: -2vw;
+    top: -1.6vw;
     font-family: "nunito", sans-serif;
     color: #020122;
     pointer-events: auto;
   }
   .img-caption2{
-    font-size: 1.2vw;
-    margin-left: 58vw;
+    font-size: 1vw;
+    margin-left: 62vw;
     position: relative;
-     top: -2vw;
+     top: -1.55vw;
      font-family: "nunito", sans-serif;
      color: #020122;
      pointer-events: auto;
