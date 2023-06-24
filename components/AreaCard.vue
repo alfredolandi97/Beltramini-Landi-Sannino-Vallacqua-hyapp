@@ -11,14 +11,15 @@
           
        <div class="infoDescWrapper">       
              <span class="AC-info">{{info}}</span>
-       </div> 
+       </div>
+       <ProjectIntro v-for = "project of projects" :title="project.title" :image="project.image"/>
     </div>
 </NuxtLink>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["name", "info", "description", "image", "link"])
+    const props = defineProps(["name", "info", "description", "image", "link", "projects"])
 
     function getImagePath() {
         return new URL(`../assets/img/areas/${props.image}`, import.meta.url)

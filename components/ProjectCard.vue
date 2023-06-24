@@ -1,10 +1,19 @@
 <template>
-    TO-DO
+    <NuxtLink :to="link">
+        <div class="cardProjC">
+        <div class="image-containerProjC">
+            <img class="imgProjC" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
+        </div>
+        <span class="titleProjC">{{title}}</span>
+        <span class="area_nameProjC">{{area_name}}</span>
+        <span class="infoProjC">{{info}}</span>
+        </div>
+    </NuxtLink>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["title", "caption", "text", "image"])
+    defineProps(["title", "area_name", "info", "image", "link"])
 </script>
 
 <style>
