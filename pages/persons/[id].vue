@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class = "info-group">
-            <img id = "main-img" src = "" />
+        <img id = "main-img" :src ="`${person.image}`"/>
             <div id = "data-container">
                 <p class = "data">Name: <span>{{ person.name }}</span></p>
                 <p class = "data">Breed: <span>{{ person.role }}</span></p>
@@ -10,8 +10,6 @@
                 <p class = "data">Breed: <span>{{ person.number }}</span></p>
             </div>
         </div>
-        <h2>Description</h2>
-        <!-- TO-DO: mettere i supervised projects-->
     </main>
     <p class="parEndPag"> You are on the Description Persons page.</p>
 </template>
