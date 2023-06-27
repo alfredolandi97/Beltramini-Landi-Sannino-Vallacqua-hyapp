@@ -55,4 +55,11 @@
     font-size: 2em;
     font-weight: bold;
 }
+
+
+.imgProjC{
+    width: 30px;
+    height: 30px;
+
+}
 </style>
