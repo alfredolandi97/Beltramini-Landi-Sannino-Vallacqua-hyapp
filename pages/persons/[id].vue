@@ -7,10 +7,13 @@
                 <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
                 <img class = "imgDP" :src ="`${person.image}`"/>
                 <p class = "rolePD">Breed: <span>{{ person.role }}</span></p>
+                <p><span> {{ person.caption }}</span></p>
                 <p class = "bioPD">Age: <span>{{ person.bio }}</span></p>
                 <p class = "emailPD"><span>{{ person.email }}</span></p>
                 <p class = "numberPD"><span>{{ person.number }}</span></p>
             </div>
+            <h2>SUPERVISED PROJECTS</h2>
+            <ProjectIntro v-for = "project of person.projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
         </div>
     </main>
     <p class="parEndPag"> You are on the Description Persons page.</p>

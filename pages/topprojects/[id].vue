@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img id = "main-img" src = "" />
+        <img id = "main-img" :src ="`${project.image}`" />
         <div id = "data-container">
             <p class = "data">Name: <span>{{ project.title }}</span></p>
             <p class = "data">Breed: <span>{{ project.info }}</span></p>

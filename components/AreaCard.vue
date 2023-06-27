@@ -3,7 +3,7 @@
     <NuxtLink :to = "link" class="nuxtclassAC">
     <div class="cardAC">
         <div class="imageAC">
-            <img class="imgAC" :src="getImagePath()"/>
+            <img class="imgAC" :src="`${props.icon}`"/>
         </div>
        <div class="textWrapper">
              <span class="AC-name">{{name}}</span>
@@ -12,18 +12,14 @@
        <div class="infoDescWrapper">       
              <span class="AC-info">{{info}}</span>
        </div>
-       <ProjectIntro v-for = "project of projects" :title="project.title" :image="project.image"/>
+       <ProjectIntro v-for = "project of projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
     </div>
 </NuxtLink>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["name", "info", "description", "image", "link", "projects"])
-
-    function getImagePath() {
-        return new URL(`../assets/img/areas/${props.image}`, import.meta.url)
-    }
+    const props = defineProps(["name", "info", "description", "link", "projects", "icon"])
 </script>
 
 <style>

@@ -6,11 +6,11 @@ export default defineEventHandler(async (event) => {
     const client = serverSupabaseClient(event)
 
     const { data, error }= await client.from('projects').select("title, info, description, link").eq('id', id).limit(1).single()
-    //DA PERFEZIONARE
     
     if(error) {
         throw createError({statusCode: 400, statusMessage: error.message})
     }
-
+    const image = client.storage.from('next_fund').getPublicUrl(`projects/${id}.png`)
+    data.image = image.data.publicUrl
     return data
 })

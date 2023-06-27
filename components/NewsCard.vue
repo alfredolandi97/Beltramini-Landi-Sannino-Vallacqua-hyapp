@@ -1,18 +1,19 @@
 <template>
-    <div class="cardNC">
-       <div class="containerNC">
-        <img class="imgNC" src="" />
-        <span class="titleNC">{{title}}</span>
-        <span class="captionNC">{{caption}}</span>
-        <span class="textNC">{{text}}</span>
-        <span class="dateNC">{{date}}</span>
-       </div>
-    </div>
+    <NuxtLink :to="link">
+        <div class="cardNC">
+            <div class="containerNC">
+                <img class="imgNC" :src="`${image}`" />
+                <span class="titleNC">{{title}}</span>
+                <span class="captionNC">{{caption}}</span>
+                <span class="dateNC">{{date}}</span>
+            </div>
+        </div>
+    </NuxtLink>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["title", "caption", "text", "date"])
+    const props = defineProps(["title", "caption", "date", "link", "image"])
 </script>
 
 <style>

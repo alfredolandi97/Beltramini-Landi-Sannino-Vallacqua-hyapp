@@ -1,13 +1,14 @@
 <template>
-    <div class="IntroProj">
+    <NuxtLink :to="link">
+        <div class="IntroProj">
         <div class="image-containerPC">
-            <!--img class="imgIntroProj" src="~/assets/img/about/papa_francesco_02-696x557.jpg"-->
+            <img class="imgIntroProj" :src="`${logo}`">
         </div>
-        <span class="titleIntroProj">{{title}}</span>
-        </div>
+    </div>
+    </NuxtLink>
 </template>
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["title", "image"])
+    defineProps(["logo", "link"])
 </script>
