@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     if(error) {
         throw createError({statusCode: 400, statusMessage: error.message})
     }
-    const image = client.storage.from('next_fund').getPublicUrl(`projects/${id}.png`)
+    const image = await client.storage.from('next_fund').getPublicUrl(`projects/${id}.png`)
     data.image = image.data.publicUrl
     return data
 })

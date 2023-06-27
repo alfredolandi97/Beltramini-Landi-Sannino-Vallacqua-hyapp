@@ -4,9 +4,10 @@
             <div class="image-containerProjC">
                 <img class="imgProjC" :src="`${props.logo}`">
             </div>
-            <span class="titleProjC">{{title}}</span>
-            <span class="area_nameProjC">{{area_id}}</span>
-            <span class="infoProjC">{{info}}</span>
+            <p><span class="titleProjC">{{title}}</span></p>
+            <p><span class="area_nameProjC">{{area_name}}</span></p>
+            <p><span class="infoProjC">{{info}}</span></p>
+            <br>
         </div>
     </NuxtLink>
     
@@ -14,7 +15,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["title", "area_id", "info", "link", "logo"])
+    const props = defineProps(["title", "area_name", "info", "link", "logo"])
 </script>
 
 <style>

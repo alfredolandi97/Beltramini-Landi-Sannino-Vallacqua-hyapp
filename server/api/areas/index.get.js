@@ -10,10 +10,10 @@ export default defineEventHandler(async (event) => {
     }
 
     for (let area of data){
-        const icon = client.storage.from('next_fund').getPublicUrl(`areas/icons/${area.id}.png`)
+        const icon = await client.storage.from('next_fund').getPublicUrl(`areas/icons/${area.id}.png`)
         area.icon = icon.data.publicUrl
         for(let project of area.projects){
-            const logo = client.storage.from('next_fund').getPublicUrl(`projects/logos/${project.id}.png`)
+            const logo = await client.storage.from('next_fund').getPublicUrl(`projects/logos/${project.id}.png`)
             project.logo = logo.data.publicUrl
         }
     }

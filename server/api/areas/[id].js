@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
     const client = serverSupabaseClient(event)
 
     const { data, error }= await client.from('areas').select("name, info, description").eq('id', id).limit(1).single()
-    const image = client.storage.from('next_fund').getPublicUrl(`areas/${id}.png`)
+    const image = await client.storage.from('next_fund').getPublicUrl(`areas/${id}.png`)
     data.image = image.data.publicUrl
     
     if(error) {

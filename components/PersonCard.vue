@@ -3,13 +3,10 @@
         <div class="cardPC">
         
         <div class="image-containerPC">
-            <img class="imgPC" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
+            <img class="imgPC" :src="`${image}`">
         </div>
         <span class="namePC">{{name}}</span>
         <span class="rolePC">{{role}}</span>
-        <!-- <span class="captionPC">{{caption}}</span>-->
-        <!-- <span class="emailPC">{{email}}</span>-->
-        <!-- <span class="numberPC">{{number}}</span> -->
     
         </div>
   </NuxtLink>
@@ -17,7 +14,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["name", "role", "email", "number", "image", "caption", "link"])
+    defineProps(["name", "role", "link", "image"])
     
 </script>
 

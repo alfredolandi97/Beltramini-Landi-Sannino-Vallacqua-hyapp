@@ -2,7 +2,7 @@
     <NuxtLink :to="link">
         <div class="cardNC">
             <div class="containerNC">
-                <img class="imgNC" :src="`${image}`" />
+                <img class="imgNC" :src="`${props.image}`" />
                 <span class="titleNC">{{title}}</span>
                 <span class="captionNC">{{caption}}</span>
                 <span class="dateNC">{{date}}</span>
