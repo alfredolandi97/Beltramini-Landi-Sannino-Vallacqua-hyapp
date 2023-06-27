@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
     }
     data.role=roles[data.role]
 
-    const image = client.storage.from('next_fund').getPublicUrl(`persons/${id}.jpg`)
+    const image = client.storage.from('next_fund').getPublicUrl(`persons/${id}.png`)
     data.image = image.data.publicUrl
 
     for(let project of data.projects){

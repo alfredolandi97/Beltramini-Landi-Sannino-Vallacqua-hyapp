@@ -15,20 +15,20 @@
 
 <style scoped>
 .Introproj{
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 200px;
 }
 
 .image-containerPC{
 
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 200px;
 
 }
 
 .imgIntroProj{
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 200px;
 
 }
 
