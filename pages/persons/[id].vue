@@ -8,8 +8,8 @@
                 <img class = "imgDP" :src ="`${person.image}`"/>
                 <p class = "rolePD">Breed: <span>{{ person.role }}</span></p>
                 <p class = "bioPD">Age: <span>{{ person.bio }}</span></p>
-                <p class = "data">Name: <span>{{ person.email }}</span></p>
-                <p class = "data">Breed: <span>{{ person.number }}</span></p>
+                <p class = "emailPD"><span>{{ person.email }}</span></p>
+                <p class = "numberPD"><span>{{ person.number }}</span></p>
             </div>
         </div>
     </main>
@@ -32,7 +32,6 @@ width: 58vw;
 height: 38vw;
 margin-left: -3vw;
 clip-path: polygon(0 0, 94% 0, 100% 8%, 100% 100%, 6% 100%, 0 92%);
-float: left;
 }
 
 .pageDP{
@@ -65,13 +64,31 @@ margin-bottom: 6vw;
 .rolePD{
 
     font-family: "stretch_pro", sans-serif;
+    font-size: 1.1vw;
+    text-transform: uppercase;
 }
 
 
 .bioPD{
 
 font-family: "nunito", sans-serif;
+font-size: 1.5vw;
+line-height: 1.6vw;
+margin-right: -3vw;
 
 }
 
+.emailPD{
+font-family: "nunito", sans-serif;
+font-size: 1.5vw;
+margin-top: 2vw;
+
+}
+
+
+.numberPD{
+    font-size: 1.5vw;
+    font-family: "nunito", sans-serif;
+    margin-top: -1vw;
+}
 </style>
