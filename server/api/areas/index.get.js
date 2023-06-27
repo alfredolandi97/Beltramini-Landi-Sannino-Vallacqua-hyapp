@@ -3,7 +3,8 @@ import { serverSupabaseClient } from '#supabase/server'
 export default defineEventHandler(async (event) => {
     const client = serverSupabaseClient(event)
 
-    const { data, error }= await client.from('areas').select("name, info, description, projects(title, image)")
+    const { data, error }= await client.from('areas').select("id, name, info, description, projects(title)")
+    
     
     if(error) {
         throw createError({statusCode: 400, statusMessage: error.message})

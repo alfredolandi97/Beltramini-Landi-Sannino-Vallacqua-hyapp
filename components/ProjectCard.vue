@@ -5,7 +5,7 @@
             <img class="imgProjC" src="~/assets/img/about/papa_francesco_02-696x557.jpg">
         </div>
         <span class="titleProjC">{{title}}</span>
-        <span class="area_nameProjC">{{area_name}}</span>
+        <span class="area_nameProjC">{{area_id}}</span>
         <span class="infoProjC">{{info}}</span>
         </div>
     </NuxtLink>
@@ -13,7 +13,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    defineProps(["title", "area_name", "info", "image", "link"])
+    defineProps(["title", "area_id", "info", "link"])
 </script>
 
 <style>

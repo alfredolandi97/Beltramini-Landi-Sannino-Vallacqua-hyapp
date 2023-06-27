@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     
     const client = serverSupabaseClient(event)
 
-    const { data, error }= await client.from('projects').select("title, info, description, link, image").eq('id', id).limit(1).single()
+    const { data, error }= await client.from('projects').select("title, info, description, link").eq('id', id).limit(1).single()
     //DA PERFEZIONARE
     
     if(error) {

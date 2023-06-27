@@ -1,7 +1,7 @@
 <template>
     <div class="cardNC">
        <div class="containerNC">
-        <img class="imgNC" :src="getImagePath()" />
+        <img class="imgNC" src="" />
         <span class="titleNC">{{title}}</span>
         <span class="captionNC">{{caption}}</span>
         <span class="textNC">{{text}}</span>
@@ -12,11 +12,7 @@
 
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(["title", "caption", "text", "image", "date"])
-
-    function getImagePath() {
-        return new URL(`../assets/img/news/${props.image}`, import.meta.url)
-    }
+    const props = defineProps(["title", "caption", "text", "date"])
 </script>
 
 <style>

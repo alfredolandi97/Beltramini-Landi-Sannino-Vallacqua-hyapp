@@ -8,7 +8,7 @@
               
           <nav>
               <NuxtLink to = "/about"  class="nav-link">About us</NuxtLink>
-              <NuxtLink to = "/areas"  class="nav-link">Areas of interest</NuxtLink>
+              <NuxtLink to = "/areas"  class="nav-link">Investment areas</NuxtLink>
               <NuxtLink to = "/topprojects"  class="nav-link">Top projects</NuxtLink>
               <NuxtLink to = "/persons"  class="nav-link">Our team</NuxtLink>
               <NuxtLink to = "/news"  class="nav-link">News</NuxtLink>

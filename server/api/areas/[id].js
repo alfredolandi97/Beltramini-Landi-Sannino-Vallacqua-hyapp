@@ -1,11 +1,13 @@
 import { serverSupabaseClient } from '#supabase/server'
 
 export default defineEventHandler(async (event) => {
-    const name = event.context.params.name
+    const id = event.context.params.id
     
     const client = serverSupabaseClient(event)
 
-    const { data, error }= await client.from('areas').select("name, info, description, image").eq('name', name).limit(1).single()
+    const { data, error }= await client.from('areas').select("name, info, description").eq('id', id).limit(1).single()
+    const image = client.storage.from('next_fund').getPublicUrl(`areas/${id}.png`)
+    data.image = image.data.publicUrl
     
     if(error) {
         throw createError({statusCode: 400, statusMessage: error.message})
