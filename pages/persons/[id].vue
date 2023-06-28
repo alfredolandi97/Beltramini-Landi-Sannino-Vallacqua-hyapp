@@ -5,9 +5,9 @@
                 <span class="pageDP"> OUR TEAM / </span>
                 <p class = "namePD"><span>{{ person.name }}</span></p>
                 <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
+                <p class = "rolePD"> <span>{{ person.role }}</span></p>
                 <img class = "imgDP" :src ="`${person.image}`"/>
-                <p class = "rolePD">Breed: <span>{{ person.role }}</span></p>
-                <p><span> {{ person.caption }}</span></p>
+                <p class="captionPD"><span> {{ person.caption }}</span></p>
                 <p class = "bioPD">Age: <span>{{ person.bio }}</span></p>
                 <p class = "emailPD"><span>{{ person.email }}</span></p>
                 <p class = "numberPD"><span>{{ person.number }}</span></p>
@@ -28,13 +28,16 @@
 
 </script>
 
-<style>
+<style scoped>
 .imgDP{
 
 width: 58vw;
 height: 38vw;
 margin-left: -3vw;
 clip-path: polygon(0 0, 94% 0, 100% 8%, 100% 100%, 6% 100%, 0 92%);
+float: left;
+margin-top: 1vw;
+margin-bottom: -20vw;
 }
 
 .pageDP{
@@ -69,6 +72,8 @@ margin-bottom: 6vw;
     font-family: "stretch_pro", sans-serif;
     font-size: 1.1vw;
     text-transform: uppercase;
+    margin-left: 58vw;
+    margin-bottom: -2.3vw;
 }
 
 
@@ -78,6 +83,8 @@ font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
 margin-right: -3vw;
+position: relative;
+top: -16.5vw;
 
 }
 
@@ -93,5 +100,14 @@ margin-top: 2vw;
     font-size: 1.5vw;
     font-family: "nunito", sans-serif;
     margin-top: -1vw;
+}
+
+.captionPD{
+margin-left: 58vw;
+margin-top: 4vw;
+font-size: 1.5vw;
+font-family: "nunito", sans-serif;
+line-height: 1.6vw;
+
 }
 </style>

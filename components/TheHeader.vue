@@ -28,6 +28,7 @@
   background-color: white;
   padding-left: 1%;
   margin-bottom: 2%;
+  margin-left: -3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +36,7 @@
   width: 100%;
   height: 8.3vw;
   z-index: 998;
+
 
 }
   header
@@ -50,7 +52,7 @@
       justify-content: space-between;
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-      width:106%;
+      width:105.4%;
       height:8vw;
       z-index:999;
      
@@ -112,30 +114,6 @@ opacity:1;
 
 }
 
-/* custom scrollbar, qui si regolano le dimensioni */
-::-webkit-scrollbar {
-width: 27px;
-height: 80%
-}
-
-
-/* questo è per lo sfondo della scrollbar*/
-::-webkit-scrollbar-track {
-background-color: transparent;
-}
-
-/* caratteristiche della scrollbar stessa*/
-::-webkit-scrollbar-thumb {
-background-color: #F3F4EF;
-border-radius: 20px;
-border: 6px solid transparent;
-background-clip: content-box;
-}
-
-/* comportamento quando si va sopra la scrollbar*/
-::-webkit-scrollbar-thumb:hover {
-background-color: #a8bbbf;
-}
 
 
 

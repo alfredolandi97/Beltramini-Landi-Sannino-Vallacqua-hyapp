@@ -26,7 +26,7 @@
         margin-left: -3vw;
         color: #020122;
         text-align:leftmar;
-        width: 105%;
+        width: 103.76%;
         padding-left: 2.5vw;
         display: flex;
         align-items: center;
