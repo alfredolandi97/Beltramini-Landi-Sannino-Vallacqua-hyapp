@@ -84,8 +84,7 @@ font-size: 1.5vw;
 line-height: 1.6vw;
 margin-right: -3vw;
 position: relative;
-top: -16.5vw;
-
+top: 4.5vw;
 }
 
 .emailPD{
