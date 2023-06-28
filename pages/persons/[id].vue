@@ -33,7 +33,7 @@
 
 width: 58vw;
 height: 38vw;
-margin-left: -3vw;
+margin-left: 0vw;
 clip-path: polygon(0 0, 94% 0, 100% 8%, 100% 100%, 6% 100%, 0 92%);
 float: left;
 margin-top: 1vw;
@@ -72,7 +72,7 @@ margin-bottom: 6vw;
     font-family: "stretch_pro", sans-serif;
     font-size: 1.1vw;
     text-transform: uppercase;
-    margin-left: 58vw;
+    margin-left: 61vw;
     margin-bottom: -2.3vw;
 }
 
@@ -102,7 +102,7 @@ margin-top: 2vw;
 }
 
 .captionPD{
-margin-left: 58vw;
+margin-left: 61vw;
 margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
