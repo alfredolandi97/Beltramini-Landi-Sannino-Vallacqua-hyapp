@@ -30,7 +30,6 @@
     height: 16.3vw;
     margin-left: 0vw;
     position: relative;
-    overflow: hidden;
 }
 
 
@@ -42,14 +41,9 @@
     height: auto;
     width: auto;
     margin-bottom:2vw;
-    transition: transform 0.2s;
-    transform-origin: bottom;
+    
 }
 
-.image-containerPC:hover .imgPC {
-  transform: scale(1.1);
-
-}
 .cardPC
 {
     margin-top:1.5vw;
@@ -64,6 +58,7 @@
     height: 20vw;
     background-color:   #020122;
     transition: background-color 0.2s;
+    overflow: hidden;
     /*clip-path: polygon(12% 0%, 100% 0%, 100% 88%, 88% 100%, 0% 100%, 0% 12%);*/
 
 }
@@ -74,6 +69,15 @@
 background-color: #BBFB1E;
 
 
+
+}
+
+
+.cardPC:hover .image-containerPC{
+    transform: scale(1.1);
+    transform-origin: bottom;
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
 .namePC

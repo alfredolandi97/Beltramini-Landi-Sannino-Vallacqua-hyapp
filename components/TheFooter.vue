@@ -82,7 +82,7 @@
    
     width: 1.2vw;
     height: 1.2vw;
-    margin-left: 60.5vw;
+    margin-left: 61.5vw;
     margin-bottom: 0vw;
     pointer-events: auto;
     
@@ -93,16 +93,16 @@
     font-size: 1vw;
     margin-left: 71vw;
     position: relative; 
-    top: -1.7vw;
+    top: -1.8vw;
     font-family: "nunito", sans-serif;
     color: #020122;
     pointer-events: auto;
   }
   .img-caption2{
     font-size: 1vw;
-    margin-left: 62vw;
+    margin-left: 63vw;
     position: relative;
-     top: -1.7vw;
+     top: -1.8vw;
      font-family: "nunito", sans-serif;
      color: #020122;
      pointer-events: auto;

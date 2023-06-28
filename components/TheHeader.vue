@@ -52,7 +52,7 @@
       justify-content: space-between;
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-      width:106%;
+      width:106.4%;
       height:8vw;
       z-index:999;
      

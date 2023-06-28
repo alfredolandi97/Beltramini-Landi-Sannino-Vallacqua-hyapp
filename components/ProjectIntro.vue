@@ -15,22 +15,24 @@
 
 <style scoped>
 .Introproj{
-    width: 250px;
-    height: 200px;
+    
 }
 
 .image-containerPC{
 
-    width: 250px;
-    height: 200px;
+    
 
 }
 
 .imgIntroProj{
-    width: 250px;
-    height: 200px;
+    margin-top: 0vw;
+    width: 11vw;
+    height: 7vw;
 
 }
 
-
+.imgIntroProj:hover{
+    transform: scale(1.15);
+    transition: transform 0.2s;
+}
 </style>
