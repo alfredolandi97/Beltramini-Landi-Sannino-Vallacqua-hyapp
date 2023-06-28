@@ -12,8 +12,10 @@
                 <p class = "emailPD"><span>{{ person.email }}</span></p>
                 <p class = "numberPD"><span>{{ person.number }}</span></p>
             </div>
-            <h2>SUPERVISED PROJECTS</h2>
-            <ProjectIntro v-for = "project of person.projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
+            <div v-if="`${person.projects}`">
+                <h2>SUPERVISED PROJECTS</h2>
+                <ProjectIntro v-for = "project of person.projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
+            </div>
         </div>
     </main>
     <p class="parEndPag"> You are on the Description Persons page.</p>
