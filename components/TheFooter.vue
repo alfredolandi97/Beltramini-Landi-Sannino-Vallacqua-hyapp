@@ -2,8 +2,8 @@
     <span class="footerspan">
 <p>
     <footer>
-        <span class="nunito-text" style="font-family:'nunito', sans-serif;"> ©  </span>
-         2023 NextFund - All Rights Reserved
+        <span class="nunito-text"> ©  </span>
+         <span class="nunito-text1">2023 NextFund - All Rights Reserved</span>
 
         <NuxtLink to="https://www.google.com/" class="logoFT1">
                 <img class="logoimgFT1" src="../assets/img/general/logo_insta_icon.png" alt="Logo instagram">
@@ -93,7 +93,7 @@
     font-size: 1vw;
     margin-left: 71vw;
     position: relative; 
-    top: -1.6vw;
+    top: -1.7vw;
     font-family: "nunito", sans-serif;
     color: #020122;
     pointer-events: auto;
@@ -102,9 +102,18 @@
     font-size: 1vw;
     margin-left: 62vw;
     position: relative;
-     top: -1.55vw;
+     top: -1.7vw;
      font-family: "nunito", sans-serif;
      color: #020122;
      pointer-events: auto;
+  }
+  .nunito-text{
+    font-family:'helvetica1', sans-serif;
+    font-size: 1vw;
+  }
+
+  .nunito-text1{
+    font-family:'nunito', sans-serif;
+    font-size: 1vw;
   }
 </style>

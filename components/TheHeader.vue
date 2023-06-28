@@ -33,7 +33,7 @@
   justify-content: space-between;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
-  width: 100%;
+  width:100%;
   height: 8.3vw;
   z-index: 998;
 
@@ -44,7 +44,7 @@
       position: sticky;
       top: 0%;
       background-color: #6320EE;
-      padding-left: 1%;
+      padding-left: -2%;
       margin-bottom: 2%;
       margin-left: -3vw;
       height: 7vw;
@@ -52,7 +52,7 @@
       justify-content: space-between;
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
-      width:105.4%;
+      width:106%;
       height:8vw;
       z-index:999;
      

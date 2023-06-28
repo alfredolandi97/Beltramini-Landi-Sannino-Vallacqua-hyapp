@@ -2,7 +2,7 @@
 <h1 class="titolo">ABOUT US</h1>
 <div>
 
-    <p class="descrPag">Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
+    <p class="descrPag">We are delighted to welcome you to the future with Next Fund, the premier venture capital firm dedicated to investing in your tomorrow!</p>
 
     <div class="firstsec">
        <img  class="firstimg" src="../assets/img/about/sopra.png" alt=""> 
@@ -51,9 +51,10 @@
   top: 1vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
+
 }
 
 .secondpar{
@@ -62,7 +63,7 @@
   top: 2vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
   }
@@ -73,7 +74,7 @@
   top: 3vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
 
@@ -84,7 +85,7 @@
   top: 4vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
 }
@@ -93,7 +94,7 @@
   top: 5vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
 }
@@ -103,7 +104,7 @@
   top: 6vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 40vw;
+  margin-right: 41vw;
   font-size: 1.4vw;
   text-align: justify;
 }
@@ -121,6 +122,7 @@
     height: 51vw;
     position: relative;
     bottom: 47vw;
+    margin-bottom: -100vw;
   
 } 
 

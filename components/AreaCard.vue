@@ -26,7 +26,7 @@
 
 .cardAC
 {
-      width: 100.3vw;
+      width: 98.92vw;
       height: 10vw;
       display: flex;
       flex-wrap: wrap;
