@@ -108,6 +108,6 @@ margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
 line-height: 1.6vw;
-
+white-space: pre-line;
 }
 </style>

@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
 
     const image = await client.storage.from('next_fund').getPublicUrl(`persons/${id}.png`)
     data.image = image.data.publicUrl
-
+    data.caption  = data.caption.replace("   ", "\n")
     for(let project of data.projects){
         const logo = await client.storage.from('next_fund').getPublicUrl(`projects/logos/${project.id}.png`)
         project.logo = logo.data.publicUrl
