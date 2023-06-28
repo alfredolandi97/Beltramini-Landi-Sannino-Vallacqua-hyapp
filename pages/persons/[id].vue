@@ -55,7 +55,8 @@ margin-bottom: -20vw;
     color: transparent;
     background-clip: text;
     font-family: "stretch_pro", sans-serif;
-    margin-top:-40px;
+    position: relative;
+    top: -1.6vw;
 }
 
 .namePD{
