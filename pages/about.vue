@@ -5,18 +5,27 @@
     <p class="descrPag">Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
 
     <div class="firstsec">
-       <img  class="firstimg" src="../assets/img/about/papa_francesco_02-696x557.jpg" alt=""> 
+       <img  class="firstimg" src="../assets/img/about/sopra.png" alt=""> 
 
-        <p class="secondpar"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque cupiditate dignissimos rem pariatur consectetur consequatur voluptate nihil. Dolorem tempora ipsam error facere obcaecati nesciunt eligendi sit, at corrupti rerum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quas esse nihil deserunt consequuntur? Quos vitae sapiente consequatur quisquam autem minima illo aliquam temporibus, provident nostrum ab iure, quibusdam repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos fugit rerum cumque doloremque, delectus accusantium in distinctio illum aperiam accusamus vero sequi odit voluptates veniam provident saepe animi repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia iure porro eos velit. Ducimus repellendus, quibusdam tempore odit veniam, dolor ratione exercitationem tenetur aliquam nulla fugiat sunt, voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum explicabo porro quas, assumenda nulla aliquid odio tempore, doloremque quisquam incidunt beatae, voluptas dicta commodi. At atque ut quibusdam unde veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum quasi corporis maiores iure mollitia asperiores recusandae magni eos, obcaecati labore, quos sit cupiditate optio impedit dolores molestiae ducimus pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum maiores iste molestiae odit dolor, facere neque, libero impedit sunt quisquam est earum fugiat repellendus officiis eveniet laudantium blanditiis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quia. Exercitationem porro quaerat veritatis delectus atque autem eos esse eveniet ipsam minima illo dolore doloremque consectetur, rem quibusdam quo provident! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit sunt aperiam amet adipisci odit asperiores porro, quod nulla tenetur tempore ducimus obcaecati ad rerum vitae architecto molestiae temporibus dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, voluptate. Dolore dolorum sunt repellendus! A vel, error eos iure, eligendi nam, iste maxime harum omnis cupiditate eaque ab! Perferendis, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti quo at exercitationem placeat quod nulla assumenda ipsam id nemo, expedita praesentium vel culpa facere nobis soluta, nihil necessitatibus dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque cupiditate dignissimos rem pariatur consectetur consequatur voluptate nihil. </p>
+       <p class="firstpar"> At Next Fund, we are driven by a passion for innovation and a desire to shape the future. As a venture capital company specializing in the metaverse, artificial intelligence, cyber-security, and blockchain, we are at the forefront of cutting-edge technologies that are revolutionizing industries and transforming the way we live, work, and play.</p>
 
+        <p class="secondpar">Founded in Milan in 2015, Next Fund has emerged as a leading player in the investment landscape, providing strategic capital and expertise to visionary entrepreneurs and disruptive startups. We understand that breakthrough ideas require not just funding, but also mentorship, guidance, and a strong network of industry connections.
+                             That's why we offer more than just capital—we offer a partnership built on trust, collaboration, and shared ambition.</p>
+
+                             <p class="thirdpar"> Our expertise lies in identifying and nurturing talent with the potential to redefine industries. We believe that the metaverse holds immense possibilities, bridging the gap between the digital and physical realms and creating entirely new experiences. With our deep knowledge and insights into this evolving landscape, we actively seek opportunities to invest in metaverse platforms, virtual reality, augmented reality, and immersive technologies.</p>
+
+<p class="forthpar"> Artificial intelligence is another key focus area for us. We recognize its transformative power across various sectors, from healthcare and finance to manufacturing and logistics. Our team of experts is dedicated to identifying and supporting AI startups that have the potential to revolutionize industries and unlock new levels of efficiency and productivity.</p>
+
+<p class="fifthpar"> In an increasingly connected world, cyber-security has become a critical concern for businesses and individuals alike.
+                     At Next Fund, we prioritize investments in innovative cyber-security solutions that protect against evolving threats and safeguard valuable digital assets. We support startups developing advanced encryption technologies, threat intelligence platforms, and proactive defense mechanisms.
+                     We have a keen interest in the transformative potential of blockchain technology. Blockchain offers secure and transparent decentralized solutions, revolutionizing finance, supply chain management, and digital identity verification. We actively seek out startups that are leveraging blockchain to drive innovation and disrupt traditional industries.</p>
+<p class="sixth">    As a team, we bring together diverse backgrounds and expertise to provide our portfolio companies with unparalleled support. We work closely with founders, offering strategic guidance, operational insights, and access to our extensive network of industry partners and investors.
+                     At Next Fund, we are committed to driving positive change through technology and fostering innovation that shapes the future. Join us on this exciting journey as we invest in the brightest minds and game-changing ideas that will shape the metaverse, artificial intelligence, cyber-security, and blockchain industries.</p>
     </div>
     <div class="secondsec">
-         <img class="secondimg" src="../assets/img/about/20096080_small-900x600.jpg" alt="">
+         <img class="secondimg" src="../assets/img/about/sotto.png" alt="">
 
-        <p class="thirdpar"> 'my silky poodle is so wet'</p>
-
-        <p class="forthpar"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto, itaque optio culpa aut minima ea laudantium! Velit ipsum sint eius dolor quod reprehenderit maxime quisquam! Voluptates delectus enim incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore ut architecto perspiciatis excepturi distinctio dolorem quas, fuga similique? Dolorem eos blanditiis id illo quas quaerat fugiat voluptatem ad deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam velit deleniti magni ullam aut voluptate doloribus modi quibusdam iste expedita voluptatem, ad perferendis sint excepturi facere distinctio quae, porro accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum molestiae ducimus obcaecati, explicabo cum totam adipisci dignissimos enim assumenda! Tenetur rem nisi quod sequi officiis inventore tempora facilis quibusdam illo!</p>
-    </div>
+      </div>
     
 </div>
 <p class="parEndPag"> You are on the About Us page.</p>
@@ -37,49 +46,81 @@
 
 }
 
+.firstpar{
+  position: relative; 
+  top: 1vw;
+  left: 41vw;
+  font-family: "nunito", sans-serif;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
+}
+
 .secondpar{
    
   position: relative; 
-  top: 12vw;
-  left: 52vw;
+  top: 2vw;
+  left: 41vw;
   font-family: "nunito", sans-serif;
-  margin-right: 50vw;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
   }
 
 
 .thirdpar{
-  font-size: 3vw;
-    /* per creare lo spessore nel testo*/
-    -webkit-text-stroke-width: 1px; /* Spessore del contorno */
-    -webkit-text-stroke-color:#BBFB1E;
-    color: transparent;
-    background-clip: text;
-    font-family: "nunito", sans-serif;
-    position: relative;
-    top: 12vw;
-    left: 2vw;
+  position: relative; 
+  top: 3vw;
+  left: 41vw;
+  font-family: "nunito", sans-serif;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
 
 }
 
 .forthpar {
   position: relative; 
-  top: 14vw;
+  top: 4vw;
+  left: 41vw;
   font-family: "nunito", sans-serif;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
+}
+.fifthpar{
+  position: relative; 
+  top: 5vw;
+  left: 41vw;
+  font-family: "nunito", sans-serif;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
+}
+
+.sixth{
+  position: relative; 
+  top: 6vw;
+  left: 41vw;
+  font-family: "nunito", sans-serif;
+  margin-right: 40vw;
+  font-size: 1.4vw;
+  text-align: justify;
 }
 
 
 .firstimg{
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45vw;
+    width: 100%;
   }
 .secondimg {
     float: left;
     margin-right: 2vw;
-    width: 50vw;
-   
+    width: 38vw;
+    height: 51vw;
+    position: relative;
+    bottom: 47vw;
   
 } 
 
