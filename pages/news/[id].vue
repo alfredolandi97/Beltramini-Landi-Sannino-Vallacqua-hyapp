@@ -18,3 +18,12 @@
     //const description = ref(newLineOnFullStop(dog.value.description))
 
 </script>
+
+<style>
+
+
+
+
+
+
+</style>
