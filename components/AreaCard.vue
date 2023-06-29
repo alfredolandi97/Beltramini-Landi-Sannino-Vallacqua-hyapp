@@ -32,7 +32,7 @@
       flex-wrap: wrap;
       align-items: center;
       border: 1px solid #BBFB1E;
-      margin-top: 0vw;
+      margin-top: -1px;
       margin-left: -3.1vw;
       transition: background-color 0.5s;
 

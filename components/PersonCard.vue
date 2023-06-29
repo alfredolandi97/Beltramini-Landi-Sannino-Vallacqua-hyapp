@@ -41,8 +41,13 @@
     height: auto;
     width: auto;
     margin-bottom:2vw;
+    border: 1.7px solid #BBFB1E;
+    border-top: none;
+
     
+   
 }
+
 
 .cardPC
 {
@@ -67,6 +72,8 @@
 
 .cardPC:hover {
 background-color: #BBFB1E;
+
+
 
 
 
