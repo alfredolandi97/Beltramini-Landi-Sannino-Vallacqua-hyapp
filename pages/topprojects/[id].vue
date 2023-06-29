@@ -27,9 +27,11 @@
 
 .imgTP{
     width: 100%;
+    height: 35vw;
     margin-bottom: 1.6vw;
-    height: 40vw;
+    
 }
+
 
 .titleTP{
 font-size:3.3vw;
@@ -64,7 +66,7 @@ font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
 text-align: justify;
-margin-bottom: -4vw;
+margin-bottom: -4vw; 
 }
 
 .linkTP{
@@ -75,4 +77,5 @@ margin-left: 82.5vw;
 position: relative;
 top: 9.5vw;
 }
+
 </style>

@@ -1,17 +1,15 @@
 <template>
-    <NuxtLink :to = "link" class="nuxtclassProJC">
-        <div class="cardProJC">
-
-            <div class="image-containerProJC">
-                <img class="imgProJC" :src="`${props.logo}`">
-            </div>
-            <p><span class="titleProJC">{{title}}</span></p>
-            <p><span class="area_nameProJC">{{area_name}}</span></p>
-            <p><span class="infoProJC">{{info}}</span></p>
-            
+    <NuxtLink :to = "link" class="nuxtclassPROJ">
+        <div class="cardPROJ">
+        
+        <div class="image-containerPROJ">
+            <img class="imgPROJ" :src="`${props.logo}`">
         </div>
-    </NuxtLink>
+        <span class="titlePROJ">{{title}}</span>
+        <span class="areaPROJ">{{area_name}}</span>
     
+        </div>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -19,32 +17,47 @@
     const props = defineProps(["title", "area_name", "info", "link", "logo"])
 </script>
 
-
 <style>
 
-.image-containerProJC
+
+
+.image-containerPROJ
 {
     display: flex;
     justify-content: center;
     width: 18vw;
-    height: 16.3vw;
+    height: 15vw;
     margin-left: 0vw;
     position: relative;
+    border: 1.7px solid #BBFB1E;
+    border-top: none;
+    border-left: none;
+    background-color:#020122;
 }
 
+.cardPROJ:hover{
+background-color: #BBFB1E;
 
-.imgProJC
+}
+
+.imgPROJ
 {
     vertical-align: middle;
-    max-width: 140%;
-    max-height: 110%;
+    max-width: 75%;
+    max-height: 50%;
     height: auto;
     width: auto;
-    margin-bottom:2vw;
+    position: relative;
+    top: 3.5vw;
+   
+
     
+   
 }
 
-.cardProJC
+
+
+.cardPROJ
 {
     margin-top:1.5vw;
     margin-left: 1.6vw;
@@ -65,47 +78,45 @@
 
 
 
-.cardProJC:hover {
+.cardPROJ:hover {
 background-color: #BBFB1E;
-
-
 
 }
 
 
-.cardProJC:hover .image-containerProJC{
+.cardPROJ:hover .image-containerPROJ{
     transform: scale(1.1);
     transform-origin: bottom;
     overflow: hidden;
     transition: transform 0.2s;
 }
 
-.titleProJC
+.titlePROJ
 {
     font-size: 1.2vw;
     font-family: "stretch_pro", sans-serif;
     text-transform: uppercase;
     color: #BBFB1E;
     font-weight:bold;
-    margin-top:-1.4vw;
+    margin-top:0.2vw;
     margin-left: 0.8vw;
     font-weight:500;
     transition:color 0.2s;
 }
 
-.cardProJC:hover .titleProJC{
+.cardPROJ:hover .titlePROJ{
     font-size: 1.2vw;
     font-family: "stretch_pro", sans-serif;
     text-transform: uppercase;
     color:  #020122;
     font-weight:bold;
-    margin-top:-1.4vw;
+    margin-top:0.2vw;
     margin-left: 0.8vw;
     font-weight:500;
     transition:color 0.2s;
 }
 
-.area_nameProJC
+.areaPROJ
 {
     font-size: 1vw;
     font-family:"nunito" ,sans-serif;
@@ -115,7 +126,7 @@ background-color: #BBFB1E;
     margin-left: 0.8vw;
 }
 
-.cardProJC:hover .area_nameProJC{
+.cardPROJ:hover .areaPROJ{
     font-size: 1vw;
     font-family:"nunito" ,sans-serif;
     color:  #020122;
@@ -124,29 +135,12 @@ background-color: #BBFB1E;
     margin-left: 0.8vw;
 }
 
-.infoProJC
-{
-    font-size: 1vw;
-    font-family: "nunito", sans-serif;
-    color:#020122;
-    margin: 0.3vw;
-}
-
-.cardProJC:hover .infoProJC{
-    font-size: 1vw;
-    font-family: "nunito", sans-serif;
-    color:#BBFB1E;
-    margin: 0.3vw;
-}
-
-.nuxtclassProJC{
+.nuxtclassPROJ{
     margin: auto;
     margin-right:1vw;
 }
 
-.nuxtclassProJC{
+.nuxtclassPROJ{
     text-decoration: none;
 }
-
-
 </style>
