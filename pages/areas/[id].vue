@@ -3,13 +3,16 @@
         <div class = "info-groupDAC">
             <span class="pageDAC"> INVESTMENT AREAS/</span>
             <p class = "nameDAC"><span>{{ area.name }}</span></p>
-            <p class = "descrPag captionDAC"><span>{{ area.info }}</span></p>
+            <p id="textField" class = "descrPag captionDAC"><span>{{ area.info }}</span></p>
             <img class = "imgDAC" :src ="`${area.image}`" />
             <div class = "data-containerDAC">
-            <p class = "descDAC"><span>{{ area.description }}</span></p>
+                <p id="textField" class = "descDAC"><span>{{ area.description }}</span></p>
             </div>
         </div>
-        <!-- TO-DO: mettere i related projects-->
+        <h2 class="textPD1">EXPLORE THE PROJECTS</h2>
+        <div class="projectPC">
+            <ProjectIntro v-for="project of area.projects" :logo="project.logo" :link="'/topprojects/' + project.id" class="projectIntro" />
+        </div>
     </main>
     <p class="parEndPag"> You are on the Description Areas page.</p>
 </template>
@@ -18,12 +21,9 @@
     const route = useRoute()
     const id = route.params.id
     const { data: area} = await useFetch('/api/areas/' + id)
-
-    //const description = ref(newLineOnFullStop(dog.value.description))
-
 </script>
 
-<style>
+<style scoped>
 
 .pageDAC{
 
@@ -80,4 +80,13 @@ line-height: 1.6vw;
 text-align: justify;
 }
 
+.projectPC {
+  display: flex;
+  flex-direction: row;
+}
+
+.textPD1{
+
+margin-top: 35vw;
+}
 </style>

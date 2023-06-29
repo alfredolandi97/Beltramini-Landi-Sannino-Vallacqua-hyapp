@@ -5,7 +5,7 @@
         <p class="captionNW"><span>{{ news.caption }}</span></p>
         <img class= "imgNW" :src ="`${news.image}`" />
         <div class = "data-containerNW">
-            <p class = "textNW"><span>{{ news.text }}</span></p>
+            <p id="textField" class = "textNW"><span>{{ news.text }}</span></p>
             <p class = "dateNW"><span>{{ news.date }}</span></p>
         </div>
      </div>
@@ -15,6 +15,8 @@
     const route = useRoute()
     const id = route.params.id
     const { data: news} = await useFetch('/api/news/' + id)
+    console.log(news)
+
 
     //const description = ref(newLineOnFullStop(dog.value.description))
 
@@ -60,7 +62,6 @@ font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
 text-align: justify;
-white-space: pre-line;
 }
 
 .dateNW{

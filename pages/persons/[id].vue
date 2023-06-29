@@ -7,18 +7,17 @@
                 <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
                 <p class = "rolePD"> <span>{{ person.role }}</span></p>
                 <img class = "imgDP" :src ="`${person.image}`"/>
-                <p class="captionPD"><span> {{ person.caption }}</span></p>
-                <p class = "bioPD"><span>{{ person.bio }}</span></p>
+                <p id="textField" class="captionPD"><span> {{ person.caption }}</span></p>
+                <p id="textField" class = "bioPD"><span>{{ person.bio }}</span></p>
                 <p class = "numberPD"><span>{{ person.number }}</span></p>
                 <p class = "emailPD1"><span>{{ person.email }}</span></p>
             </div>
             <div v-if="`${person.projects}`">
                 <h2 class="textPD1">SUPERVISED PROJECTS</h2>
                 <div class="projectPC">
-                <ProjectIntro v-for="project of person.projects" :logo="project.logo" :link="'/topprojects/' + project.id" class="projectIntro" />
+                    <ProjectIntro v-for="project of person.projects" :logo="project.logo" :link="'/topprojects/' + project.id" class="projectIntro" />
                 </div>
-                </div>
-            
+            </div>
         </div>
     </main>
     <p class="parEndPag"> You are on the Description Persons page.</p>
@@ -116,7 +115,6 @@ margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
 line-height: 1.6vw;
-white-space: pre-line;
 }
 
 .projectPC {

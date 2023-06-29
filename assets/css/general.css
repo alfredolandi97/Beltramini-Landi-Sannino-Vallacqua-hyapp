@@ -102,3 +102,7 @@ p{
   src: url("../img/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
 
 }
+
+p#textField{
+  white-space: pre-line;
+}

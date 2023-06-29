@@ -5,7 +5,7 @@
         <p class = "descrPag captionTP"><span>{{ project.info }}</span></p>
         <img class = "imgTP" :src ="`${project.image}`" />
         <div class= "data-containerTP">
-            <p class = "descTP"><span>{{ project.description }}</span></p>
+            <p id="textField" class = "descTP"><span>{{ project.description }}</span></p>
             <p class = "linkTP"><span>{{ project.link }}</span></p>
         </div>
      </div>
