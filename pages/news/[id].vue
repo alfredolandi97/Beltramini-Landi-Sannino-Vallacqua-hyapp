@@ -2,7 +2,7 @@
     <div>
         <span class="pageNW"> NEWS/ </span>
         <p class = "titleNW"><span>{{ news.title }}</span></p>
-        <p class="descrPag captionNW"><span>{{ news.caption }}</span></p>
+        <p class="captionNW"><span>{{ news.caption }}</span></p>
         <img class= "imgNW" :src ="`${news.image}`" />
         <div class = "data-containerNW">
             <p class = "textNW"><span>{{ news.text }}</span></p>
@@ -60,6 +60,7 @@ font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
 text-align: justify;
+white-space: pre-line;
 }
 
 .dateNW{
@@ -67,5 +68,9 @@ font-family: "nunito", sans-serif;
 font-size: 1vw;
 margin-top: 4vw;
 margin-left: 86vw;
+}
+
+.captionNW{
+    white-space: pre-line;
 }
 </style>
