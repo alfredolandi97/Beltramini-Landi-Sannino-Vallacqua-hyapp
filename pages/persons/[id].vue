@@ -87,16 +87,18 @@ margin-bottom: 6vw;
 font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
-margin-right: -3vw;
-position: relative;
-top: 1.3vw;
+margin-bottom: 25vw;
+margin-top: 10vw;
+text-align: justify;
 }
 
 .emailPD1{
 font-family: "nunito", sans-serif;
 font-size: 1.5vw;
-margin-left: 65vw;
+margin-left: 61vw;
 margin-bottom: -10vw;
+position: relative;
+bottom: 33vw;
 
 
 }
@@ -106,7 +108,9 @@ margin-bottom: -10vw;
     font-size: 1.5vw;
     font-family: "nunito", sans-serif;
     margin-top: -25vw;
-    margin-left: 65vw;
+    margin-left: 61vw;
+    position: relative;
+    bottom: 27vw;
 }
 
 .captionPD{
@@ -115,16 +119,29 @@ margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
 line-height: 1.6vw;
+text-align: justify;
 }
 
 .projectPC {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5vw;
+  position: relative;
+  top: 10vw;
 }
 
 
 .textPD1{
+  position: relative;
+  top: 9vw;
+}
 
-    margin-top: 35vw;
+.projectIntro{
+    padding-left: 5vw;
+    position: relative;
+    left: -5vw;
+    
 }
 </style>
+
+
