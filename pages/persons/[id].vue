@@ -90,6 +90,8 @@ line-height: 1.6vw;
 margin-bottom: 25vw;
 margin-top: 10vw;
 text-align: justify;
+position: relative;
+top:3vw;
 }
 
 .emailPD1{
@@ -98,7 +100,7 @@ font-size: 1.5vw;
 margin-left: 61vw;
 margin-bottom: -10vw;
 position: relative;
-bottom: 33vw;
+bottom: 29vw;
 
 
 }
@@ -110,16 +112,17 @@ bottom: 33vw;
     margin-top: -25vw;
     margin-left: 61vw;
     position: relative;
-    bottom: 27vw;
+    bottom: 23vw;
 }
 
 .captionPD{
 margin-left: 61vw;
-margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
 line-height: 1.6vw;
 text-align: justify;
+position: relative;
+bottom: -2vw;
 }
 
 .projectPC {
@@ -133,7 +136,7 @@ text-align: justify;
 
 .textPD1{
   position: relative;
-  top: 9vw;
+  top: 10vw;
 }
 
 .projectIntro{
