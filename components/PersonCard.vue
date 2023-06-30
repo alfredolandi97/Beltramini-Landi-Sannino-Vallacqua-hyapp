@@ -1,4 +1,5 @@
 <template>
+    <div class="allContainerPC">
     <NuxtLink :to = "link" class="nuxtclassPC">
         <div class="cardPC">
         
@@ -10,6 +11,7 @@
     
         </div>
   </NuxtLink>
+</div>
 </template>
 
 <script setup>
@@ -18,9 +20,7 @@
     
 </script>
 
-<style>
-
-
+<style scoped>
 
 .image-containerPC
 {

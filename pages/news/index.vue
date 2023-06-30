@@ -3,8 +3,9 @@
       
       <h1 class="titolo">NEWS</h1>
       <div class="form-container">
-        <label for="date-filter" class="filter-labelNews">Date Filter:</label>
-        <input id="date-filter" type="text" placeholder="Date filter" v-model="dateFilter">
+        <label for="date-filter" class="filter-labelNews"></label>
+        <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
+        <input id="Efilter" type="text" placeholder="Date filter" v-model="dateFilter">
       </div>
       <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
       <div id="card-container">

@@ -1,4 +1,5 @@
 <template>
+    <div class="allContPROJ">
     <NuxtLink :to = "link" class="nuxtclassPROJ">
         <div class="cardPROJ">
         
@@ -10,6 +11,7 @@
     
         </div>
   </NuxtLink>
+</div>
 </template>
 
 <script setup>
@@ -17,9 +19,13 @@
     const props = defineProps(["title", "area_name", "info", "link", "logo"])
 </script>
 
-<style>
+<style scoped>
 
+.allContPROJ{
 
+    display: flex;
+ flex-wrap: wrap;
+}
 
 .image-containerPROJ
 {

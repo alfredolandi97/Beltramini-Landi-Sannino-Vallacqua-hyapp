@@ -1,10 +1,11 @@
 <template>
     <h1 class="titolo">OUR TEAM</h1>
     <div class="form-container">
-        <label for="name-filter">Name Filter:</label>
+        <label for="name-filter"></label>
       </div>
     <div>
-      <input id="name-filter" type="text" placeholder="Name filter" v-model="nameFilter">
+      <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
+      <input id="Efilter" type="text" placeholder="Name filter" v-model="nameFilter">
     </div>
     <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
     
@@ -33,11 +34,14 @@ const filteredPersons = computed(() => {
 
   return filteredList;
 });
+
+
 </script>
 
 <style>
-#card-containerPC {
-    display: flex;
-    flex-wrap: wrap;
+
+#card-containerPC{
+  display: flex;
+ flex-wrap: wrap;
 }
 </style>
