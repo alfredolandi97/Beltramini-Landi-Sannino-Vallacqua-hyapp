@@ -122,7 +122,7 @@
     height: 51vw;
     position: relative;
     bottom: 47vw;
-    margin-bottom: -100vw;
+    margin-bottom: -48vw;
   
 } 
 

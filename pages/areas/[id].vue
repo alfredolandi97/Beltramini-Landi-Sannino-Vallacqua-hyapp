@@ -82,11 +82,22 @@ text-align: justify;
 
 .projectPC {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
+  position: relative;
+  right: 12.5vw;
+  
+}
+
+.projectIntro {
+    margin-right: 5.9vw;
 }
 
 .textPD1{
-
-margin-top: 35vw;
+margin: 3vw;
+position: relative;
+right: 37.5vw;
+font-family: "nunito", sans-serif;
+font-size: 1.5vw;
+color: #BBFB1E;
 }
 </style>

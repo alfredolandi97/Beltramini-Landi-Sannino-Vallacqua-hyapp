@@ -12,7 +12,7 @@ body
     display: flex;
     flex-direction: column;
     background-color:#020122;
-    background-image: url("../img/general/background.jpg");
+    background-image: url("../img/general/backkk.jpg");
     background-size: 30vw;
     /*background-repeat: repeat;*/
     margin-top: 0px;
@@ -67,9 +67,9 @@ margin-bottom: 1.4vw;
 p.parEndPag{
   font-family: "nunito", sans-serif;
   font-size: 1vw;
-  margin-top: 9vw;
-  margin-bottom: -2vw;
-  margin-left: -0.5vw;
+  position: relative;
+  top: 4vw;
+  
  
 }
 
@@ -89,7 +89,7 @@ input#Efilter
  opacity: 1;
  transition: width 0.3s, opacity 0.3s;
  background-color: #020122;
- border: 3px solid #BBFB1E;
+ border: 2px solid #BBFB1E;
  color: #BBFB1E;
  font-size: 1.1vw;
  font-family: "nunito";

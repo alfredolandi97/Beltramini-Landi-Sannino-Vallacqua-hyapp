@@ -55,6 +55,7 @@
     height: 42%;
     filter: invert(98%);
     margin-bottom: -1.1%;
+  
    
 }
 
@@ -71,7 +72,7 @@
     height: auto;
     width: auto;
     margin-left: -30%;
-    
+   
     
     
 }

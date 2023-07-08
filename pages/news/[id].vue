@@ -73,5 +73,7 @@ margin-left: 86vw;
 
 .captionNW{
     white-space: pre-line;
+    font-family: "nunito", sans-serif;
+    font-size: 1.5vw;
 }
 </style>

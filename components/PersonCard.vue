@@ -52,7 +52,7 @@
 .cardPC
 {
     margin-top:1.5vw;
-    margin-left: 1.6vw;
+    margin-left: 2.7vw;
     margin-right: 2vw;
     margin-bottom: 3vw;
     display: flex;

@@ -7,7 +7,7 @@
       <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
       <input id="Efilter" type="text" placeholder="Name filter" v-model="nameFilter">
     </div>
-    <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
+    <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
     
     <div id="card-containerPC">
       <PersonCard v-for="person of filteredPersons" :name="person.name" :role="person.role" :link="'/persons/' + person.id" :image="person.image" />

@@ -32,9 +32,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
   width:100%;
-  height: 8.3vw;
+  height: 5.6vw;
   z-index: 998;
 
 
@@ -43,7 +42,7 @@
   {
       position: sticky;
       top: 0%;
-      background-color: #6320EE;
+      background-color: #020122;
       padding-left: -2%;
       margin-bottom: 2%;
       margin-left: -3vw;
@@ -51,17 +50,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
       width:106.4%;
-      height:8vw;
+      height:5.5vw;
       z-index:999;
      
   }
 
   nav {
       display: flex;
-      margin-right:0.5%;
-      margin-bottom:3.5%;
+      position: relative;
+      top: -0.3vw;
+      right: 0.2vw;
       
       
   }
@@ -74,11 +73,11 @@
 }
 
  .logo {
-  max-width:18vw;
-  height: 2.7vw;
-  margin-bottom: 2vw;
-  margin-left: 2vw;
-  
+  max-width:17vw;
+  height: 2.5vw;
+  position: relative;
+  top: 1.4vw;  
+  left: 2vw;
   
 }
 .logo-link {

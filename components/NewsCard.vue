@@ -1,6 +1,7 @@
 <template>
-    <NuxtLink :to="link">
+    <NuxtLink :to="link" class="nuxtclassNEWS">
         <div class="cardNC">
+           
             <div class="containerNC">
                 <img class="imgNC" :src="`${props.image}`" />
                 <span class="titleNC">{{title}}</span>
@@ -9,6 +10,7 @@
             </div>
         </div>
     </NuxtLink>
+   
 </template>
 
 <script setup>
@@ -16,7 +18,7 @@
     const props = defineProps(["title", "caption", "date", "link", "image"])
 </script>
 
-<style>
+<style scoped>
 .containerNC{
     display: flex;
     flex-flow:column;
@@ -133,4 +135,9 @@ margin-right: 2vw;
     left: 85vw;
 }
 
+
+.nuxtclassNEWS{
+
+    text-decoration: none;
+}
 </style>

@@ -6,10 +6,10 @@
         <img class = "imgTP" :src ="`${project.image}`" />
         <div class= "data-containerTP">
             <p id="textField" class = "descTP"><span>{{ project.description }}</span></p>
-            <p class = "linkTP"><span>{{ project.link }}</span></p>
+            <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
         </div>
      </div>
-     <p class="parEndPag"> You are on the Description Persons page.</p>
+     <p class="parEndPag"> You are on the Description Project page.</p>
 </template>
 
 
@@ -26,9 +26,10 @@
 <style>
 
 .imgTP{
-    width: 100%;
-    height: 35vw;
+    width: 60%;
+    height: 50%;
     margin-bottom: 1.6vw;
+    float: left;
     
 }
 
@@ -66,16 +67,17 @@ font-family: "nunito", sans-serif;
 font-size: 1.5vw;
 line-height: 1.6vw;
 text-align: justify;
-margin-bottom: -4vw; 
+margin-bottom: -3vw; 
+margin-left: 59vw;
 }
 
 .linkTP{
 font-family: "nunito", sans-serif;
 font-size: 1vw;
-margin-top: 4vw;
-margin-left: 82.5vw;
 position: relative;
-top: 9.5vw;
+top: 6.5vw;
+left: 80vw;
+color: #ffffff;
 }
 
 </style>
