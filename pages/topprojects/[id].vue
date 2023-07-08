@@ -8,8 +8,8 @@
             <p id="textField" class = "descTP"><span>{{ project.description }}</span></p>
             <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
         </div>
-        <p>Check the supervisor: {{ project.persons.name }}</p>
-        <p>Check the area: {{ project.areas.name }}</p>
+        <p><NuxtLink :to="'/persons/' + project.persons.id">Check the supervisor: {{ project.persons.name }}</NuxtLink></p>
+        <p><NuxtLink :to="'/areas/' + project.areas.id">Check the area: {{ project.areas.name }}</NuxtLink></p>
      </div>
      <p class="parEndPag"> You are on the Description Project page.</p>
 </template>
