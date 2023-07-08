@@ -95,9 +95,9 @@ text-align: justify;
 .textPD1{
 margin: 3vw;
 position: relative;
-right: 37.5vw;
-font-family: "nunito", sans-serif;
-font-size: 1.5vw;
+right: 36vw;
+font-family: "stretch_pro", sans-serif;
+   font-size: 1.1vw;
 color: #BBFB1E;
 }
 </style>

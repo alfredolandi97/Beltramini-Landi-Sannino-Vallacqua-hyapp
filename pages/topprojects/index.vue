@@ -1,6 +1,7 @@
 <template>
   <h1 class="titolo">TOP PROJECTS</h1>
   <div class="containerFilterTP">
+    <p class="descrPag">Inspect the most popular and rewarding projects of NextFund: witness the profound impact and transformative potential of our firm.</p>
     <label for="area-filter"></label>
   </div>
   
