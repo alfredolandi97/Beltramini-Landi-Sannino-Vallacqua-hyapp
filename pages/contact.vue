@@ -2,100 +2,66 @@
     Contact Page
 -->
 <template>
-    <main>
-        <main>
-
-            <h1 class="titpag">CONTACT US</h1>
-
-            <p class="descrPag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sint eum minima. Eius illum qui quas reprehenderit dolorum earum corporis adipisci nemo optio beatae explicabo, id dicta sit a magnam!</p>
-            
-            <p>
-                This are our contacts:
-                <ul>
-                    <li>E-mail: mail@shelter.it</li>
-                    <li>Tel: 053684864351</li>
-                </ul>
-            </p>
-            <form>
-                <div>
-                    <label for = "name">Name & Surname</label>
-                    <input type = "text" id = "name" placeholder = "Name & Surname">
-                </div>
-                <div>
-                    <label for = "mail">E-mail</label>
-                    <input type = "email" id = "mail" placeholder = "E-mail">
-                </div>
-                <div id = "message-div">
-                    <label for = "message">Message</label>
-                    <textarea id = "message" placeholder = "Write your message here"></textarea>  
-                </div>
-                <button>Send Message</button>
-            </form>
-        </main>
-    </main>
-
+    <h1>CONTACTS</h1>
+    <p>We would love to hear from you. Please submit your project filling out the form or use the other details below to get other information.</p>
+    <div class="container">
+        <div class="element">
+        <form class="form" action="">
+            <h2>SUBMIT</h2>
+            <p>Submit your idea to get in touch with one of our team members.</p>
+            <div class="row">
+                <input type="name" id="name" placeholder="Name and Surname">
+                <input type="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="row">
+                <input type="company_name" id="company_name" placeholder="Company Name" >
+                <select name="subject" id="subject" placeholder="Area name">
+                    <option v-for="name of names" :value="`${name.name}`">{{ name.name }}</option>
+                </select>
+            </div>
+            <div class="row">
+            <textarea name="query" id="query" cols="30" rows="7" placeholder="Description" style="height: 150px;"></textarea>
+            </div>
+            <div class="row">
+                <input type="file" id="" placeholder="CHOOSE FILE">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        </div>
+        <div class="element">
+        <h2>INFO</h2>
+        <p>Visit our headquarter or contact us.</p>
+        <p>Via Tommaso Marino, 5, 20121</p>
+        <p>02862177</p>
+        <p>info@nextfund.it</p>
+        <p>(852) 3010 8530</p>
+        </div>   
+    </div>
+    
+        
+    
     <p class="parEndPag"> You are on the Contact page.</p>
 </template>
 
-<style>
-    main {
-    width: 100%;
+<style scoped>
+    form{
+    }
+   .row{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    }
-
-    form {
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        border: 2px rgb(255, 102, 0) dashed;
-        border-radius: 5px;
-        row-gap: 20px;
-    }
-
-    form div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    textarea {
-        width: 99%;
-        min-height: 5.1em;
-        resize: vertical;
-    }
-
-    input {
-        width: 60%;
-    }
-
-    label {
-        font-size: 13pt;
-        font-weight: bold;
-    }
-
-    #message-div {
-        flex-direction: column;
-    }
-
-    @media screen and (max-width: 650px) {
-        form div {
-            flex-direction: column;
-        }
-
-        input {
-            width: 100%;
-        }
-        
-        form {
-            width: 90%;
-            min-width: 400px;
-        }
-    }
-
-   
+    flex-direction: row;
+   }
+   select{
+   }
+   .container{
+    display:flex;
+    flex-direction: row;
+   }
+   .element{
+    margin:2.5%;
+   }
 
 </style>
+
+<script setup>
+    const { data: names} = await useFetch('/api/areas/getName')
+</script>

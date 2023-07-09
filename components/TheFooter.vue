@@ -18,7 +18,7 @@
 </span>
 </template>
 
-<style>
+<style scoped>
     footer{
         background-color: #F8F0FB;
         flex-shrink: 0;
@@ -34,6 +34,8 @@
         font-family: "nunito", sans-serif;
         letter-spacing: -0.3px;
         font-size: 0.9vw;
+        bottom: 0;
+        position: fixed;
         
 
     }

@@ -1,23 +1,28 @@
 
 <template>
-    <NuxtLink :to = "link" class="nuxtclassAC">
-    <div class="cardAC">
-        <div class="imageAC">
-            <img class="imgAC" :src="`${props.icon}`"/>
-        </div>
-       <div class="textWrapper">
-             <span class="AC-name">{{name}}</span>
-       </div>
+            <NuxtLink :to = "link" class="nuxtclassAC">
+                <div class="cardAC">
+                    <div class="imageAC">
+                        <img class="imgAC" :src="`${props.icon}`"/>
+                    </div>
+                    <div class="textWrapper">
+                        <span class="AC-name">{{name}}</span>
+                    </div>
           
-       <div class="infoDescWrapper">       
-             <span class="AC-info">{{info}}</span>
-       </div>
-       <ProjectIntro v-for = "project of projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
-    </div>
-</NuxtLink>
+                    <div class="infoDescWrapper">       
+                        <span class="AC-info">{{info}}</span>
+                    </div>
+                </div>
+            </NuxtLink>
+        <div class="projectIntroContainer">
+            <!--h2>EXPLORE THE PROJECTS</h2--->
+            <ProjectIntro v-for = "project of projects" :logo="project.logo" :link="'/topprojects/'+project.id"/>
+        </div>
+              
 </template>
 
 <script setup>
+
     import { defineProps } from 'vue';
     const props = defineProps(["name", "info", "description", "link", "projects", "icon"])
 </script>
@@ -139,5 +144,10 @@ font-family: "nunito", sans-serif;
 }
 .nuxtclassAC{
     text-decoration: none;
+}
+
+.projectIntroContainer{
+    display: flex;
+    flex-direction: row;
 }
 </style>
