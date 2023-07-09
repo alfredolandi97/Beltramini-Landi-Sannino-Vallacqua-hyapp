@@ -1,20 +1,28 @@
 <template>
-    <div>
+    <div class="ContainerTP">
         <span class="pageTP"> TOP PROJECTS/ </span>
         <p class = "titleTP"><span>{{ project.title }}</span></p>
         <p class = "descrPag captionTP"><span>{{ project.info }}</span></p>
         <img class = "imgTP" :src ="`${project.image}`" />
         <div class= "data-containerTP">
             <p id="textField" class = "descTP"><span>{{ project.description }}</span></p>
-            <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
-        </div>
-        <p class="ProjPers1"> Check the supervisor:</p>
-        <p><NuxtLink class="ProjPers" :to="'/persons/' + project.persons.id"> {{ project.persons.name }}</NuxtLink></p>
 
-        <p class="AreaPers1"> Check the area: </p>
-        <p><NuxtLink class="AreaPers" :to="'/areas/' + project.areas.id">{{ project.areas.name }}</NuxtLink></p>
-     </div>
-     <p class="parEndPag"> You are on the Description Project page.</p>
+            <div class="DivLinkTP">
+            <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div class="ProjPers1"> Check the supervisor: <NuxtLink class="ProjPers" :to="'/persons/' + project.persons.id">{{ project.persons.name }}</NuxtLink></div>
+       
+       <div class="AreaPers1"> Check the area: <NuxtLink class="AreaPers" :to="'/areas/' + project.areas.id"> {{ project.areas.name }}  </NuxtLink></div>
+
+        </div>
+        <p class="parEndPag"> You are on the Description Project page.</p>
+    </div>
+    
+
+   
 </template>
 
 
@@ -29,6 +37,7 @@
 </script>
 
 <style scoped>
+
 
 .imgTP{
     width: 60%;
@@ -77,16 +86,27 @@ position: relative;
 left: 2.5vw;
 }
 
-.linkTP{
-font-family: "nunito", sans-serif;
-font-size: 1vw;
-position: relative;
-top: 18.5vw;
-left: 24vw;
-color: #ffffff;
-background-color: pink;
+
+.AreaPers{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: "stretch_pro", sans-serif;
+   font-size: 1.1vw;
+   color:#ffffff;
+   position: relative;
+   top: 0vw;
+   left: 0vw;
 }
 
+.ProjPers{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: "stretch_pro", sans-serif;
+   font-size: 1.1vw;
+   color:#ffffff;
+   position:relative;
+   
+}
 .ProjPers1{
    text-decoration: none;
    text-transform: uppercase;
@@ -94,8 +114,9 @@ background-color: pink;
    font-size: 1.1vw;
    color:#BBFB1E;
    position: relative;
-   top: 6.42vw;
+   top: 5vw;
    left: -55vw;
+
 }
 
 .AreaPers1{
@@ -105,30 +126,23 @@ background-color: pink;
    font-size: 1.1vw;
    color:#BBFB1E;
    position: relative;
-   top: 1vw;
-   left: 65vw;
+   top: 3.5vw;
+   left: 9vw;
+   margin-bottom: 2vw;
+  
 }
 
-.ProjPers{
-   text-decoration: none;
-   text-transform: uppercase;
-   font-family: "stretch_pro", sans-serif;
-   font-size: 1.1vw;
-   color:#ffffff;
-   position: relative;
-   top: 3.8vw;
-   left: -33vw;
+.linkTP{
+font-family: "nunito", sans-serif;
+font-size: 1vw;
+color: #ffffff;
+
 }
 
-.AreaPers{
-    text-decoration: none;
-   text-transform: uppercase;
-   font-family: "stretch_pro", sans-serif;
-   font-size: 1.1vw;
-   color:#ffffff;
+.DivLinkTP{
    position: relative;
-   top: -1.6vw;
-   left: 81vw;
+   left: 25vw;
+   top: 10.2vw;
 }
 
 

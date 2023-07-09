@@ -1,23 +1,39 @@
 <template>
     <main>
-        <div class = "info-group">
-            <div id = "data-container">
-                <span class="pageDP"> OUR TEAM / </span>
-                <p class = "namePD"><span>{{ person.name }}</span></p>
-                <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
-                <p class = "rolePD"> <span>{{ person.role }}</span></p>
-                <img class = "imgDP" :src ="`${person.image}`"/>
-                <p id="textField" class="captionPD"><span> {{ person.caption }}</span></p>
-                <p id="textField" class = "bioPD"><span>{{ person.bio }}</span></p>
-                <p class = "numberPD"><span>{{ person.number }}</span></p>
-                <p class = "emailPD1"><span>{{ person.email }}</span></p>
-            </div>
-            <div v-if="`${person.projects}`">
-                <h2 class="textPD1">SUPERVISED PROJECTS</h2>
-                <div class="projectPC">
-                    <ProjectIntro v-for="project of person.projects" :logo="project.logo" :link="'/topprojects/' + project.id" class="projectIntro" />
+        <div class = "info-groupOT">
+
+                <div class="pagNamOT">
+                <span class="pageOT"> OUR TEAM / </span>
+                <span class = "nameOT"> <span>{{ person.name }}</span></span>
                 </div>
+                <span> <p class="descrPag"> Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p></span>
+                <span class = "roleOT"> <span>{{ person.role }}</span></span>
+                <div>
+                    <img class = "imgOT" :src ="`${person.image}`"/>
+                    <span class="captionOT"><span> {{ person.caption }}</span></span>
+                </div>
+                <div>
+                <span class="numEmaOT">
+                    <span class = "numberOT"><span>{{ person.number }}</span></span>
+                    <span class = "emailOT"><span>{{ person.email }}</span></span>
+                </span>
+                </div>
+
+                
+                <span class = "bioOT"><span>{{ person.bio }}</span></span>
+                
+
             </div>
+
+            
+           
+            <div v-if="`${person.projects}`" class="projectOT">
+                <span class="textOT" > <p> SUPERVISED PROJECTS </p></span>
+                
+
+                    <div class="projectOTIN">
+                    <ProjectIntro v-for="project of person.projects" :logo="project.logo" :link="'/topprojects/' + project.id" class="projectIntroOT" />
+                   </div>
         </div>
     </main>
     <p class="parEndPag"> You are on the Description Persons page.</p>
@@ -28,123 +44,136 @@
     const id = route.params.id
     const { data: person} = await useFetch('/api/persons/' + id)
 
-    //const description = ref(newLineOnFullStop(dog.value.description))
+    
 
 </script>
 
 <style scoped>
-.imgDP{
 
-width: 58vw;
-height: 38vw;
-margin-left: 0vw;
-clip-path: polygon(0 0, 94% 0, 100% 8%, 100% 100%, 6% 100%, 0 92%);
-float: left;
-margin-top: 1vw;
-margin-bottom: -20vw;
+.info-groupOT{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+      
 }
 
-.pageDP{
+.pagNamOT{
+    display: flex;
+    flex-direction: column;
+}
+.pageOT{
 
-    font-size: 1.5vw;
-    
-    /* per creare lo spessore nel testo*/
-    -webkit-text-stroke-width: 1.1px; /* Spessore del contorno */
-    -webkit-text-stroke-color:#BBFB1E;
-    color: transparent;
-    background-clip: text;
-    font-family: "stretch_pro", sans-serif;
-    position: relative;
-    top: -1.6vw;
+font-size: 1.5vw;
+-webkit-text-stroke-width: 1.1px;
+-webkit-text-stroke-color:#BBFB1E;
+color: transparent;
+background-clip: text;
+font-family: "stretch_pro", sans-serif;
+position: relative;
+top: -1.5vw;
 }
 
-.namePD{
+
+.nameOT{
 
 font-size:3.3vw;
 color: #BBFB1E;
 font-family: "stretch_pro", sans-serif;
-margin-top:-0.1vw;
-margin-bottom: 1.4vw;
 text-transform: uppercase;
-margin-top: -1vw;
-margin-bottom: 6vw;
-
-
-}
-
-.rolePD{
-
-    font-family: "stretch_pro", sans-serif;
-    font-size: 1.1vw;
-    text-transform: uppercase;
-    margin-left: 61vw;
-    margin-bottom: -2.3vw;
-}
-
-
-.bioPD{
-
-font-family: "nunito", sans-serif;
-font-size: 1.5vw;
-line-height: 1.6vw;
-margin-bottom: 25vw;
-margin-top: 10vw;
-text-align: justify;
+margin-bottom: -1.5vw;
 position: relative;
-top:3vw;
+top: -2.5vw;
 }
 
-.emailPD1{
-font-family: "nunito", sans-serif;
-font-size: 1.5vw;
-margin-left: 61vw;
-margin-bottom: -10vw;
+.imgOT{
+
+width: 56vw;
+height: 41vw;
+clip-path: polygon(0 0, 94% 0, 100% 8%, 100% 100%, 6% 100%, 0 92%);
+float: left;
+margin-top: 0.5vw;
 position: relative;
-bottom: 29vw;
+top: -1.8vw;
+}
 
+.roleOT{
 
+font-family: "stretch_pro", sans-serif;
+font-size: 1.1vw;
+text-transform: uppercase;
+position: relative;
+left: 59vw;
 }
 
 
-.numberPD{
-    font-size: 1.5vw;
-    font-family: "nunito", sans-serif;
-    margin-top: -25vw;
-    margin-left: 61vw;
-    position: relative;
-    bottom: 23vw;
-}
-
-.captionPD{
-margin-left: 61vw;
+.captionOT{
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
 line-height: 1.6vw;
-text-align: justify;
 position: relative;
 bottom: -2vw;
+left: 3vw;
+text-align: justify;
 }
 
-.projectPC {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5vw;
+.numEmaOT{
+display: flex;
+flex-direction: column;
+position: relative;
+bottom: 6vw;
+left: 59vw;
+}
+
+.emailOT,
+.numberOT{
+font-family: "nunito", sans-serif;
+font-size: 1.5vw;
+}
+
+
+
+.bioOT{
+
+font-family: "nunito", sans-serif;
+font-size: 1.5vw;
+line-height: 1.6vw;
+text-align: justify;
+position: relative;
+top:-2vw;
+
+}
+.projectOT {
+margin-left: -6vw;
+
+  
+}
+.textOT{
   position: relative;
-  top: 10vw;
+  left: -33vw;
+  top: 2vw;
+  font-family: "stretch_pro", sans-serif;
+  font-size: 1.1vw;
+  color: #BBFB1E;
+
+
 }
 
+.projectOTIN{
+position: relative;
+left: 2vw;
 
-.textPD1{
-  position: relative;
-  top: 10vw;
 }
 
-.projectIntro{
-    padding-left: 5vw;
+.projectIntroOT{
+    padding-left: 6vw;
     position: relative;
-    left: -5vw;
-    
+    top: 3vw;
+    left: -31vw;
+ 
+
 }
+
 </style>
 
 

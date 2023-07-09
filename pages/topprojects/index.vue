@@ -6,7 +6,7 @@
   </div>
   
   <div class="input-wrapper">
-    <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
+    <img src="~/assets/img/general/lente 1.png" alt="Icona di ricerca" class="search-icon">
     <input id="Efilter" type="text" placeholder="Area filter" v-model="areaFilter">
   </div>
 

@@ -14,7 +14,6 @@ body
     background-color:#020122;
     background-image: url("../img/general/backkk.jpg");
     background-size: 30vw;
-    /*background-repeat: repeat;*/
     margin-top: 0px;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -26,8 +25,8 @@ body
 
 h1.titpag{
     font-size: 150px;
-    /* per creare lo spessore nel testo*/
-    -webkit-text-stroke-width: 1px; /* Spessore del contorno */
+   
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blue;
     color: transparent;
     background-clip: text;
@@ -35,14 +34,14 @@ h1.titpag{
     margin-top:-40px;
 
 
-    /* codice per il movimento del titolo*/
+    
 
-    overflow: hidden;/* nasconde contenuto in eccesso*/
-    white-space: nowrap; /*mantiene il testo su un'unica riga*/
+    overflow: hidden;
+    white-space: nowrap; 
     text-overflow: marquee;
-    animation: marquee 6s infinite linear; /* come deve essere l'animazione*/
+    animation: marquee 6s infinite linear; 
       }
-      /* come si muove l'animazione*/
+    
       @keyframes marquee {
         0% {
           transform: translateX(120%);
@@ -94,7 +93,7 @@ input#Efilter
  font-size: 1.1vw;
  font-family: "nunito";
  margin-bottom: 2vw;
- margin-left: 2vw;
+ margin-left: 1.5vw;
 }
 
 
@@ -102,8 +101,8 @@ input#Efilter
   position: relative;
   left: 1.5vw;
   right: 1vw;
-  top: 0.4vw;
-  width: 1.5vw;
+  top: 0.58vw;
+  width: 1.8vw;
   margin-right: 0.5vw;
 
 }

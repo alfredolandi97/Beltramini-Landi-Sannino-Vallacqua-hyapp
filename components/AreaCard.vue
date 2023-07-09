@@ -98,9 +98,7 @@
           position:relative;
           bottom:0.4vw;
           font-size: 3.8vw;
-          /* per creare lo spessore nel testo*/
-          -webkit-text-stroke-width: 1px; /* Spessore del contorno */
-          -webkit-text-stroke-color:#BBFB1E;
+          -webkit-text-stroke-width: 1px; 
           color: transparent;
           background-clip: text;
           font-family: "stretch_pro", sans-serif;

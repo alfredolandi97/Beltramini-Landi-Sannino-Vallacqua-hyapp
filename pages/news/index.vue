@@ -5,7 +5,7 @@
       <div class="form-container">
         <p class="descrPag">Read the latest updates, insightful analysis, and cutting-edge insights on finance, investments, and market trends from NextFund.</p>
         <label for="date-filter" class="filter-labelNews"></label>
-        <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
+        <img src="~/assets/img/general/lente 1.png" alt="Icona di ricerca" class="search-icon">
         <input id="Efilter" type="text" placeholder="Date filter" v-model="dateFilter">
       </div>
   

@@ -5,7 +5,7 @@
         <label for="name-filter"></label>
       </div>
     <div>
-      <img src="~/assets/img/general/pngegg.png" alt="Icona di ricerca" class="search-icon">
+      <img src="~/assets/img/general/lente 1.png" alt="Icona di ricerca" class="search-icon">
       <input id="Efilter" type="text" placeholder="Name filter" v-model="nameFilter">
     </div>
     
