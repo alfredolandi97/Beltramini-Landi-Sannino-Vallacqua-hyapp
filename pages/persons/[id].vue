@@ -10,7 +10,7 @@
                 <span class = "roleOT"> <span>{{ person.role }}</span></span>
                 <div>
                     <img class = "imgOT" :src ="`${person.image}`"/>
-                    <span class="captionOT"><span> {{ person.caption }}</span></span>
+                    <span id="textField" class="captionOT"><span> {{ person.caption }}</span></span>
                 </div>
                 <div>
                 <span class="numEmaOT">
@@ -20,7 +20,7 @@
                 </div>
 
                 
-                <span class = "bioOT"><span>{{ person.bio }}</span></span>
+                <span id="textField"  class = "bioOT"><span>{{ person.bio }}</span></span>
                 
 
             </div>
