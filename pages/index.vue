@@ -23,7 +23,7 @@
             
             <NuxtLink to = "/about"><button class="buttonHome"> LEARN MORE</button></NuxtLink>
 
-            <span class="p9p">--</span>
+            <span class="p9p">-</span>
 
             <span class="p7p" > A TEAM OF EXPERTS </span>
 
