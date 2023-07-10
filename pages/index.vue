@@ -1,4 +1,5 @@
 <template>
+  <main>
     <div class="HomeContainer">
 
         <div class="divHomeImg">
@@ -59,6 +60,7 @@
                 <NuxtLink to = "/contact"><button class="buttonHomeCont">CONTACT US</button></NuxtLink>
         </div>
    <p class="parEndPag"> You are on the Home page.</p>
+  </main>
 </template>
 
 
@@ -102,7 +104,7 @@ export default {
         width: 90%;
         position: relative;
         left: 6vw;
-        top: -10vw;
+        top: -12vw;
     }
     
     .p1p{
@@ -110,21 +112,21 @@ export default {
         font-size: 5vw;
         color: #BBFB1E;
         position: relative;
-        bottom: 45vw;
+        bottom: 49vw;
         left: 24vw;
     }
     .p2p{
         font-family: "stretch_pro", sans-serif;
         font-size: 5vw;
         position: relative;
-        bottom: 51.6vw;
+        bottom: 55.6vw;
         left: 65vw;
     }
     .p3p{
         font-family: "stretch_pro", sans-serif;
         font-size: 5vw;
         position: relative;
-        bottom: 47.5vw;
+        bottom: 51.5vw;
         left: 18vw;
     }
     .p4p{
@@ -132,7 +134,7 @@ export default {
         font-size: 5vw;
         color: #BBFB1E;
         position: relative;
-        bottom: 47.4vw;
+        bottom: 51.4vw;
         left: 19.5vw;
     }
 .HomeContainer1 {

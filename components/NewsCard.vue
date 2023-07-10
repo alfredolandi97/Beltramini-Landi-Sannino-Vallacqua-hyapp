@@ -45,7 +45,8 @@
     display: flex;
     flex-flow: column;
     padding: 20px;
-    border: 2px solid #BBFB1E;
+    border-top: 2px solid #BBFB1E;
+    border-bottom: 2px solid #BBFB1E;
     width: fit-content;
     height: fit-content;
     margin-bottom: -1px;

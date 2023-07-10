@@ -67,6 +67,8 @@
 
   .nav-link {
     margin-left: 1vw;
+    position: relative;
+    left: -2vw;
     
     
     

@@ -31,12 +31,13 @@ const props = defineProps(["name", "info", "description", "link", "projects", "i
 
 
 .cardAC {
-    width: 106.5%;
+    width: 106.4%;
     height: 10vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid #BBFB1E;
+    border-top: 1px solid #BBFB1E;
+    border-bottom: 1px solid #BBFB1E;
     margin-top: -1px;
     margin-left: -3.1vw;
     transition: background-color 0.5s;
@@ -150,13 +151,13 @@ font-family: "nunito", sans-serif;
     font-size: 1vw;
     position: relative;
     top: 1.9vw;
-    left: 8vw;
+    left: 3vw;
 }
 .projectIntroContainer{
     display: flex;
     flex-direction: row;
     background-color: #6320EE;
-    width: 106.4%;
+    width: 106.3%;
     margin-left: -3vw;
 
     

@@ -1,7 +1,9 @@
 <template>
     <main>
         <div class = "info-groupDAC">
+            <div class="pagNamDAC">
             <span class="pageDAC"> INVESTMENT AREAS/</span>
+        </div>
             <p class = "nameDAC"><span>{{ area.name }}</span></p>
             <p id="textField" class = "descrPag captionDAC"><span>{{ area.info }}</span></p>
             <img class = "imgDAC" :src ="`${area.image}`" />
@@ -39,7 +41,11 @@ position: relative;
 top: -1.6vw;
 }
 
-
+.pagNamDAC {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
 .imgDAC{
     width: 100%;
     margin-bottom: 1.6vw;

@@ -131,6 +131,7 @@ margin-bottom: 9vw;
   font-size: 1vw;
   position: relative;
   top: 2vw;
+  left: -40vw;
 }
   </style>
 

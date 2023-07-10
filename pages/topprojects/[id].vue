@@ -1,7 +1,9 @@
 <template>
     <div class="ContainerTP">
+        <div class="pagNamTP">
         <span class="pageTP"> TOP PROJECTS/ </span>
         <p class = "titleTP"><span>{{ project.title }}</span></p>
+        </div>
         <p class = "descrPag captionTP"><span>{{ project.info }}</span></p>
         <div class= "data-containerTP">
             <img class = "imgTP" :src ="`${project.image}`" />
@@ -54,6 +56,11 @@ margin-bottom: 3vw;
     
 }
 
+.pagNamTP {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
 
 .titleTP{
 font-size:3.3vw;
@@ -90,6 +97,7 @@ text-align: justify;
 margin-right: 2vw;
 position: relative;
 left: 2.5vw;
+top: -1.5vw;
 }
 
 
@@ -154,8 +162,8 @@ font-family: "nunito", sans-serif;
 font-size: 1vw;
 color: #ffffff;
 position: relative;
-top: -2vw;
-z-index: 1;
+top: -14.5vw;
+left: -21.8vw;
 
 }
 

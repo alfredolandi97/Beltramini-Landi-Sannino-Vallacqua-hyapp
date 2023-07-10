@@ -2,12 +2,15 @@
     Default layout used by all the page
 -->
 <template>
-    <div class = 'page'>
-        <TheHeader />
+    <div class="page">
+      <TheHeader />
+      <main class="content">
         <slot />
-        <TheFooter />
+      </main>
+      <TheFooter />
     </div>
-</template>
+  </template>
+
 
 <style>
     .page {
