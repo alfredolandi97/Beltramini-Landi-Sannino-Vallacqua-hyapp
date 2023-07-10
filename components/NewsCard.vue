@@ -19,11 +19,14 @@
 </script>
 
 <style scoped>
+
+
 .containerNC{
     display: flex;
     flex-flow:column;
  
 }
+
 .imgNC
 {
     width: 68vw;
@@ -46,7 +49,7 @@
     width: fit-content;
     height: fit-content;
     margin-bottom: -1px;
-    width: 106%;
+    width: 103.39%;
     height: 18vw;
     margin-left: -3.1vw;
     transition: background-color 0.2s;
@@ -121,10 +124,12 @@ margin-right: 2vw;
     color:  #ffffff;
     font-weight: 400;
     margin-top: 8vw;
-    position: relative;
-    left: 85vw;
+    margin-left: 84vw;
     
+
 }
+
+
 .cardNC:hover .dateNC{
     font-size: 1.1vw;
     font-family:"nunito" ,sans-serif;
@@ -132,7 +137,7 @@ margin-right: 2vw;
     font-weight: 400;
     margin-top: 8vw;
     position: relative;
-    left: 85vw;
+    margin-left: 84vw;
 }
 
 
@@ -140,4 +145,6 @@ margin-right: 2vw;
 
     text-decoration: none;
 }
+
+
 </style>

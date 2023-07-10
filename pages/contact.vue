@@ -44,6 +44,13 @@
     <p class="parEndPag"> You are on the Contact page.</p>
 </template>
 
+
+
+<script setup>
+    const { data: names} = await useFetch('/api/areas/getName')
+</script>
+
+
 <style scoped>
     form{
     }
@@ -62,7 +69,3 @@
    }
 
 </style>
-
-<script setup>
-    const { data: names} = await useFetch('/api/areas/getName')
-</script>
