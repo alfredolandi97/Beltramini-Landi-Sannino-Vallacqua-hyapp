@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/general.css'
     ],
+    nitro: {
+        preset: 'firebase'
+    }
 })
 
 
