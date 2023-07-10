@@ -1,0 +1,104 @@
+html, body
+{
+    height: 100%; 
+}
+
+
+
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#020122;
+    background-image: url("../img/general/background.jpg");
+    background-size: 30vw;
+    /*background-repeat: repeat;*/
+    margin-top: 0px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 100%; 
+    color:#F8F0FB;
+
+}
+
+
+h1.titpag{
+    font-size: 150px;
+    /* per creare lo spessore nel testo*/
+    -webkit-text-stroke-width: 1px; /* Spessore del contorno */
+    -webkit-text-stroke-color: blue;
+    color: transparent;
+    background-clip: text;
+    font-family: "stretch_pro", sans-serif;
+    margin-top:-40px;
+
+
+    /* codice per il movimento del titolo*/
+
+    overflow: hidden;/* nasconde contenuto in eccesso*/
+    white-space: nowrap; /*mantiene il testo su un'unica riga*/
+    text-overflow: marquee;
+    animation: marquee 6s infinite linear; /* come deve essere l'animazione*/
+      }
+      /* come si muove l'animazione*/
+      @keyframes marquee {
+        0% {
+          transform: translateX(120%);
+        }
+        100% {
+          transform: translateX(-130%);
+        }
+      }
+
+
+h1.titolo{
+font-size:5.8vw;
+color: #BBFB1E;
+font-family: "stretch_pro", sans-serif;
+margin-top:-0.1vw;
+margin-bottom: 1.4vw;
+
+
+
+}
+
+p.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  margin-top: 7vw;
+  margin-bottom: -2vw;
+  margin-left: -0.5vw;
+ 
+}
+
+p.descrPag{
+  font-family:  "nunito",sans-serif;
+  margin-bottom: 3vw;
+  font-size: 1.5vw;
+}
+
+p{
+  line-height: 1.5vw;
+}
+
+
+@font-face {
+  font-family: "stretch_pro";
+  src: url("../img/fonts/stretch-pro.basic.ttf") format("truetype");
+/*  font-family: "stretch_pro", sans-serif; */
+}
+
+
+@font-face {
+  font-family: "helvetica11";
+  src: url("../img/fonts/Helvetica.ttc") format("truetype");
+
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../img/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+
+}
