@@ -119,7 +119,7 @@ const { data: person } = await useFetch('/api/persons/' + id)
 .captionOT {
     font-size: 1.5vw;
     font-family: "nunito", sans-serif;
-    line-height: 1.6vw;
+    line-height: -2vw;
     position: relative;
     bottom: -2vw;
     left: 3vw;
