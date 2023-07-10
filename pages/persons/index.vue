@@ -45,4 +45,12 @@ const filteredPersons = computed(() => {
   display: flex;
  flex-wrap: wrap;
 }
+
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5vw;
+}
 </style>

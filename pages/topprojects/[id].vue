@@ -3,20 +3,21 @@
         <span class="pageTP"> TOP PROJECTS/ </span>
         <p class = "titleTP"><span>{{ project.title }}</span></p>
         <p class = "descrPag captionTP"><span>{{ project.info }}</span></p>
-        <img class = "imgTP" :src ="`${project.image}`" />
         <div class= "data-containerTP">
+            <img class = "imgTP" :src ="`${project.image}`" />
             <p id="textField" class = "descTP"><span>{{ project.description }}</span></p>
 
-            <div class="DivLinkTP">
-            <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
-            </div>
-        </div>
+            
 
         <div class="row"> 
             <div class="ProjPers1"> Check the supervisor: <NuxtLink class="ProjPers" :to="'/persons/' + project.persons.id">{{ project.persons.name }}</NuxtLink></div>
        
        <div class="AreaPers1"> Check the area: <NuxtLink class="AreaPers" :to="'/areas/' + project.areas.id"> {{ project.areas.name }}  </NuxtLink></div>
+        </div>
 
+        <div class="DivLinkTP">
+                <NuxtLink class="linkTP" :to="project.link"><span>{{ project.link }}</span></NuxtLink>
+            </div>
         </div>
         <p class="parEndPag"> You are on the Description Project page.</p>
     </div>
@@ -32,11 +33,17 @@
     const id = route.params.id
     const { data: project} = await useFetch('/api/topprojects/' + id)
 
-    //const description = ref(newLineOnFullStop(dog.value.description))
-
 </script>
 
 <style scoped>
+
+.ContainerTP{
+
+display: flex;
+flex-direction: column;
+margin-bottom: 3vw;
+
+}
 
 
 .imgTP{
@@ -64,8 +71,8 @@ margin-bottom: 4vw;
 
 font-size: 1.5vw;
 
-/* per creare lo spessore nel testo*/
--webkit-text-stroke-width: 1.1px; /* Spessore del contorno */
+
+-webkit-text-stroke-width: 1.1px; 
 -webkit-text-stroke-color:#BBFB1E;
 color: transparent;
 background-clip: text;
@@ -73,7 +80,6 @@ font-family: "stretch_pro", sans-serif;
 position: relative;
 top: -1.6vw;
 }
-
 
 .descTP{
 
@@ -98,6 +104,8 @@ left: 2.5vw;
    left: 0vw;
 }
 
+
+
 .ProjPers{
    text-decoration: none;
    text-transform: uppercase;
@@ -107,6 +115,13 @@ left: 2.5vw;
    position:relative;
    
 }
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .ProjPers1{
    text-decoration: none;
    text-transform: uppercase;
@@ -114,21 +129,23 @@ left: 2.5vw;
    font-size: 1.1vw;
    color:#BBFB1E;
    position: relative;
-   top: 5vw;
-   left: -55vw;
+   top: 6.5vw;
+   margin-left: -55vw;
 
 }
 
+
 .AreaPers1{
-    text-decoration: none;
+   text-decoration: none;
    text-transform: uppercase;
    font-family: "stretch_pro", sans-serif;
    font-size: 1.1vw;
    color:#BBFB1E;
    position: relative;
-   top: 3.5vw;
-   left: 9vw;
+   top: 6.5vw;
+   margin-left: 27vw;
    margin-bottom: 2vw;
+   
   
 }
 
@@ -136,14 +153,23 @@ left: 2.5vw;
 font-family: "nunito", sans-serif;
 font-size: 1vw;
 color: #ffffff;
+position: relative;
+top: -2vw;
+z-index: 1;
 
 }
 
 .DivLinkTP{
    position: relative;
-   left: 25vw;
    top: 10.2vw;
+   margin-left: 80vw;
 }
 
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 6vw;
+}
 
 </style>

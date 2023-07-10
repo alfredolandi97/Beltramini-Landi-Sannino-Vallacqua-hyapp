@@ -39,7 +39,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 .card1 {
   width: 100vw;
   height: fit-content;

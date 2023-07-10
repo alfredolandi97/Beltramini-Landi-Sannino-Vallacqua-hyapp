@@ -55,6 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: -2vw;
       
 }
 
@@ -150,7 +151,7 @@ margin-left: -6vw;
 }
 .textOT{
   position: relative;
-  left: -33vw;
+  left: 6vw;
   top: 2vw;
   font-family: "stretch_pro", sans-serif;
   font-size: 1.1vw;
@@ -160,9 +161,11 @@ margin-left: -6vw;
 }
 
 .projectOTIN{
-position: relative;
-left: 2vw;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  left: 32vw;
 }
 
 .projectIntroOT{
@@ -174,6 +177,12 @@ left: 2vw;
 
 }
 
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 3vw;
+}
 </style>
 
 

@@ -50,4 +50,10 @@ const filteredProjects = computed(() => {
  flex-wrap: wrap;
 }
 
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 0vw;
+}
 </style>

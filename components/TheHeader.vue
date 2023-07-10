@@ -20,7 +20,7 @@
       </header>
 </template>
 
-<style>
+<style scoped>
 
 .header-white {
   position: fixed;

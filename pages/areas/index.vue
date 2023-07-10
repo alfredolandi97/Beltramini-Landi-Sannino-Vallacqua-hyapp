@@ -6,9 +6,18 @@
             <AreaCard v-for = "area of areas" :name = "area.name" :info = "area.info" :description="area.description" :link="'/areas/'+area.id" :projects="area.projects" :icon="area.icon"/>
 
         </div>
-        <p class="parEndPag"> You are on the Areas Of Interest page.</p>
+        <p class="parEndPag"> You are on the Investment Areas page.</p>
 </template>
 
 <script setup>
     const { data: areas } = await useFetch('/api/areas')
 </script>
+
+<style scoped>
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 3vw;
+}
+</style>

@@ -43,7 +43,7 @@
   
   <style scoped>
 .firstsec{
-
+margin-bottom: 9vw;
 }
 
 .firstpar{
@@ -82,7 +82,7 @@
 
 .forthpar {
   position: relative; 
-  top: 4vw;
+  top: 5vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
   margin-right: 41vw;
@@ -91,7 +91,7 @@
 }
 .fifthpar{
   position: relative; 
-  top: 5vw;
+  top: 7vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
   margin-right: 41vw;
@@ -101,7 +101,7 @@
 
 .sixth{
   position: relative; 
-  top: 6vw;
+  top: 8.5vw;
   left: 41vw;
   font-family: "nunito", sans-serif;
   margin-right: 41vw;
@@ -121,11 +121,17 @@
     width: 38vw;
     height: 51vw;
     position: relative;
-    bottom: 47vw;
+    bottom: 51vw;
     margin-bottom: -48vw;
   
 } 
 
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 2vw;
+}
   </style>
 
 

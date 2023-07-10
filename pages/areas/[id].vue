@@ -84,7 +84,7 @@ text-align: justify;
   display: flex;
   flex-direction: wrap;
   position: relative;
-  right: 12.5vw;
+  margin-bottom: 2vw;
   
 }
 
@@ -95,9 +95,16 @@ text-align: justify;
 .textPD1{
 margin: 3vw;
 position: relative;
-right: 36vw;
+right: 3vw;
 font-family: "stretch_pro", sans-serif;
-   font-size: 1.1vw;
+font-size: 1.1vw;
 color: #BBFB1E;
+}
+
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  position: relative;
+  top: 2vw;
 }
 </style>

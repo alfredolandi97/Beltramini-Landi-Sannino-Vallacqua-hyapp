@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ContainerNW">
         <span class="pageNW"> NEWS/ </span>
         <p class = "titleNW"><span>{{ news.title }}</span></p>
         <p class="captionNW"><span>{{ news.caption }}</span></p>
@@ -8,7 +8,9 @@
             <p id="textField" class = "textNW"><span>{{ news.text }}</span></p>
             <p class = "dateNW"><span>{{ news.date }}</span></p>
         </div>
+        <p class="parEndPag">You are on the Description News page.</p>
      </div>
+    
 </template>
 
 <script setup>
@@ -18,11 +20,10 @@
     console.log(news)
 
 
-    //const description = ref(newLineOnFullStop(dog.value.description))
 
 </script>
 
-<style>
+<style scoped>
 
 .imgNW{
     width: 100%;
@@ -45,8 +46,8 @@ margin-bottom: 6vw;
 
 font-size: 1.5vw;
 
-/* per creare lo spessore nel testo*/
--webkit-text-stroke-width: 1.1px; /* Spessore del contorno */
+
+-webkit-text-stroke-width: 1.1px; 
 -webkit-text-stroke-color:#BBFB1E;
 color: transparent;
 background-clip: text;
@@ -67,8 +68,9 @@ text-align: justify;
 .dateNW{
 font-family: "nunito", sans-serif;
 font-size: 1vw;
-margin-top: 4vw;
 margin-left: 86vw;
+position: relative;
+top: 3vw;
 }
 
 .captionNW{
@@ -76,4 +78,18 @@ margin-left: 86vw;
     font-family: "nunito", sans-serif;
     font-size: 1.5vw;
 }
+
+.parEndPag{
+  font-family: "nunito", sans-serif;
+  font-size: 1vw;
+  margin-bottom: 0vw;
+  position: relative;
+  top: 0vw;
+}
+
+.ContainerNW{
+    margin-bottom: 1.8vw;
+}
+
+
 </style>

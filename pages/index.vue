@@ -87,10 +87,11 @@ export default {
 
 
 
-<style>
+<style scoped>
     .HomeContainer {
         flex-direction: column;
         align-items: center;
+        margin-bottom: -1vw;
     }
 
     .divHomeImg{
@@ -117,14 +118,14 @@ export default {
         font-size: 5vw;
         position: relative;
         bottom: 51.6vw;
-        left: 65vw;
+        left: 66vw;
     }
     .p3p{
         font-family: "stretch_pro", sans-serif;
         font-size: 5vw;
         position: relative;
         bottom: 47.5vw;
-        left: 18vw;
+        left: 19vw;
     }
     .p4p{
         font-family: "stretch_pro", sans-serif;
@@ -143,7 +144,7 @@ export default {
   height: 48vw;
   background-color: #BBFB1E;
   position: relative;
-  bottom: 33vw;
+  bottom: 36vw;
 }
 
 .p5p {
@@ -230,6 +231,7 @@ opacity:1;
 .arrowIconHome {
   width: 2.5vw;
   height: 2.5vw;
+  cursor: pointer;
 }
 
 .p10p{
@@ -244,7 +246,7 @@ opacity:1;
     font-size: 3vw;
     color: #ffffff;
     position: relative;
-    bottom: 33vw;
+    bottom: 36vw;
   }
 
 
@@ -277,7 +279,7 @@ opacity:1;
     font-size: 3vw;
     color: #020122;
     position: relative;
-    bottom: 33vw;
+    bottom: 36vw;
   }
 
   .p11p:hover .parHome{
@@ -288,17 +290,16 @@ opacity:1;
 
   .p11p:hover .arrowIconHome3{
     transform: scale(1.2) translateX(-2vw);
+    
   }
 
 .arrowIconHome3{
     position: relative;
     left: -72vw;
-}
-
-.arrowIconHome3{
     width: 5vw;
     margin-left: -5vw;
     transition: all 0.2s ease;
+    
   }
 
   .p12p{
@@ -313,7 +314,7 @@ opacity:1;
     font-size: 3vw;
     color: #ffffff;
     position: relative;
-    bottom: 33vw;
+    bottom: 36vw;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #020122;
     color: transparent;
@@ -344,7 +345,7 @@ opacity:1;
   }
 
   .p12p:hover .pallinoHome{
-    transform: scale(1.3) 
+    transform: scale(1.2) 
   }
 
 
@@ -357,7 +358,7 @@ opacity:1;
   width: 106.45%;
   height: 25vw;
   position: relative;
-  bottom: 33vw;
+  bottom: 36vw;
 }
  
 
@@ -367,11 +368,11 @@ opacity:1;
   align-items: center;
   margin-left: -3vw;
   width: 106.45%;
-  height: 30vw;
+  height: 33vw;
   background-color: rgba(99, 32, 238, 0.7);
   position: relative;
-  bottom: 33vw;
-  margin-bottom: -41.5vw;
+  bottom: 34.9vw;
+  margin-bottom: -43.5vw;
   
 }
 

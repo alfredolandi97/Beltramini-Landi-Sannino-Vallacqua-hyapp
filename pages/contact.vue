@@ -2,8 +2,9 @@
     Contact Page
 -->
 <template>
-    <h1>CONTACTS</h1>
-    <p>We would love to hear from you. Please submit your project filling out the form or use the other details below to get other information.</p>
+    <h1 class="titolo">CONTACTS</h1>
+    <p class="descrPag">We would love to hear from you. Please submit your project filling out the form or use the other details below to get other information!</p>
+    <p></p>
     <div class="container">
         <div class="element">
         <form class="form" action="">
