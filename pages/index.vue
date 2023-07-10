@@ -98,6 +98,8 @@ export default {
 
     .divHomeImg{
         width: 100%;
+        flex-direction: column;
+        align-items: center;
        
     }
     .homeImg{
