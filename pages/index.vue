@@ -101,7 +101,7 @@ export default {
     .homeImg{
         width: 90%;
         position: relative;
-        left: 7vw;
+        left: 6vw;
         top: -10vw;
     }
     
@@ -111,21 +111,21 @@ export default {
         color: #BBFB1E;
         position: relative;
         bottom: 45vw;
-        left: 25vw;
+        left: 24vw;
     }
     .p2p{
         font-family: "stretch_pro", sans-serif;
         font-size: 5vw;
         position: relative;
         bottom: 51.6vw;
-        left: 66vw;
+        left: 65vw;
     }
     .p3p{
         font-family: "stretch_pro", sans-serif;
         font-size: 5vw;
         position: relative;
         bottom: 47.5vw;
-        left: 19vw;
+        left: 18vw;
     }
     .p4p{
         font-family: "stretch_pro", sans-serif;
@@ -133,7 +133,7 @@ export default {
         color: #BBFB1E;
         position: relative;
         bottom: 47.4vw;
-        left: 20.5vw;
+        left: 19.5vw;
     }
 .HomeContainer1 {
   display: flex;
