@@ -5,12 +5,19 @@
                 <span class="pageDP"> OUR TEAM / </span>
                 <p class = "namePD"><span>{{ person.name }}</span></p>
                 <p class="descrPag">Please, check out the profiles of our esteemed team members, which include their insightful biographies and reliable contact information.</p>
-                <p class = "rolePD"> <span>{{ person.role }}</span></p>
-                <img class = "imgDP" :src ="`${person.image}`"/>
-                <p class="captionPD"><span> {{ person.caption }}</span></p>
-                <p class = "bioPD"><span>{{ person.bio }}</span></p>
-                <p class = "numberPD"><span>{{ person.number }}</span></p>
-                <p class = "emailPD1"><span>{{ person.email }}</span></p>
+                <div class="row">
+                    <img class = "imgDP" :src ="`${person.image}`"/>
+                <div class="column">
+                    <p class = "rolePD"> <span>{{ person.role }}</span></p>
+                    <p id = "textField" class="captionPD"><span> {{ person.caption }}</span></p>
+                    <p class = "numberPD"><span>{{ person.number }}</span></p>
+                    <p class = "emailPD1"><span>{{ person.email }}</span></p>
+                </div>
+                </div>
+                
+                
+                <p id = "textField" class = "bioPD"><span>{{ person.bio }}</span></p>
+                
             </div>
             <div v-if="`${person.projects}`">
                 <h2 class="textPD1">SUPERVISED PROJECTS</h2>
@@ -78,7 +85,6 @@ margin-bottom: 6vw;
     font-family: "stretch_pro", sans-serif;
     font-size: 1.1vw;
     text-transform: uppercase;
-    margin-left: 61vw;
     margin-bottom: -2.3vw;
 }
 
@@ -90,28 +96,22 @@ font-size: 1.5vw;
 line-height: 1.6vw;
 margin-right: -3vw;
 position: relative;
-top: 1.3vw;
+top: 0vw;
+white-space: inherit;
 }
 
 .emailPD1{
 font-family: "nunito", sans-serif;
 font-size: 1.5vw;
-margin-left: 65vw;
-margin-bottom: -10vw;
-
-
 }
 
 
 .numberPD{
     font-size: 1.5vw;
     font-family: "nunito", sans-serif;
-    margin-top: -25vw;
-    margin-left: 65vw;
 }
 
 .captionPD{
-margin-left: 61vw;
 margin-top: 4vw;
 font-size: 1.5vw;
 font-family: "nunito", sans-serif;
@@ -127,6 +127,17 @@ white-space: pre-line;
 
 .textPD1{
 
-    margin-top: 35vw;
+    margin-top: 7vw;
+}
+
+.column{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
 }
 </style>

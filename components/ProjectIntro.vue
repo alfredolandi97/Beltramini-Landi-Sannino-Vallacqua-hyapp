@@ -28,7 +28,7 @@
     margin-top: 0vw;
     width: 11vw;
     height: 7vw;
-
+    margin-left: 2vw;
 }
 
 .imgIntroProj:hover{

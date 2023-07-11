@@ -67,8 +67,8 @@ margin-bottom: 1.4vw;
 p.parEndPag{
   font-family: "nunito", sans-serif;
   font-size: 1vw;
-  margin-top: 7vw;
-  margin-bottom: -2vw;
+  margin-top: 6vw;
+  margin-bottom: 0vw;
   margin-left: -0.5vw;
  
 }
@@ -81,6 +81,10 @@ p.descrPag{
 
 p{
   line-height: 1.5vw;
+}
+
+p#textField{
+  white-space: pre-line;
 }
 
 

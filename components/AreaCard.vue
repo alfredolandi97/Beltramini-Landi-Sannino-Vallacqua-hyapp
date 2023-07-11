@@ -99,7 +99,7 @@ const props = defineProps(["name", "info", "description", "link", "projects", "i
     background-clip: text;
     font-family: "stretch_pro", sans-serif;
     font-weight: 800;
-    margin-left: -4vw;
+    margin-left: 0vw;
     margin-top: 2vw;
     transition: color 0.5s;
 }
@@ -166,7 +166,7 @@ font-family: "nunito", sans-serif;
 .projectIntroConInt{
     margin-left: 3vw;
     position: relative;
-    left: 19vw;
+    left: 15vw;
     
 }
 </style>
