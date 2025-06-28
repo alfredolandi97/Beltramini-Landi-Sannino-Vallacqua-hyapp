@@ -3,7 +3,7 @@ import { serverSupabaseClient } from '#supabase/server'
 export default defineEventHandler(async (event) => {
     const id = event.context.params.id
     
-    const client = serverSupabaseClient(event)
+    const client = await serverSupabaseClient(event)
     const { data, error }= await client.from('areas').select("name, info, description, projects(id)").eq('id', id).limit(1).single()
 
     if(error) {

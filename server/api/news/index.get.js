@@ -1,7 +1,7 @@
 import { serverSupabaseClient } from '#supabase/server'
 
 export default defineEventHandler(async (event) => {
-    const client = serverSupabaseClient(event)
+    const client = await serverSupabaseClient(event)
 
     const { data, error }= await client.from('news').select("id, title, caption, date").order("date",{ascending:false})
     
