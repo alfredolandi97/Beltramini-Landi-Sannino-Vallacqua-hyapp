@@ -1,11 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr:true,
-    modules:["@nuxtjs/supabase"],
-    css: [
-        '~/assets/css/general.css'
-    ],
-    supabase: {
-        redirect:false,
-    }
+  compatibilityDate: '2025-07-15',
+  //devtools: { enabled: true },
+  ssr: true,
+  css:[
+    '~/assets/css/general.css'
+  ],
+  modules:[
+    '@nuxtjs/supabase'
+  ],
+  supabase: { redirect:false, },
+  
 })

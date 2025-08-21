@@ -22,9 +22,7 @@
 </template>
 
 <script setup>
-
-import { defineProps } from 'vue';
-const props = defineProps(["name", "info", "description", "link", "projects", "icon"])
+    const props = defineProps(["name", "info", "description", "link", "projects", "icon"])
 </script>
 
 <style scoped>

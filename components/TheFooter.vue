@@ -1,20 +1,18 @@
 <template>
   <span class="footerspan">
-<p>
-  <footer>
-      <span class="nunito-text"> ©  </span>
-       <span class="nunito-text1">2023 NextFund - All Rights Reserved</span>
+    <footer>
+        <span class="nunito-text"> ©  </span>
+        <span class="nunito-text1">2023 NextFund - All Rights Reserved</span>
 
-      <NuxtLink to="https://www.google.com/" class="logoFT1">
-              <img class="logoimgFT1" src="../assets/img/general/logo_insta_icon.png" alt="Logo instagram">
-              <span class="img-caption1">Instagram</span>
-      </NuxtLink>
-      <NuxtLink to="https://www.google.com/" class="logoFT2">
-              <img class="logoimgFT2" src="../assets/img/general/logo_linkedin_icon.png" alt="Logo linkedin">
-              <span class="img-caption2">Linkedin</span>
-      </NuxtLink>
-  </footer>
-</p>
+        <NuxtLink to="https://www.google.com/" class="logoFT1">
+                <img class="logoimgFT1" src="../assets/img/general/logo_insta_icon.png" alt="Logo instagram">
+                <span class="img-caption1">Instagram</span>
+        </NuxtLink>
+        <NuxtLink to="https://www.google.com/" class="logoFT2">
+                <img class="logoimgFT2" src="../assets/img/general/logo_linkedin_icon.png" alt="Logo linkedin">
+                <span class="img-caption2">Linkedin</span>
+        </NuxtLink>
+    </footer>
 </span>
 </template>
 

@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-    import { defineProps } from 'vue';
     const props = defineProps(["title", "area_name", "info", "link", "logo"])
 </script>
 
