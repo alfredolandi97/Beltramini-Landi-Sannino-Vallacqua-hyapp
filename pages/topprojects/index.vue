@@ -20,6 +20,16 @@
 </template>
 
 <script setup>
+  useHead({
+    title:"Top projects - NextFund",
+    meta:
+    [
+      {
+        name:"author",
+        content:"Alfredo Landi"
+      }
+    ]
+  })
 const { data: topprojects } = await useFetch('/api/topprojects');
 
 const areaFilter = ref('');

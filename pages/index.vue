@@ -63,27 +63,45 @@
   </main>
 </template>
 
-
+<script setup>
+  useHead({
+    title: "NextFund",
+    meta:[
+      {
+        name:"description",
+        content:"Home page of the website for NextFund venture capital"
+      },
+      {
+        name:"author",
+        content:"Alfredo Landi"
+      },
+      {
+        name:"keywords",
+        content:"NextFund, Venture Capital, company"
+      }
+    ]
+  })
+</script>
 
 
 <script>
-export default {
-  methods: {
-    scrollToSection() {
-      const element = document.getElementById('homeContainer1');
-      const offset = -50; 
+  export default {
+    methods: {
+      scrollToSection() {
+        const element = document.getElementById('homeContainer1');
+        const offset = -50; 
 
-      if (element) {
-        const topPos = element.offsetTop + offset;
+        if (element) {
+          const topPos = element.offsetTop + offset;
 
-        window.scrollTo({
-          top: topPos,
-          behavior: 'smooth',
-        });
-      }
+          window.scrollTo({
+            top: topPos,
+            behavior: 'smooth',
+          });
+        }
+      },
     },
-  },
-};
+  };
 </script>
 
 

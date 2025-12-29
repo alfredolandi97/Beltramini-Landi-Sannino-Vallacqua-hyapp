@@ -10,6 +10,15 @@
 </template>
 
 <script setup>
+    useHead({
+        title: "Investment areas - NextFund",
+        meta:[
+            {
+                name: "author",
+                content: "Alfredo Landi"
+            }
+        ]
+    })
     const { data: areas } = await useFetch('/api/areas')
 </script>
 

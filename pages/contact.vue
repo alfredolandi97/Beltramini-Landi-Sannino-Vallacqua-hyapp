@@ -1,4 +1,21 @@
 <script setup>
+    useHead({
+        title: "Contact us - NextFund",
+        meta: [
+            {
+                name: "description",
+                content: "Contact page to send a message to NextFund secretary office"
+            },
+            {
+                name: "author",
+                content: "Alfredo Landi"
+            },
+            {
+                name: "keywords",
+                content: "Contact, NextFund, email, office phone, contacts"
+            }
+        ]
+    })
     const { data: names} = await useFetch('/api/areas/getName');
 
     const name = ref("");

@@ -18,25 +18,37 @@
   </template>
 
 <script setup>
-const { data: persons } = await useFetch('/api/persons')
+   useHead({
+    title:"Our Team - Next Fund",
+    meta:
+    [
+      {
+        name: "author",
+        content: "Alfredo Landi"
+      },
+      {
+        name:"content",
+        content:"Team page about people who works at NextFund"
+      }
+    ]
+  })
+  const { data: persons } = await useFetch('/api/persons')
 
-const nameFilter = ref('');
+  const nameFilter = ref('');
 
-const filteredPersons = computed(() => {
-  if (!nameFilter.value) {
-    return persons.value;
-  }
+  const filteredPersons = computed(() => {
+    if (!nameFilter.value) {
+      return persons.value;
+    }
 
-  const filteredList = persons.value.filter((person) => {
-    const name = person.name.toLowerCase();
-    const filter = nameFilter.value.toLowerCase();
-    return name.includes(filter);
+    const filteredList = persons.value.filter((person) => {
+      const name = person.name.toLowerCase();
+      const filter = nameFilter.value.toLowerCase();
+      return name.includes(filter);
+    });
+
+    return filteredList;
   });
-
-  return filteredList;
-});
-
-
 </script>
 
 <style>

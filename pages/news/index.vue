@@ -17,6 +17,9 @@
   </template>
   
   <script setup>
+    useHead({
+      title: "News - NextFund"
+    })
     const { data: news } = await useFetch('/api/news')
   
     const dateFilter = ref('');

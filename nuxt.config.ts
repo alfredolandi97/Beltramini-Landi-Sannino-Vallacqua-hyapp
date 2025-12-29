@@ -10,5 +10,28 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase'
   ],
   supabase: { redirect:false, },
-  
+  /*app: {
+    head:{
+      title:"My title page",
+      charset: "utf-8",
+      meta:[
+        {
+          name:"description",
+          content:"this is the description of the web page"
+        },
+        {
+          name:"keyword",
+          content:"key1, key2"
+        }
+
+        //Other metadata
+      ],
+      script: [
+        {src:''}
+      ],
+      link: [
+        {rel: 'stylesheet', href:''}
+      ]
+    }
+  }*/
 })
