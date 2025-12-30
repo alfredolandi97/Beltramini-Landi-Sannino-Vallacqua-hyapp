@@ -1,4 +1,10 @@
 <template>
+    <div>
+        <Head>
+            <Title>{{ area.name }} - NextFund</Title>
+            <Meta name="author" content="Alfredo Landi" />
+        </Head>
+    </div>
     <main>
         <div class = "info-groupDAC">
             <div class="pagNamDAC">

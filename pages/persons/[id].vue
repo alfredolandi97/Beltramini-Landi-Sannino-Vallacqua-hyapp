@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <Title>{{ person.name }} - NextFund</Title>
+        <Meta name="author" content="Alfredo Landi" />
+    </Head>
     <main>
         <div class = "info-group">
             <div id = "data-container">

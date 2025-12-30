@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <Title>{{ project.title }} - NextFund</Title>
+        <Meta name="author" content="Alfredo Landi" />
+    </Head>
     <div class="ContainerTP">
         <div class="pagNamTP">
         <span class="pageTP"> TOP PROJECTS/ </span>

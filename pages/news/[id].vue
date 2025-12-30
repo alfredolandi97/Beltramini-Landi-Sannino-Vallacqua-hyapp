@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <Title>{{ news.title }} - NextFund</Title>
+        <Meta name="author" content="Alfredo Landi" />
+    </Head>
     <div class="ContainerNW">
         <span class="pageNW"> NEWS/ </span>
         <p class = "titleNW"><span>{{ news.title }}</span></p>
