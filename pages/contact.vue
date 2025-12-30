@@ -118,24 +118,40 @@
 
 <style scoped>
     .elementCont {
-        width: 50vw;
-        height: 45vw;
+        width: 53vw;
+        height: 48vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background: #BBFB1E;
         border: 1px solid #BBFB1E;
-        /*align-items: left;*/
-
-        
-        /*clip-path: polygon(
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(
             0 0, 
-            90% 0,
-            100% 10%,
+            80% 0,
+            100% 20%,
             100% 100%, 
-            10% 100%, 
-            0 90%
-        );*/
-    
+            20% 100%, 
+            0 80%
+        );
+        
+        -moz-clip-path: polygon(
+            0 0, 
+            80% 0,
+            100% 20%,
+            100% 100%, 
+            20% 100%, 
+            0 80%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            80% 0,
+            100% 20%,
+            100% 100%, 
+            20% 100%, 
+            0 80%
+        );    
     }
 
     .contactPar11{
@@ -156,14 +172,41 @@
     }
 
     .formCont{
-        max-width: 900px;
+        /*max-width: 900px;
         margin: 40px auto;
-        color: #8b8bb0;
+        color: #8b8bb0;*/
+        width: 52.9vw;
+        height: 47.9vw;
+        position: relative;
+        background: #020122;
+        -webkit-clip-path: polygon(
+            0 0, 
+            80% 0,
+            100% 20%,
+            100% 100%, 
+            20% 100%, 
+            0 80%
+        );
+	
+        -moz-clip-path: polygon(
+            0 0, 
+            80% 0,
+            100% 20%,
+            100% 100%, 
+            20% 100%, 
+            0 80%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            80% 0,
+            100% 20%,
+            100% 100%, 
+            20% 100%, 
+            0 80%
+        );
     }
-    /* .rowCont {
-        display: flex;
-        flex-direction: row;
-    } */
+
     .rowCont {
         display: flex;
         gap: 60px;
