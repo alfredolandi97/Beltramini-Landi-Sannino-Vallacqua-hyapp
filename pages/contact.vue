@@ -55,61 +55,65 @@
     <p class="descrPag">We would love to hear from you. Please submit your project filling out the form or use the other details below to get other information!</p>
     <p></p>
     <div class="containerCont">
-        <div class="elementCont">
-            <form class="formCont" action="">
-                <p class="contactPar11">SUBMIT</p>
-                <p class="contactPar22">Submit your idea to get in touch with one of our team members.</p>
-                <div class="rowCont">
-                    <div class="field">
-                        <label>Name and Surname</label>
-                        <input type="name" id="name" v-model="name">
+        <div class="leftElementContainerParent">
+            <div class="leftElementContainerChild">
+                <form class="formCont" action="">
+                    <p class="contactPar11">SUBMIT</p>
+                    <p class="contactPar22">Submit your idea to get in touch with one of our team members.</p>
+                    <div class="rowCont">
+                        <div class="field">
+                            <label>Name and Surname</label>
+                            <input type="name" id="name" v-model="name">
+                        </div>
+                        <div class="field">
+                            <label>E-mail</label>
+                            <input type="email" id="email" v-model="email">
+                        </div>
                     </div>
-                    <div class="field">
-                        <label>E-mail</label>
-                        <input type="email" id="email" v-model="email">
+                    <div class="rowCont">
+                        <div class="field">
+                            <label>Company Name</label>
+                            <input type="text" id="company_name">
+                        </div>
+                        <div class="field select">
+                            <label>Area</label>
+                            <select name="subject" id="subject">
+                            <option v-for="name of names" :value="`${name.name}`">{{ name.name }}</option>
+                        </select>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="rowCont">
-                    <div class="field">
-                        <label>Company Name</label>
-                        <input type="text" id="company_name">
+                <!-- <div class="rowCont">
+                <textarea class="InputCont1" name="query" id="query" cols="30" rows="7" placeholder="Description" style="height: 150px;" v-model="message"></textarea>
+                </div> -->
+                    <div class="field full">
+                        <label>Description</label>
+                        <textarea rows="6" v-model="message"></textarea>
                     </div>
-                    <div class="field select">
-                        <label>Area</label>
-                        <select name="subject" id="subject">
-                        <option v-for="name of names" :value="`${name.name}`">{{ name.name }}</option>
-                    </select>
-                    </div>
-                    
-                </div>
-            <!-- <div class="rowCont">
-            <textarea class="InputCont1" name="query" id="query" cols="30" rows="7" placeholder="Description" style="height: 150px;" v-model="message"></textarea>
-            </div> -->
-            <div class="field full">
-                <label>Description</label>
-                <textarea rows="6" v-model="message"></textarea>
-            </div>
-            <div class="rowCont actions">
-                <label class="fileIn">
-                    <input type="file">
-                    <span>CHOOSE FILE</span>
-                </label>
+                    <div class="rowCont actions">
+                        <label class="fileIn">
+                            <input type="file">
+                            <span>CHOOSE FILE</span>
+                        </label>
 
-                <button type="submit" class="sendButton" @click="contactForm">
-                    SEND <span>›</span>
-                </button>
-                <!-- <input class="InputCont2" value="SEND" type="button" @click="contactForm"> -->
-            </div>
-            </form>
+                        <button type="submit" class="sendButton" @click="contactForm">
+                            SEND <span>›</span>
+                        </button>
+                        <!-- <input class="InputCont2" value="SEND" type="button" @click="contactForm"> -->
+                    </div>
+                </form>
+            </div>    
         </div>
-        <div class="elementCont1">
-            <p class="contactPar">INFO</p>
-            <p class="contactPar2">Visit our headquarter or contact us.</p>
-            <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/indirizzo.png" alt="">Via Tommaso Marino, 5, 20121</p>
-            <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/telefono.png" alt=""> 02862177</p>
-            <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/mail.png" alt=""> info@nextfund.it</p>
-            <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/fax.png" alt=""> (852) 3010 8530</p>
-        </div>   
+        <div class="rightElementContainerParent">
+            <div class="rightElementContainerChild">
+                <p class="contactPar">INFO</p>
+                <p class="contactPar2">Visit our headquarter or contact us.</p>
+                <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/indirizzo.png" alt="">Via Tommaso Marino, 5, 20121</p>
+                <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/telefono.png" alt=""> 02862177</p>
+                <p class="contactPar1">  <img class="contactImg" src="../assets/img/general/mail.png" alt=""> info@nextfund.it</p>
+                <p class="contactPar3">  <img class="contactImg" src="../assets/img/general/fax.png" alt=""> (852) 3010 8530</p>
+            </div> 
+        </div>  
     </div>
     
     <p class="parEndPag"> You are on the Contact page.</p>
@@ -117,41 +121,8 @@
 
 
 <style scoped>
-    .elementCont {
-        width: 53vw;
-        height: 48vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: #BBFB1E;
-        border: 1px solid #BBFB1E;
-        box-sizing: border-box;
-        -webkit-clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );
-        
-        -moz-clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );
-        
-        clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );    
+    .descrPag{
+        text-align: center;
     }
 
     .contactPar11{
@@ -165,6 +136,7 @@
     .contactPar22{
         font-family: "nunito", sans-serif;
         font-size: 1.5vw;
+        color: white;
         /*margin-left: 5vw;*/
         /*margin-top: 0.5vw;*/
         position: relative;
@@ -172,39 +144,9 @@
     }
 
     .formCont{
-        /*max-width: 900px;
+        max-width: 900px;
         margin: 40px auto;
-        color: #8b8bb0;*/
-        width: 52.9vw;
-        height: 47.9vw;
-        position: relative;
-        background: #020122;
-        -webkit-clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );
-	
-        -moz-clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );
-        
-        clip-path: polygon(
-            0 0, 
-            80% 0,
-            100% 20%,
-            100% 100%, 
-            20% 100%, 
-            0 80%
-        );
+        color: #8b8bb0;
     }
 
     .rowCont {
@@ -216,32 +158,21 @@
     .containerCont {
         display: flex;
         flex-direction: row;
-    }
-
-    .elementCont1 {
-        width: 33vw;
-        height: 25vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid #BBFB1E;
-        position: relative;
-        left: 5vw;
-        top: 0vw;
+        justify-content: space-between;
     }
 
     .contactPar {
         font-size: 3vw;
         color: #BBFB1E;
         font-family: "stretch_pro", sans-serif;
-        margin-left: 5vw;
+        margin-left: 2.7vw;
         margin-top: 0.5vw;
     }
     
     .contactPar1 {
         font-family: "nunito", sans-serif;
         font-size: 1.5vw;
-        margin-left: 5vw;
+        margin-left: 2.7vw;
         margin-top: 0vw;
         line-height: 0.5vw;
         position: relative;
@@ -250,10 +181,21 @@
     .contactPar2{
         font-family: "nunito", sans-serif;
         font-size: 1.5vw;
-        margin-left: 5vw;
+        margin-left: 2.7vw;
         margin-top: 0.5vw; 
         position: relative;
         top: -1.5vw;
+    }
+
+    .contactPar3 {
+        font-family: "nunito", sans-serif;
+        font-size: 1.5vw;
+        margin-left: 2.7vw;
+        margin-top: 0vw;
+        margin-bottom: 1.5vw;
+        line-height: 0.5vw;
+        position: relative;
+        top:1.1vw;
     }
 
     .contactImg{
@@ -274,7 +216,7 @@
     label {
         display: block;
         margin-bottom: 8px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     input,
@@ -345,12 +287,6 @@
         cursor: pointer;
     }
 
-    /* .file-input em {
-    margin-left: 15px;
-    font-style: normal;
-    color: #ccc;
-    } */
-
     /* send button */
     .sendButton {
         background: none;
@@ -374,32 +310,148 @@
         color: #e5ff4d;
     }
 
-
-    /* .InputCont1{
-        background-color: transparent;
-        color:  #BBFB1E;
-        width: 20vw;
-        margin-left: 4vw;
-        margin-top: 2vw;
+    .leftElementContainerParent{
+        width: 50vw;
+        height: 48vw;
         position: relative;
-        top: -1vw;
-        font-family:  "nunito",sans-serif;
+        background: #BBFB1E;
+        border: 1px solid #BBFB1E;
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );
+        
+        -moz-clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );    
     }
 
-    .InputCont2{
-        background-color: transparent;
-        color:  #BBFB1E;
-        width: 10vw;
-        margin-left: 15vw;
-        margin-top: 2vw;
+    .leftElementContainerChild{
+        width: calc(100% - 0.1vw);
+        height: calc(100% - 0.1vw);
+        margin: 0.05vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0.5vw;
         position: relative;
-        top: -1vw;
-        font-family: "stretch_pro", sans-serif;
+        background: #020122;
+        -webkit-clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );
+	
+        -moz-clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            95% 0,
+            100% 5%,
+            100% 100%, 
+            5% 100%, 
+            0 95%
+        );
+    }
 
-    } */
+    .rightElementContainerParent{
+        width: 28vw;
+        height: 25vw;
+        position: relative;
+        background: #BBFB1E;
+        border: 1px solid #BBFB1E;
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );
+        
+        -moz-clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );    
+    }
 
-    /* .InputCont1::placeholder {
-    color:#BBFB1E;
-
-    } */
+    .rightElementContainerChild{
+        width: calc(100% - 0.2vw);
+        height: calc(100% - 0.2vw);
+        margin: 0.1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        background: #020122;
+        -webkit-clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );
+	
+        -moz-clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );
+        
+        clip-path: polygon(
+            0 0, 
+            90% 0,
+            100% 10%,
+            100% 100%, 
+            10% 100%, 
+            0 90%
+        );
+    }
 </style>
